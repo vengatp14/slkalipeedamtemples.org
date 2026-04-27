@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>தெய்வங்கள் | ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில்</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;700;900&family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/script.css">
+
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-om">ॐ</div>
+  <div class="preloader-line"><div class="preloader-fill"></div></div>
+</div>
+
+<!-- TRUST MARQUEE BAR -->
+<div class="trust-bar">
+  <div class="trust-marquee" id="trustMarquee"></div>
+</div>
+
+<!-- LANGUAGE BAR -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('ta')">தமிழ்</button>
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+  <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+  <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+  <button class="lang-btn" onclick="setLang('ml')">മലയ</button>
+</div>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><i class="bi bi-flower1"></i></div>
+      <div class="nav-logo-text">
+        <div data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்</div>
+        <div data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Temple</div>
+        <div data-lang="hi">श्री भद्रकाळी अम्मन मंदिर</div>
+        <div data-lang="te">శ్రీ భద్రకాళి అమ్మన్ ఆలయం</div>
+        <div data-lang="ml">ശ്രീ ഭദ്രകാളി അമ്മൻ ക്ഷേത്രം</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+      <a href="about.html"><span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span></a>
+      <a href="deities.html" style="color:var(--gold2)"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></a>
+      <a href="gallery.html"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></a>
+      <a href="contact.html"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></a>
+      <a href="index.html#booking" class="nav-cta">
+        <span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span>
+      </a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+    <a href="about.html" onclick="toggleMenu()"><span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span></a>
+    <a href="deities.html" onclick="toggleMenu()"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></a>
+    <a href="gallery.html" onclick="toggleMenu()"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></a>
+    <a href="contact.html" onclick="toggleMenu()"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></a>
+    <a href="index.html#booking" onclick="toggleMenu()"><span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span></a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<div class="deities-hero">
+  <div class="deities-hero-bg"></div>
+  <div class="deities-hero-om">ॐ</div>
+  <div class="deities-hero-content">
+    <div class="deities-hero-breadcrumb">
+      <a href="index.html"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+      <span class="sep">›</span>
+      <span class="current"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></span>
+    </div>
+    <div class="deities-hero-badge reveal d1">
+      <i class="bi bi-flower1"></i>
+      <span data-lang="ta">ஆலயத்தில் வீற்றிருக்கும் தெய்வங்கள்</span>
+      <span data-lang="en">Enshrined Deities of the Temple</span>
+      <span data-lang="hi">मंदिर के देवता</span>
+      <span data-lang="te">ఆలయంలోని దేవతలు</span>
+      <span data-lang="ml">ക്ഷേത്രത്തിലെ ദേവതകൾ</span>
+    </div>
+    <h1 class="deities-hero-title reveal d2">
+      <span data-lang="ta">அருள்மிகு தெய்வங்கள்</span>
+      <span data-lang="en">Sacred Deities</span>
+      <span data-lang="hi">दिव्य देवता</span>
+      <span data-lang="te">దివ్య దేవతలు</span>
+      <span data-lang="ml">ദിവ്യ ദേവതകൾ</span>
+    </h1>
+    <p class="deities-hero-subtitle reveal d3">
+      <span data-lang="ta">தேவலோக சிற்ப முறைப்படி அமைந்த இந்த திவ்ய கோவிலில் வீற்றிருக்கும் மூலவர் மற்றும் சன்னதிகளின் பூரண அறிமுகம்</span>
+      <span data-lang="en">Meet the principal deity and all enshrined sannidhis of this divinely built Devaloka Shilpa temple</span>
+      <span data-lang="hi">देवलोक शिल्प में निर्मित इस दिव्य मंदिर के मूलवर और सभी देवताओं का पूर्ण परिचय</span>
+      <span data-lang="te">దేవలోక శిల్పంలో నిర్మించిన ఈ దివ్య ఆలయంలోని మూలవర్ మరియు అన్ని సన్నిధుల పరిచయం</span>
+      <span data-lang="ml">ദേവലോക ശില്പ ക്ഷേത്രത്തിലെ മൂലവർ ഉൾപ്പെടെ എല്ലാ ദേവതകളുടെ പൂർണ്ണ പരിചയം</span>
+    </p>
+    <div class="deities-hero-line reveal d4"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     DASHA MAHA VIDYA INTRO BAND
+══════════════════════════════ -->
+<div class="dasha-band reveal">
+  <div class="dasha-band-inner">
+    <span class="dasha-band-icon"><i class="bi bi-infinity"></i></span>
+    <h2>
+      <span data-lang="ta">தச மகா வித்யா — சக்தியின் 10 அவதாரங்கள்</span>
+      <span data-lang="en">Dasha Maha Vidya — The 10 Avatars of Shakti</span>
+      <span data-lang="hi">दश महाविद्या — शक्ति के 10 अवतार</span>
+      <span data-lang="te">దశ మహావిద్య — శక్తి యొక్క 10 అవతారాలు</span>
+      <span data-lang="ml">ദശ മഹാ വിദ്യ — ശക്തിയുടെ 10 അവതാരങ്ങൾ</span>
+    </h2>
+    <p data-lang="ta">இந்த திருக்கோவிலில் தச மகா வித்யா எனும் சக்தியின் 10 அவதாரங்கள் காவலாக இருக்கின்றன. ஒவ்வொரு திசையிலும் தெய்வீக பாதுகாப்பு வழங்கும் இந்த தெய்வங்கள் பக்தர்களுக்கு அனைத்து வகையிலும் அருள் பாலிக்கின்றனர்.</p>
+    <p data-lang="en">The 10 avatars of Shakti, known as the Dasha Maha Vidya, stand as divine guardians of this temple — offering complete protection from all directions and fulfilling every spiritual need of devotees.</p>
+    <p data-lang="hi">इस मंदिर में दश महाविद्या के 10 अवतार रक्षक के रूप में विराजमान हैं — हर दिशा से दिव्य सुरक्षा और हर आवश्यकता की पूर्ति करते हैं।</p>
+    <p data-lang="te">ఈ ఆలయంలో దశ మహావిద్య శక్తి యొక్క 10 అవతారాలు కాపలాగా ఉన్నాయి — అన్ని దిశలలో దివ్య రక్షణ మరియు అన్ని విషయాలలో అనుగ్రహం.</p>
+    <p data-lang="ml">ഈ ക്ഷേത്രത്തിൽ ദശ മഹാ വിദ്യ ശക്തിയുടെ 10 അവതാരങ്ങൾ കാവൽ നിൽക്കുന്നു — എല്ലാ ദിശകളിലും ദൈവിക സംരക്ഷണം.</p>
+    <div class="dasha-count-row">
+      <div class="dasha-count">
+        <span class="dasha-count-num">10</span>
+        <div class="dasha-count-label">
+          <span data-lang="ta">மகா வித்யாக்கள்</span>
+          <span data-lang="en">Maha Vidyas</span>
+          <span data-lang="hi">महाविद्याएं</span>
+          <span data-lang="te">మహావిద్యలు</span>
+          <span data-lang="ml">മഹാ വിദ്യകൾ</span>
+        </div>
+      </div>
+      <div class="dasha-count">
+        <span class="dasha-count-num">9</span>
+        <div class="dasha-count-label">
+          <span data-lang="ta">சன்னதிகள்</span>
+          <span data-lang="en">Sannidhis</span>
+          <span data-lang="hi">सन्निधियाँ</span>
+          <span data-lang="te">సన్నిధులు</span>
+          <span data-lang="ml">ശ്രീകോവിലുകൾ</span>
+        </div>
+      </div>
+      <div class="dasha-count">
+        <span class="dasha-count-num">1</span>
+        <div class="dasha-count-label">
+          <span data-lang="ta">மூலவர்</span>
+          <span data-lang="en">Moolavár</span>
+          <span data-lang="hi">मूलवर</span>
+          <span data-lang="te">మూలవర్</span>
+          <span data-lang="ml">മൂലവർ</span>
+        </div>
+      </div>
+      <div class="dasha-count">
+        <span class="dasha-count-num">∞</span>
+        <div class="dasha-count-label">
+          <span data-lang="ta">அருள்</span>
+          <span data-lang="en">Blessings</span>
+          <span data-lang="hi">आशीर्वाद</span>
+          <span data-lang="te">అనుగ్రహం</span>
+          <span data-lang="ml">അനുഗ്രഹം</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     MAIN DEITY SPOTLIGHT
+══════════════════════════════ -->
+<section class="main-deity-section">
+  <div class="main-deity-spotlight">
+
+    <!-- IMAGE -->
+    <div class="main-deity-img-wrap reveal-left">
+      <div class="main-deity-img-halo"></div>
+      <div class="main-deity-img-ring"></div>
+      <div class="main-deity-img-frame">
+        <img src="assets/img/kaarirulbathrakali.jpeg" alt="Sri Kaar Irul Ganapadai Bhadrakali Amman">
+      </div>
+      <div class="main-deity-lamp">
+        <div class="lamp-dot"></div>
+        <div class="lamp-dot"></div>
+        <div class="lamp-dot"></div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="main-deity-content reveal-right">
+      <div class="main-deity-eyebrow">
+        <span>
+          <span data-lang="ta">மூலவர் — பிரதான தெய்வம்</span>
+          <span data-lang="en">Moolavár — Principal Deity</span>
+          <span data-lang="hi">मूलवर — प्रधान देवता</span>
+          <span data-lang="te">మూలవర్ — ప్రధాన దేవత</span>
+          <span data-lang="ml">മൂലവർ — പ്രധാന ദേവത</span>
+        </span>
+      </div>
+      <div class="deity-name-block">
+        <div class="main-deity-name-en">Sri Kaar Irul Ganapadai<br>Bhadrakali Amman</div>
+        <div class="main-deity-name-ta">
+          <span data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளியம்மன்</span>
+          <span data-lang="en">Padai Bhadra Kaliyamman</span>
+          <span data-lang="hi">श्री कार इरुल कणपडै भद्रकाळी अम्मन</span>
+          <span data-lang="te">శ్రీ కార్ ఇరుల్ కణపడై భద్రకాళి అమ్మన్</span>
+          <span data-lang="ml">ശ്രീ കാർ ഇരുൾ കണപടൈ ഭദ്രകാളി അമ്മൻ</span>
+        </div>
+      </div>
+      <div class="main-deity-rule"></div>
+      <div class="main-deity-attrib">
+        <span class="attrib-pill"><i class="bi bi-gem"></i> <span data-lang="ta">உக்ர சக்தி வடிவம்</span><span data-lang="en">Ugra Shakti Form</span><span data-lang="hi">उग्र शक्ति स्वरूप</span><span data-lang="te">ఉగ్ర శక్తి స్వరూపం</span><span data-lang="ml">ഉഗ്ര ശക്തി ഭാവം</span></span>
+        <span class="attrib-pill"><i class="bi bi-star-fill"></i> <span data-lang="ta">ஆதி வடிவம்</span><span data-lang="en">Primordial Form</span><span data-lang="hi">आदि स्वरूप</span><span data-lang="te">ఆది స్వరూపం</span><span data-lang="ml">ആദി ഭാവം</span></span>
+        <span class="attrib-pill"><i class="bi bi-shield-fill-check"></i> <span data-lang="ta">காவல் தெய்வம்</span><span data-lang="en">Guardian Deity</span><span data-lang="hi">रक्षक देवी</span><span data-lang="te">కాపలా దేవత</span><span data-lang="ml">കാവൽ ദേവത</span></span>
+        <span class="attrib-pill"><i class="bi bi-eye-fill"></i> <span data-lang="ta">விஷ்ணு தரிசனம்</span><span data-lang="en">Vishnu Darshan</span><span data-lang="hi">विष्णु दर्शन</span><span data-lang="te">విష్ణు దర్శనం</span><span data-lang="ml">വിഷ്ണു ദർശനം</span></span>
+      </div>
+      <div class="main-deity-body">
+        <span data-lang="ta">உலகில் வேறு எங்கும் தரிசிக்க முடியாத உருவத்தில் காட்சி அளிக்கும் அன்னை மகா காளியின் ஆதி வடிவம். வைகுண்ட ஏகாதசி அன்று சொர்க்கவாசல் திறந்து மகா காளி அன்னை ஸ்ரீமன் விஷ்ணு ரூபத்தில் காட்சி கொடுக்கும் ஒரே ஆலயம். மந்திரம் யந்திரம் தந்திரம் போன்ற மாந்தரீக பிரச்சனைகளை உடனடியாக தீர்க்கும் சக்தி வாய்ந்த மகா காளியின் திருவடிகளில் விழுந்து வழிபடும் பக்தர்களுக்கு அனைத்து குறைகளும் தீரும்.</span>
+        <span data-lang="en">Mother Maha Kali graces this temple in her primordial form — a divine vision found nowhere else in the world. This is the only temple where, on the sacred Vaikunta Ekadasi, the gates of heaven open and Maha Kali grants darshan in the form of Sriman Vishnu. Devotees who prostrate at her divine feet find immediate solutions to all afflictions — including those caused by Mantra, Yantra, and Tantra.</span>
+        <span data-lang="hi">माँ महाकाली यहाँ अपने आदि स्वरूप में विराजमान हैं — विश्व में अन्यत्र दुर्लभ दिव्य दर्शन। यह एकमात्र मंदिर है जहाँ वैकुंठ एकादशी पर महाकाली श्रीमन विष्णु रूप में दर्शन देती हैं। चरणों में प्रणाम करने वाले भक्तों की सभी समस्याओं का शीघ्र निवारण होता है।</span>
+        <span data-lang="te">అమ్మ మహాకాళి ఇక్కడ ఆది స్వరూపంలో కొలువై ఉంది — ప్రపంచంలో మరెక్కడా కాన రాని దివ్య దర్శనం. వైకుంఠ ఏకాదశి నాడు మహాకాళి శ్రీమన్ విష్ణు రూపంలో దర్శనమిచ్చే ఏకైక ఆలయం. చరణాలకు నమస్కరించే భక్తుల అన్ని కష్టాలు తొలగిపోతాయి.</span>
+        <span data-lang="ml">അമ്മ മഹാകാളി ഇവിടെ ആദി സ്വരൂപത്തിൽ കുടികൊള്ളുന്നു — ലോകത്ത് മറ്റൊരിടത്തും ദർശിക്കാനാകാത്ത ദിവ്യ ദർശനം. വൈകുണ്ഠ ഏകാദശിയിൽ മഹാകാളി ശ്രീമൻ വിഷ്ണു രൂപത്തിൽ ദർശനം നൽകുന്ന ഏകൈക ക്ഷേത്രം. തൃക്കാലിൽ വണങ്ങുന്ന ഭക്തരുടെ എല്ലാ ദുഃഖങ്ങളും തീരും.</span>
+      </div>
+      <div class="main-deity-highlights">
+        <div class="highlight-card">
+          <div class="highlight-card-icon"><i class="bi bi-eye-fill"></i></div>
+          <div class="highlight-card-text">
+            <strong>
+              <span data-lang="ta">வைகுண்ட ஏகாதசி</span>
+              <span data-lang="en">Vaikunta Ekadasi</span>
+              <span data-lang="hi">वैकुंठ एकादशी</span>
+              <span data-lang="te">వైకుంఠ ఏకాదశి</span>
+              <span data-lang="ml">വൈകുണ്ഠ ഏകാദശി</span>
+            </strong>
+            <span data-lang="ta">விஷ்ணு ரூபத்தில் காட்சி தரும் ஒரே ஆலயம்</span>
+            <span data-lang="en">Only temple granting Vishnu darshan</span>
+            <span data-lang="hi">विष्णु रूप में दर्शन देने वाला एकमात्र मंदिर</span>
+            <span data-lang="te">విష్ణు రూపంలో దర్శనమిచ్చే ఏకైక ఆలయం</span>
+            <span data-lang="ml">വിഷ്ണു രൂപത്തിൽ ദർശനം നൽകുന്ന ഏകൈക ക്ഷേത്രം</span>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card-icon"><i class="bi bi-gem"></i></div>
+          <div class="highlight-card-text">
+            <strong>
+              <span data-lang="ta">ஸ்ரீ சக்ர விமானம்</span>
+              <span data-lang="en">Sri Chakra Vimanam</span>
+              <span data-lang="hi">श्री चक्र विमान</span>
+              <span data-lang="te">శ్రీ చక్ర విమానం</span>
+              <span data-lang="ml">ശ്രീ ചക്ര വിമാനം</span>
+            </strong>
+            <span data-lang="ta">தேவலோக சிற்ப முறையில் அமைந்த திருக்கோவில்</span>
+            <span data-lang="en">Built in Devaloka Shilpa tradition</span>
+            <span data-lang="hi">देवलोक शिल्प में निर्मित</span>
+            <span data-lang="te">దేవలోక శిల్ప సంప్రదాయంలో నిర్మించిన</span>
+            <span data-lang="ml">ദേവലോക ശില്പ ക്ഷേത്രം</span>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card-icon"><i class="bi bi-people-fill"></i></div>
+          <div class="highlight-card-text">
+            <strong>
+              <span data-lang="ta">குலதெய்வ வழிகாட்டல்</span>
+              <span data-lang="en">Kula Deivam Guidance</span>
+              <span data-lang="hi">कुलदेवता मार्गदर्शन</span>
+              <span data-lang="te">కులదేవత మార్గదర్శనం</span>
+              <span data-lang="ml">കുലദേവതാ മാർഗദർശനം</span>
+            </strong>
+            <span data-lang="ta">சொப்பனத்தில் குலதெய்வம் காண்பிக்கும்</span>
+            <span data-lang="en">Ancestral deity revealed in dreams</span>
+            <span data-lang="hi">स्वप्न में कुलदेवता का प्रकाशन</span>
+            <span data-lang="te">స్వప్నంలో కులదేవత వెల్లడి</span>
+            <span data-lang="ml">സ്വപ്നത്തിൽ കുലദേവത വെളിപ്പെടൽ</span>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card-icon"><i class="bi bi-shield-fill-check"></i></div>
+          <div class="highlight-card-text">
+            <strong>
+              <span data-lang="ta">மாந்திரீக தீர்வு</span>
+              <span data-lang="en">Occult Relief</span>
+              <span data-lang="hi">मांत्रिक समाधान</span>
+              <span data-lang="te">మాంత్రిక పరిష్కారం</span>
+              <span data-lang="ml">മന്ത്ര-തന്ത്ര പ്രശ്ന നിവൃത്തി</span>
+            </strong>
+            <span data-lang="ta">மந்திரம் யந்திரம் தந்திரம் பிரச்சனைகள் தீரும்</span>
+            <span data-lang="en">Mantra, Yantra, Tantra issues resolved</span>
+            <span data-lang="hi">मंत्र, यंत्र, तंत्र समस्याओं का समाधान</span>
+            <span data-lang="te">మంత్ర, యంత్ర, తంత్ర సమస్యలకు పరిష్కారం</span>
+            <span data-lang="ml">മന്ത്ര, യന്ത്ര, തന്ത്ര പ്രശ്നങ്ങൾ തീരും</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     OTHER DEITIES GRID
+══════════════════════════════ -->
+<section class="deities-grid-section">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center; margin-bottom:16px;">
+      <div class="section-eyebrow" style="justify-content:center;">
+        <span>
+          <span data-lang="ta">சன்னதிகள்</span>
+          <span data-lang="en">Sannidhis</span>
+          <span data-lang="hi">सन्निधियाँ</span>
+          <span data-lang="te">సన్నిధులు</span>
+          <span data-lang="ml">ശ്രീകോവിലുകൾ</span>
+        </span>
+      </div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-lang="ta">ஆலயத்தில் அருள்பாலிக்கும் தெய்வங்கள்</span>
+        <span data-lang="en">Deities of the Sacred Sannidhis</span>
+        <span data-lang="hi">सन्निधि के देवता</span>
+        <span data-lang="te">సన్నిధుల దేవతలు</span>
+        <span data-lang="ml">ശ്രീകോവിലുകളിലെ ദേവതകൾ</span>
+      </h2>
+      <div class="section-rule center"></div>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="deity-filter-bar reveal">
+      <button class="filter-btn active" onclick="filterDeities('all', this)">
+        <span data-lang="ta">அனைத்தும்</span><span data-lang="en">All Deities</span><span data-lang="hi">सभी</span><span data-lang="te">అన్నీ</span><span data-lang="ml">എല്ലാം</span>
+      </button>
+      <button class="filter-btn" onclick="filterDeities('shakti', this)">
+        <span data-lang="ta">சக்தி</span><span data-lang="en">Shakti</span><span data-lang="hi">शक्ति</span><span data-lang="te">శక్తి</span><span data-lang="ml">ശക്തി</span>
+      </button>
+      <button class="filter-btn" onclick="filterDeities('guardian', this)">
+        <span data-lang="ta">காவல்</span><span data-lang="en">Guardian</span><span data-lang="hi">रक्षक</span><span data-lang="te">కాపలా</span><span data-lang="ml">കാവൽ</span>
+      </button>
+      <button class="filter-btn" onclick="filterDeities('male', this)">
+        <span data-lang="ta">ஆண் தெய்வம்</span><span data-lang="en">Male Deity</span><span data-lang="hi">पुरुष देवता</span><span data-lang="te">పురుష దేవత</span><span data-lang="ml">ദേവൻ</span>
+      </button>
+    </div>
+
+    <!-- DEITY CARDS -->
+    <div class="deities-main-grid" id="deitiesGrid">
+
+      <div class="deity-premium-card reveal d1" data-category="male">
+        <div class="deity-card-image">
+          <div class="diya-glow"></div>
+          <img src="assets/img/vedhalam.jpg" alt="Naga Bhootham" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-star-fill"></i></div>
+          <div class="deity-card-image-overlay"></div>
+          <div class="deity-category-badge">
+            <span data-lang="ta">காவல் சக்தி</span><span data-lang="en">Guardian Spirit</span><span data-lang="hi">रक्षक शक्ति</span><span data-lang="te">కాపలా శక్తి</span><span data-lang="ml">കാവൽ ശക്തി</span>
+          </div>
+          <div class="deity-card-image-label">
+            <div class="deity-card-image-name">Naga Bhootham</div>
+            <div class="deity-card-image-name-ta">நாக பூதம்</div>
+          </div>
+        </div>
+        <div class="deity-card-body">
+          <p class="deity-card-desc">
+            <span data-lang="ta">நாக பூதம் — பாம்பு வடிவில் கோவிலை காக்கும் புனிதமான தெய்வீக சக்தி. பக்தர்களுக்கு நாக தோஷம் நீக்கி அருள் வழங்கும் காவல் சக்தி.</span>
+            <span data-lang="en">Naga Bhootham — the sacred serpent spirit guarding the temple. This powerful guardian removes Naga dosha and blesses all devoted worshippers.</span>
+            <span data-lang="hi">नाग भूतम — सर्प रूप में मंदिर की रक्षा करने वाली पवित्र शक्ति। नाग दोष निवारण कर भक्तों को आशीर्वाद देने वाली दिव्य शक्ति।</span>
+            <span data-lang="te">నాగ భూతం — సర్ప రూపంలో దేవాలయాన్ని కాపాడే పవిత్ర శక్తి. నాగ దోషం తొలగించి భక్తులను అనుగ్రహించే కాపలా శక్తి.</span>
+            <span data-lang="ml">നാഗ ഭൂതം — സർപ്പ രൂപത്തിൽ ക്ഷേത്രം കാക്കുന്ന പവിത്ര ശക്തി. നാഗദോഷം ഒഴിവാക്കി ഭക്തരെ അനുഗ്രഹിക്കുന്ന കാവൽ ശക്തി.</span>
+          </p>
+          <div class="deity-card-powers">
+            <span class="power-tag"><i class="bi bi-star-fill"></i> <span data-lang="ta">நாக தோஷம் நீக்கும்</span><span data-lang="en">Naga Dosha Relief</span><span data-lang="hi">नाग दोष निवारण</span><span data-lang="te">నాగ దోష నివారణ</span><span data-lang="ml">നാഗദോഷ നിവൃത്തി</span></span>
+            <span class="power-tag"><i class="bi bi-shield-fill"></i> <span data-lang="ta">கோவில் காவல்</span><span data-lang="en">Temple Guardian</span><span data-lang="hi">मंदिर रक्षक</span><span data-lang="te">దేవాలయ కాపలా</span><span data-lang="ml">ക്ഷേത്ര കാവൽ</span></span>
+            <span class="power-tag"><i class="bi bi-trophy-fill"></i> <span data-lang="ta">அருள் வழங்கும்</span><span data-lang="en">Bestows Blessings</span><span data-lang="hi">आशीर्वाद प्रदाता</span><span data-lang="te">అనుగ్రహం ఇచ్చేది</span><span data-lang="ml">അനുഗ്രഹം നൽകുന്നു</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="deity-premium-card reveal d2" data-category="male">
+        <div class="deity-card-image">
+          <div class="diya-glow"></div>
+          <img src="assets/img/vedhalamfemale.jpg" alt="Agni Bhootham" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-star-fill"></i></div>
+          <div class="deity-card-image-overlay"></div>
+          <div class="deity-category-badge">
+            <span data-lang="ta">காவல் சக்தி</span><span data-lang="en">Guardian Spirit</span><span data-lang="hi">रक्षक शक्ति</span><span data-lang="te">కాపలా శక్తి</span><span data-lang="ml">കാവൽ ശക്തി</span>
+          </div>
+          <div class="deity-card-image-label">
+            <div class="deity-card-image-name">Agni Bhootham</div>
+            <div class="deity-card-image-name-ta">அக்கினி பூதம்</div>
+          </div>
+        </div>
+        <div class="deity-card-body">
+          <p class="deity-card-desc">
+            <span data-lang="ta">அக்கினி பூதம் — நெருப்பு வடிவில் கோவிலை காக்கும் புனிதமான தெய்வீக சக்தி. தீமைகளை எரித்து அழித்து பக்தர்களுக்கு தூய்மையும் அருளும் வழங்கும் காவல் சக்தி.</span>
+            <span data-lang="en">Agni Bhootham — the sacred fire spirit guarding and purifying the temple. This powerful guardian burns away evil and bestows purity and blessings upon all devotees.</span>
+            <span data-lang="hi">अग्नि भूतम — अग्नि रूप में मंदिर की रक्षा और शुद्धि करने वाली पवित्र शक्ति। बुराई को जलाकर भक्तों को पवित्रता और आशीर्वाद देने वाली दिव्य शक्ति।</span>
+            <span data-lang="te">అగ్ని భూతం — అగ్ని రూపంలో దేవాలయాన్ని కాపాడే మరియు శుద్ధి చేసే పవిత్ర శక్తి. చెడును దహించి భక్తులకు పవిత్రత మరియు అనుగ్రహం ఇచ్చే కాపలా శక్తి.</span>
+            <span data-lang="ml">അഗ്നി ഭൂതം — അഗ്നി രൂപത്തിൽ ക്ഷേത്രം കാക്കുകയും ശുദ്ധീകരിക്കുകയും ചെയ്യുന്ന പവിത്ര ശക്തി. തിന്മ ദഹിപ്പിച്ച് ഭക്തർക്ക് പരിശുദ്ധിയും അനുഗ്രഹവും നൽകുന്ന കാവൽ ശക്തി.</span>
+          </p>
+          <div class="deity-card-powers">
+            <span class="power-tag"><i class="bi bi-fire"></i> <span data-lang="ta">தீமை அழிக்கும்</span><span data-lang="en">Evil Destroyer</span><span data-lang="hi">बुराई नाशक</span><span data-lang="te">చెడు నాశనం</span><span data-lang="ml">തിന്മ നശിപ്പിക്കും</span></span>
+            <span class="power-tag"><i class="bi bi-shield-fill"></i> <span data-lang="ta">கோவில் காவல்</span><span data-lang="en">Temple Guardian</span><span data-lang="hi">मंदिर रक्षक</span><span data-lang="te">దేవాలయ కాపలా</span><span data-lang="ml">ക്ഷേത്ര കാവൽ</span></span>
+            <span class="power-tag"><i class="bi bi-stars"></i> <span data-lang="ta">தூய்மை அருளும்</span><span data-lang="en">Bestows Purity</span><span data-lang="hi">पवित्रता प्रदाता</span><span data-lang="te">పవిత్రత ఇచ్చేది</span><span data-lang="ml">പരിശുദ്ധി നൽകുന്നു</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: ரசாதள வேதாளி -->
+<div class="deity-premium-card reveal d3" data-category="female">
+  <div class="deity-card-image">
+    <div class="diya-glow"></div>
+    <img src="assets/img/vedhafemale - Copy.jpg" alt="Rasathala Vedali"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-star-fill"></i></div>
+    <div class="deity-card-image-overlay"></div>
+    <div class="deity-category-badge">
+      <span data-lang="ta">பாதாள சக்தி</span>
+      <span data-lang="en">Nether Power</span>
+      <span data-lang="hi">पाताल शक्ति</span>
+      <span data-lang="te">పాతాళ శక్తి</span>
+      <span data-lang="ml">പാതാള ശക്തി</span>
+    </div>
+    <div class="deity-card-image-label">
+      <div class="deity-card-image-name">Rasathala Vedali</div>
+      <div class="deity-card-image-name-ta">ரசாதள வேதாளி</div>
+    </div>
+  </div>
+  <div class="deity-card-body">
+    <p class="deity-card-desc">
+      <span data-lang="ta">ரசாதள வேதாளி — ரசாதள உலகை ஆளும் உக்ர தேவி. பக்தர்களின் தீய சக்திகளை அழித்து காத்தருளும் பாதாள காவல் சக்தி.</span>
+      <span data-lang="en">Rasathala Vedali — the fierce goddess ruling the Rasathala realm. This powerful nether guardian destroys evil forces and protects all devoted worshippers.</span>
+      <span data-lang="hi">रसातल वेताली — रसातल लोक पर शासन करने वाली उग्र देवी। भक्तों की बुरी शक्तियों को नष्ट कर उनकी रक्षा करने वाली पाताल की रक्षक शक्ति।</span>
+      <span data-lang="te">రసాతల వేతాళి — రసాతల లోకాన్ని పాలించే ఉగ్ర దేవి. భక్తుల దుష్ట శక్తులను నాశనం చేసి కాపాడే పాతాళ కాపలా శక్తి.</span>
+      <span data-lang="ml">രസാതല വേതാളി — രസാതല ലോകം ഭരിക്കുന്ന ഉഗ്ര ദേവി. ഭക്തരുടെ ദുഷ്ട ശക്തികളെ നശിപ്പിച്ച് കാക്കുന്ന പാതാള കാവൽ ശക്തി.</span>
+    </p>
+    <div class="deity-card-powers">
+      <span class="power-tag"><i class="bi bi-lightning-fill"></i>
+        <span data-lang="ta">தீய சக்தி அழிக்கும்</span>
+        <span data-lang="en">Evil Force Destroyer</span>
+        <span data-lang="hi">दुष्ट शक्ति नाशक</span>
+        <span data-lang="te">దుష్ట శక్తి నాశనం</span>
+        <span data-lang="ml">ദുഷ്ട ശക്തി നശിപ്പിക്കും</span>
+      </span>
+      <span class="power-tag"><i class="bi bi-shield-fill"></i>
+        <span data-lang="ta">பாதாள காவல்</span>
+        <span data-lang="en">Nether Guardian</span>
+        <span data-lang="hi">पाताल रक्षक</span>
+        <span data-lang="te">పాతాళ కాపలా</span>
+        <span data-lang="ml">പാതാള കാവൽ</span>
+      </span>
+      <span class="power-tag"><i class="bi bi-trophy-fill"></i>
+        <span data-lang="ta">அருள் வழங்கும்</span>
+        <span data-lang="en">Bestows Blessings</span>
+        <span data-lang="hi">आशीर्वाद प्रदाता</span>
+        <span data-lang="te">అనుగ్రహం ఇచ్చేది</span>
+        <span data-lang="ml">അനുഗ്രഹം നൽകുന്നു</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Card: தலாதள வேதாளம் -->
+<div class="deity-premium-card reveal d4" data-category="male">
+  <div class="deity-card-image">
+    <div class="diya-glow"></div>
+    <img src="assets/img/vedhamale - Copy.jpg" alt="Thalatala Vedalam"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-star-fill"></i></div>
+    <div class="deity-card-image-overlay"></div>
+    <div class="deity-category-badge">
+      <span data-lang="ta">பாதாள சக்தி</span>
+      <span data-lang="en">Nether Power</span>
+      <span data-lang="hi">पाताल शक्ति</span>
+      <span data-lang="te">పాతాళ శక్తి</span>
+      <span data-lang="ml">പാതാള ശക്തി</span>
+    </div>
+    <div class="deity-card-image-label">
+      <div class="deity-card-image-name">Thalatala Vedalam</div>
+      <div class="deity-card-image-name-ta">தலாதள வேதாளம்</div>
+    </div>
+  </div>
+  <div class="deity-card-body">
+    <p class="deity-card-desc">
+      <span data-lang="ta">தலாதள வேதாளம் — தலாதள உலகில் வாழும் வீரமிக்க ஆவி சக்தி. இருளை விரட்டி தீமைகளை அழித்து பக்தர்களை காக்கும் மகாசக்தி.</span>
+      <span data-lang="en">Thalatala Vedalam — the mighty spirit dwelling in the Thalatala realm. This powerful force drives away darkness, destroys evil, and shields all devoted worshippers.</span>
+      <span data-lang="hi">तलातल वेताळम — तलातल लोक में निवास करने वाली वीर आत्मा शक्ति। अंधकार को दूर भगाकर बुराई को नष्ट कर भक्तों की रक्षा करने वाली महाशक्ति।</span>
+      <span data-lang="te">తలాతల వేతాళం — తలాతల లోకంలో నివసించే వీరమైన ఆత్మ శక్తి. చీకటిని తరిమి చెడును నాశనం చేసి భక్తులను కాపాడే మహాశక్తి.</span>
+      <span data-lang="ml">തലാതല വേതാളം — തലാതല ലോകത്ത് വസിക്കുന്ന വീരമുള്ള ആത്മ ശക്തി. ഇരുൾ തുരത്തി തിന്മ നശിപ്പിച്ച് ഭക്തരെ കാക്കുന്ന മഹാശക്തി.</span>
+    </p>
+    <div class="deity-card-powers">
+      <span class="power-tag"><i class="bi bi-moon-stars-fill"></i>
+        <span data-lang="ta">இருள் விரட்டும்</span>
+        <span data-lang="en">Darkness Banisher</span>
+        <span data-lang="hi">अंधकार नाशक</span>
+        <span data-lang="te">చీకటి తరిమేది</span>
+        <span data-lang="ml">ഇരുൾ തുരത്തും</span>
+      </span>
+      <span class="power-tag"><i class="bi bi-shield-fill"></i>
+        <span data-lang="ta">தலாதள காவல்</span>
+        <span data-lang="en">Thalatala Guardian</span>
+        <span data-lang="hi">तलातल रक्षक</span>
+        <span data-lang="te">తలాతల కాపలా</span>
+        <span data-lang="ml">തലാതല കാവൽ</span>
+      </span>
+      <span class="power-tag"><i class="bi bi-stars"></i>
+        <span data-lang="ta">வெற்றி அருளும்</span>
+        <span data-lang="en">Bestows Victory</span>
+        <span data-lang="hi">विजय प्रदाता</span>
+        <span data-lang="te">విజయం ఇచ్చేది</span>
+        <span data-lang="ml">വിജയം നൽകുന്നു</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+      <!-- 1. Navagraha Vinayagar -->
+      <div class="deity-premium-card reveal d1" data-category="male">
+        <div class="deity-card-image">
+          <div class="diya-glow"></div>
+          <img src="assets/img/vinayagar - Copy.jpg" alt="Navagraha Vinayagar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-star-fill"></i></div>
+          <div class="deity-card-image-overlay"></div>
+          <div class="deity-category-badge">
+            <span data-lang="ta">ஆண் தெய்வம்</span><span data-lang="en">Male</span><span data-lang="hi">पुरुष देवता</span><span data-lang="te">పురుష దేవత</span><span data-lang="ml">ദേവൻ</span>
+          </div>
+          <div class="deity-card-image-label">
+            <div class="deity-card-image-name">Navagraha Vinayagar</div>
+            <div class="deity-card-image-name-ta">நவகிரக விநாயகர்</div>
+          </div>
+        </div>
+        <div class="deity-card-body">
+          <p class="deity-card-desc">
+            <span data-lang="ta">ஒன்பது கிரகங்களின் அதிபதியாக விளங்கும் விநாயகர். நவகிரக தோஷங்களை நீக்கி பக்தர்களுக்கு நவக்கிரகங்களின் அருளை வழங்கும் மகாசக்தி.</span>
+            <span data-lang="en">Lord Vinayagar presiding over the nine celestial bodies. He removes Navagraha doshas and bestows the blessings of all nine planets upon devotees.</span>
+            <span data-lang="hi">नवग्रहों के अधिपति विनायगर। ग्रह दोषों को दूर कर सभी नवग्रहों की कृपा भक्तों पर बरसाते हैं।</span>
+            <span data-lang="te">నవగ్రహాల అధిపతి వినాయగర్. నవగ్రహ దోషాలు నీకి భక్తులకు గ్రహ అనుగ్రహం ఇచ్చే మహాశక్తి.</span>
+            <span data-lang="ml">നവഗ്രഹങ്ങളുടെ അധിപതി വിനായഗർ. ഗ്രഹദോഷങ്ങൾ ഒഴിവാക്കി ഭക്തർക്ക് നവഗ്രഹ അനുഗ്രഹം നൽകുന്ന മഹാശക്തി.</span>
+          </p>
+          <div class="deity-card-powers">
+            <span class="power-tag"><i class="bi bi-star-fill"></i> <span data-lang="ta">கிரக தோஷம் நீக்கும்</span><span data-lang="en">Graha Dosha Relief</span><span data-lang="hi">ग्रह दोष निवारण</span><span data-lang="te">గ్రహ దోష నివారణ</span><span data-lang="ml">ഗ്രഹദോഷ നിവൃത്തി</span></span>
+            <span class="power-tag"><i class="bi bi-check-circle-fill"></i> <span data-lang="ta">விघ்ன நாசம்</span><span data-lang="en">Obstacle Remover</span><span data-lang="hi">विघ्न नाशक</span><span data-lang="te">విఘ్న నాశనం</span><span data-lang="ml">വിഘ്ന നാശം</span></span>
+            <span class="power-tag"><i class="bi bi-trophy-fill"></i> <span data-lang="ta">வெற்றி</span><span data-lang="en">Victory</span><span data-lang="hi">विजय</span><span data-lang="te">విజయం</span><span data-lang="ml">വിജയം</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Sapta Mathas -->
+      <div class="deity-premium-card reveal d2" data-category="shakti">
+        <div class="deity-card-image">
+          <div class="diya-glow"></div>
+          <img src="assets/img/Sapta Mathas.jpg" alt="Sapta Mathas" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-people-fill"></i></div>
+          <div class="deity-card-image-overlay"></div>
+          <div class="deity-category-badge">
+            <span data-lang="ta">சக்தி</span><span data-lang="en">Shakti</span><span data-lang="hi">शक्ति</span><span data-lang="te">శక్తి</span><span data-lang="ml">ശക്തി</span>
+          </div>
+          <div class="deity-card-image-label">
+            <div class="deity-card-image-name">Sapta Mathas</div>
+            <div class="deity-card-image-name-ta">சப்த மாதாக்கள்</div>
+          </div>
+        </div>
+        <div class="deity-card-body">
+          <p class="deity-card-desc">
+            <span data-lang="ta">ஏழு தாய் தெய்வங்கள் — பிரம்மாணி, வைஷ்ணவி, மாஹேஸ்வரி, காளி, கௌமாரி, இந்திராணி, சாமுண்டி. அனைத்து நலன்களையும் வழங்கும் சக்தி வாய்ந்த ஏழு மாதாக்கள்.</span>
+            <span data-lang="en">The seven Mother Goddesses — Brahmani, Vaishnavi, Maheshwari, Kali, Kaumari, Indrani, Chamundi. Seven powerful mothers who bestow all blessings upon their devotees.</span>
+            <span data-lang="hi">सात माता — ब्राह्मणी, वैष्णवी, माहेश्वरी, काली, कौमारी, इंद्राणी, चामुंडी — सभी आशीर्वाद देती हैं।</span>
+            <span data-lang="te">ఏడు మాతలు — బ్రాహ్మణి, వైష్ణవి, మాహేశ్వరి, కాళి, కౌమారి, ఇంద్రాణి, చాముండి. అన్ని వరాలు ప్రసాదించే సప్త మాతలు.</span>
+            <span data-lang="ml">ഏഴ് മാതൃദേവതകൾ — ബ്രാഹ്മണി, വൈഷ്ണവി, മഹേശ്വരി, കാളി, കൗമാരി, ഇന്ദ്രാണി, ചാമുണ്ഡി. സർവ്വ അനുഗ്രഹം നൽകുന്ന സപ്ത മാതൃക്കൾ.</span>
+          </p>
+          <div class="deity-card-powers">
+            <span class="power-tag"><i class="bi bi-heart-fill"></i> <span data-lang="ta">குடும்ப நலன்</span><span data-lang="en">Family Welfare</span><span data-lang="hi">परिवार कल्याण</span><span data-lang="te">కుటుంబ శ్రేయం</span><span data-lang="ml">കുടുംബ ഐശ്വര്യം</span></span>
+            <span class="power-tag"><i class="bi bi-shield-fill"></i> <span data-lang="ta">பாதுகாப்பு</span><span data-lang="en">Protection</span><span data-lang="hi">सुरक्षा</span><span data-lang="te">రక్షణ</span><span data-lang="ml">സംരക്ഷണം</span></span>
+            <span class="power-tag"><i class="bi bi-flower1"></i> <span data-lang="ta">ஆரோக்கியம்</span><span data-lang="en">Health</span><span data-lang="hi">स्वास्थ्य</span><span data-lang="te">ఆరోగ్యం</span><span data-lang="ml">ആരോഗ്യം</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Unmatha Bhairavar -->
+<div class="deity-premium-card reveal d3" data-category="guardian">
+  <div class="deity-card-image">
+    <div class="diya-glow"></div>
+    
+    <img src="assets/img/bhairavar.jpeg" alt="Unmatha Bhairavar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    
+    <div class="deity-placeholder-icon" style="display:none">
+      <i class="bi bi-shield-fill"></i>
+    </div>
+
+    <div class="deity-card-image-overlay"></div>
+
+    <div class="deity-category-badge">
+      <span data-lang="ta">காவல்</span>
+      <span data-lang="en">Guardian</span>
+      <span data-lang="hi">रक्षक</span>
+      <span data-lang="te">కాపలా</span>
+      <span data-lang="ml">കാവൽ</span>
+    </div>
+
+    <div class="deity-card-image-label">
+      <div class="deity-card-image-name">Unmatha Bhairavar</div>
+      <div class="deity-card-image-name-ta">உன்மத்த பைரவர்</div>
+    </div>
+  </div>
+
+  <div class="deity-card-body">
+    <p class="deity-card-desc">
+      <span data-lang="ta">காவல் தெய்வமாக விளங்கும் உன்மத்த பைரவர். நலன் காக்கும் சக்தி வாய்ந்த பைரவர் ஆலயத்தையும் பக்தர்களையும் எல்லா தீமைகளிலிருந்தும் காக்கின்றார்.</span>
+      
+      <span data-lang="en">Unmatha Bhairavar, the fierce guardian deity. This powerful protector shields both the temple and its devotees from all harm and negative forces.</span>
+      
+      <span data-lang="hi">रक्षक देवता उन्मत्त भैरव। शक्तिशाली भैरव मंदिर और भक्तों को सभी बुराइयों से सुरक्षित रखते हैं।</span>
+      
+      <span data-lang="te">కాపలా దేవత ఉన్మత్త భైరవుడు. ఆలయాన్ని మరియు భక్తులను సర్వ అపాయాల నుండి రక్షించే శక్తివంతమైన దేవుడు.</span>
+      
+      <span data-lang="ml">കാവൽ ദേവൻ ഉന്മത്ത ഭൈരവൻ. ക്ഷേത്രത്തെയും ഭക്തരെയും എല്ലാ ദോഷങ്ങളിൽ നിന്നും കാക്കുന്ന ശക്തൻ.</span>
+    </p>
+
+    <div class="deity-card-powers">
+      <span class="power-tag">
+        <i class="bi bi-shield-fill-check"></i>
+        <span data-lang="ta">எதிரி நாசம்</span>
+        <span data-lang="en">Enemy Protection</span>
+        <span data-lang="hi">शत्रु नाश</span>
+        <span data-lang="te">శత్రు నాశనం</span>
+        <span data-lang="ml">ശത്രു നിവൃത്തി</span>
+      </span>
+
+      <span class="power-tag">
+        <i class="bi bi-eye-fill"></i>
+        <span data-lang="ta">கண் திருஷ்டி</span>
+        <span data-lang="en">Evil Eye Relief</span>
+        <span data-lang="hi">बुरी नजर से मुक्ति</span>
+        <span data-lang="te">దృష్టి దోష నివారణ</span>
+        <span data-lang="ml">ദൃഷ്ടി ദോഷ നിവൃത്തി</span>
+      </span>
+
+      <span class="power-tag">
+        <i class="bi bi-lock-fill"></i>
+        <span data-lang="ta">பாதுகாப்பு</span>
+        <span data-lang="en">Divine Guard</span>
+        <span data-lang="hi">दिव्य रक्षा</span>
+        <span data-lang="te">దివ్య రక్షణ</span>
+        <span data-lang="ml">ദൈവിക സംരക്ഷണം</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+      <!-- 4. Velapper (Murugan) -->
+      <div class="deity-premium-card reveal d4" data-category="male">
+        <div class="deity-card-image">
+          <div class="diya-glow"></div>
+          <img src="assets/img/Velapper.jpg" alt="Velapper Murugan" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-lightning-fill"></i></div>
+          <div class="deity-card-image-overlay"></div>
+          <div class="deity-category-badge">
+            <span data-lang="ta">ஆண் தெய்வம்</span><span data-lang="en">Male</span><span data-lang="hi">पुरुष देवता</span><span data-lang="te">పురుష దేవత</span><span data-lang="ml">ദേവൻ</span>
+          </div>
+          <div class="deity-card-image-label">
+            <div class="deity-card-image-name">Velapper (Murugan)</div>
+            <div class="deity-card-image-name-ta">வேலப்பர்</div>
+          </div>
+        </div>
+        <div class="deity-card-body">
+          <p class="deity-card-desc">
+            <span data-lang="ta">வேல் ஏந்திய அழகிய முருகன் — ஆற்றல், ஞானம் மற்றும் வெற்றி தரும் தெய்வம். இளைஞர்களுக்கும் அறிவு தேடுவோருக்கும் வழிகாட்டும் ஆறுமுக வேலன்.</span>
+            <span data-lang="en">Lord Murugan, wielder of the divine Vel — deity of strength, wisdom, and victory. He guides the youth and seekers of knowledge, the six-faced lord of eternal grace.</span>
+            <span data-lang="hi">वेल धारण करने वाले भगवान मुरुगन — शक्ति, ज्ञान और विजय के देवता। युवाओं और ज्ञान के साधकों को मार्ग दिखाते हैं।</span>
+            <span data-lang="te">వేలు ధరించిన ముత్తమ మురుగన్ — శక్తి, జ్ఞానం, విజయం ఇచ్చే దేవుడు. యువకులకు మరియు జ్ఞాన అన్వేషకులకు మార్గం చూపించే ఆరుముఖ వేలన్.</span>
+            <span data-lang="ml">ദിവ്യ വേൽ ഏന്തിയ മുരുഗൻ — ശക്തി, ജ്ഞാനം, വിജയം പ്രദാനം ചെയ്യുന്ന ദേവൻ. യൗവനക്കാർക്കും ജ്ഞാനാന്വേഷകർക്കും വഴി കാണിക്കുന്ന ആറുമുഖ വേലൻ.</span>
+          </p>
+          <div class="deity-card-powers">
+            <span class="power-tag"><i class="bi bi-mortarboard-fill"></i> <span data-lang="ta">கல்வி வெற்றி</span><span data-lang="en">Academic Success</span><span data-lang="hi">शिक्षा में सफलता</span><span data-lang="te">విద్యా విజయం</span><span data-lang="ml">വിദ്യ വിജയം</span></span>
+            <span class="power-tag"><i class="bi bi-lightning-fill"></i> <span data-lang="ta">ஆற்றல்</span><span data-lang="en">Strength</span><span data-lang="hi">शक्ति</span><span data-lang="te">శక్తి</span><span data-lang="ml">ശക്തി</span></span>
+            <span class="power-tag"><i class="bi bi-trophy-fill"></i> <span data-lang="ta">வெற்றி</span><span data-lang="en">Victory</span><span data-lang="hi">विजय</span><span data-lang="te">విజయం</span><span data-lang="ml">വിജയം</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Malaiyal Karupasami -->
+      <div class="deity-premium-card reveal d5" data-category="guardian">
+        <div class="deity-card-image">
+          <div class="diya-glow"></div>
+          <img src="assets/img/malaiyalakarupu.jpeg" alt="Malaiyal Karupasami" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-tree-fill"></i></div>
+          <div class="deity-card-image-overlay"></div>
+          <div class="deity-category-badge">
+            <span data-lang="ta">காவல்</span><span data-lang="en">Guardian</span><span data-lang="hi">रक्षक</span><span data-lang="te">కాపలా</span><span data-lang="ml">കാവൽ</span>
+          </div>
+          <div class="deity-card-image-label">
+            <div class="deity-card-image-name">Malaiyal Karupasami</div>
+            <div class="deity-card-image-name-ta">மலையாள கருப்பசாமி</div>
+          </div>
+        </div>
+        <div class="deity-card-body">
+          <p class="deity-card-desc">
+            <span data-lang="ta">மலைகளின் அதிபதி — காவல் மற்றும் வளம் தரும் கருப்பசாமி. குல தெய்வமாகவும் காவல் தெய்வமாகவும் விளங்கி பக்தர்களுக்கு நலன் அளிக்கும் மலையாள கருப்பசாமி.</span>
+            <span data-lang="en">Lord of the mountains — Karupasami who bestows protection and prosperity. He stands as both ancestral deity and guardian, granting welfare to all devotees who seek him.</span>
+            <span data-lang="hi">पहाड़ों के स्वामी — कारुप्पसामी जो सुरक्षा और समृद्धि देते हैं। कुलदेवता और रक्षक दोनों रूपों में भक्तों की रक्षा करते हैं।</span>
+            <span data-lang="te">పర్వతాల అధిపతి — రక్షణ మరియు సంపద ఇచ్చే కరుప్పసామి. కుల దేవతగా మరియు కాపలా దేవతగా విలసిల్లి భక్తులను కాపాడే కరుప్పసామి.</span>
+            <span data-lang="ml">മലകളുടെ അധിപൻ — കാരുപ്പസ്വാമി, കാവലും ഐശ്വര്യവും നൽകുന്ന ദേവൻ. കുലദേവതയും കാവൽദേവനുമായി ഭക്തരെ കാക്കുന്നു.</span>
+          </p>
+          <div class="deity-card-powers">
+            <span class="power-tag"><i class="bi bi-tree-fill"></i> <span data-lang="ta">வளம்</span><span data-lang="en">Prosperity</span><span data-lang="hi">समृद्धि</span><span data-lang="te">సమృద్ధి</span><span data-lang="ml">ഐശ്വര്യം</span></span>
+            <span class="power-tag"><i class="bi bi-people-fill"></i> <span data-lang="ta">குல தெய்வம்</span><span data-lang="en">Kula Deivam</span><span data-lang="hi">कुलदेवता</span><span data-lang="te">కుల దేవత</span><span data-lang="ml">കുലദേവത</span></span>
+            <span class="power-tag"><i class="bi bi-wind"></i> <span data-lang="ta">நோய் நீக்கம்</span><span data-lang="en">Healing</span><span data-lang="hi">रोग निवारण</span><span data-lang="te">రోగ నివారణ</span><span data-lang="ml">രോഗ നിവൃത്തി</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Vana Pechi -->
+      <div class="deity-premium-card reveal d6" data-category="shakti">
+        <div class="deity-card-image">
+          <div class="diya-glow"></div>
+          <img src="assets/img/vanapechi.jpeg" alt="Vana Pechi Amman" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-wind"></i></div>
+          <div class="deity-card-image-overlay"></div>
+          <div class="deity-category-badge">
+            <span data-lang="ta">சக்தி</span><span data-lang="en">Shakti</span><span data-lang="hi">शक्ति</span><span data-lang="te">శక్తి</span><span data-lang="ml">ശക്തി</span>
+          </div>
+          <div class="deity-card-image-label">
+            <div class="deity-card-image-name">Vana Pechi Amman</div>
+            <div class="deity-card-image-name-ta">வன பேச்சி அம்மன்</div>
+          </div>
+        </div>
+        <div class="deity-card-body">
+          <p class="deity-card-desc">
+            <span data-lang="ta">வனத்தின் சக்தி — குழந்தைகள் மற்றும் குடும்பத்தை காக்கும் தெய்வம். குழந்தை பேறு வேண்டுவோருக்கும், குழந்தைகளை காக்க விரும்புவோருக்கும் அருள் வழங்கும் வன பேச்சி அம்மன்.</span>
+            <span data-lang="en">Goddess of the forest — the protector of children and families. Vana Pechi Amman blesses those seeking childbirth and shields young ones from harm.</span>
+            <span data-lang="hi">वन की देवी — बच्चों और परिवार की रक्षक। वन पेच्चि अम्मन संतान प्राप्ति की इच्छुकों और बच्चों की रक्षा करती हैं।</span>
+            <span data-lang="te">వనం యొక్క శక్తి — పిల్లలు మరియు కుటుంబాన్ని కాపాడే దేవత. సంతానం కోసం వేడుకునే వారికి మరియు పిల్లలను కాపాడాలనే వారికి అనుగ్రహం ఇచ్చే వన పేచ్చి అమ్మన్.</span>
+            <span data-lang="ml">വനത്തിന്റെ ശക്തി — കുട്ടികളെയും കുടുംബത്തെയും കാക്കുന്ന ദേവത. സന്താനഭാഗ്യം ആഗ്രഹിക്കുന്നവർക്ക് അനുഗ്രഹം നൽകുന്ന വന പേച്ചി അമ്മൻ.</span>
+          </p>
+          <div class="deity-card-powers">
+            <span class="power-tag"><i class="bi bi-flower1"></i> <span data-lang="ta">குழந்தை பேறு</span><span data-lang="en">Fertility</span><span data-lang="hi">संतान प्राप्ति</span><span data-lang="te">సంతానం</span><span data-lang="ml">സന്താനഭാഗ്യം</span></span>
+            <span class="power-tag"><i class="bi bi-shield-fill-heart"></i> <span data-lang="ta">பிள்ளை காவல்</span><span data-lang="en">Child Protection</span><span data-lang="hi">बालरक्षा</span><span data-lang="te">పిల్లల రక్షణ</span><span data-lang="ml">ശിശു സംരക്ഷണം</span></span>
+            <span class="power-tag"><i class="bi bi-house-heart-fill"></i> <span data-lang="ta">குடும்ப நலன்</span><span data-lang="en">Family Harmony</span><span data-lang="hi">गृह सुख</span><span data-lang="te">కుటుంబ శాంతి</span><span data-lang="ml">കുടുംബ ഐക്യം</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Jada Muneeswar -->
+      <div class="deity-premium-card reveal d1" data-category="male">
+        <div class="deity-card-image">
+          <div class="diya-glow"></div>
+          <img src="assets/img/jadamuneshwar.jpeg" alt="Jada Muneeswar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-moon-stars-fill"></i></div>
+          <div class="deity-card-image-overlay"></div>
+          <div class="deity-category-badge">
+            <span data-lang="ta">ஆண் தெய்வம்</span><span data-lang="en">Male</span><span data-lang="hi">पुरुष देवता</span><span data-lang="te">పురుష దేవత</span><span data-lang="ml">ദേവൻ</span>
+          </div>
+          <div class="deity-card-image-label">
+            <div class="deity-card-image-name">Jada Muneeswar</div>
+            <div class="deity-card-image-name-ta">ஜடா முனீஸ்வரன்</div>
+          </div>
+        </div>
+        <div class="deity-card-body">
+          <p class="deity-card-desc">
+            <span data-lang="ta">ஞானம் மற்றும் முக்தி அருளும் முனிவர் தெய்வம். ஜடை கொண்ட முனீஸ்வரன் ஆன்மீக வழிகாட்டியாக விளங்கி பக்தர்களுக்கு ஞானத்தையும் தெய்வீக அருளையும் வழங்குகிறார்.</span>
+            <span data-lang="en">The sage deity who bestows wisdom and liberation. Jata Muneeswar, the dreadlocked sage, serves as a spiritual guide — granting knowledge and divine grace to all seekers.</span>
+            <span data-lang="hi">ज्ञान और मोक्ष प्रदान करने वाले मुनि देवता। जटाधारी मुनीश्वर आध्यात्मिक मार्गदर्शक के रूप में भक्तों को ज्ञान और कृपा देते हैं।</span>
+            <span data-lang="te">జ్ఞానం మరియు మోక్షం ఇచ్చే ముని దేవత. జటలు ధరించిన మునీశ్వర్ ఆత్మీయ మార్గదర్శకుడిగా భక్తులకు జ్ఞానం మరియు అనుగ్రహం ఇస్తాడు.</span>
+            <span data-lang="ml">ജ്ഞാനവും മോക്ഷവും നൽകുന്ന മുനി ദേവൻ. ജട ധരിച്ച മുനീശ്വർ ആത്മീയ വഴികാട്ടിയായി ഭക്തർക്ക് ജ്ഞാനവും ദൈവ കൃപയും നൽകുന്നു.</span>
+          </p>
+          <div class="deity-card-powers">
+            <span class="power-tag"><i class="bi bi-brightness-high-fill"></i> <span data-lang="ta">ஞான ஒளி</span><span data-lang="en">Spiritual Wisdom</span><span data-lang="hi">आध्यात्मिक ज्ञान</span><span data-lang="te">ఆత్మీయ జ్ఞానం</span><span data-lang="ml">ആത്മീയ ജ്ഞാനം</span></span>
+            <span class="power-tag"><i class="bi bi-infinity"></i> <span data-lang="ta">முக்தி</span><span data-lang="en">Liberation</span><span data-lang="hi">मोक्ष</span><span data-lang="te">మోక్షం</span><span data-lang="ml">മോക്ഷം</span></span>
+            <span class="power-tag"><i class="bi bi-eye-fill"></i> <span data-lang="ta">தெளிவு</span><span data-lang="en">Clarity</span><span data-lang="hi">मानसिक शांति</span><span data-lang="te">మానసిక స్పష్టత</span><span data-lang="ml">മനസ്സ് തെളിമ</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Maha Kali (Second form / Unmatha Bhairavar associated) -->
+      <!-- <div class="deity-premium-card reveal d2" data-category="shakti">
+        <div class="deity-card-image">
+          <div class="diya-glow"></div>
+          <img src="assets/img/Maha Kali.jpg" alt="Maha Kali" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="deity-placeholder-icon" style="display:none"><i class="bi bi-flower3"></i></div>
+          <div class="deity-card-image-overlay"></div>
+          <div class="deity-category-badge">
+            <span data-lang="ta">சக்தி</span><span data-lang="en">Shakti</span><span data-lang="hi">शक्ति</span><span data-lang="te">శక్తి</span><span data-lang="ml">ശക്തി</span>
+          </div>
+          <div class="deity-card-image-label">
+            <div class="deity-card-image-name">Maha Kali</div>
+            <div class="deity-card-image-name-ta">மகா காளி</div>
+          </div>
+        </div>
+        <div class="deity-card-body">
+          <p class="deity-card-desc">
+            <span data-lang="ta">காலத்தின் அதிபதி, அழிவின் மகா சக்தி — மகா காளி. தீமையை நாசமாக்கி நன்மையை நிலைநாட்டும் உக்ர வடிவத்தில் காட்சி தரும் அன்னை. பக்தர்களுக்கு அஞ்சல் ஒழிக்கும் தெய்வீக சக்தி.</span>
+            <span data-lang="en">Mistress of time and the supreme power of transformation — Maha Kali. In her fierce form, she destroys evil and establishes righteousness, removing all fear from the hearts of devoted souls.</span>
+            <span data-lang="hi">काल की अधिष्ठात्री और परम शक्ति — महाकाली। अपने उग्र रूप में बुराई का नाश कर धर्म की स्थापना करती हैं और भक्तों के भय दूर करती हैं।</span>
+            <span data-lang="te">కాల స్వరూపిణి, మహా పరాశక్తి — మహాకాళి. ఉగ్ర రూపంలో అధర్మాన్ని నాశనం చేసి ధర్మాన్ని స్థాపించి భక్తుల భయాన్ని తొలగిస్తుంది.</span>
+            <span data-lang="ml">കാലത്തിന്റെ ദേവി, പരമ ശക്തി — മഹാകാളി. ഉഗ്ര ഭാവത്തിൽ തിന്മ നശിപ്പിക്കുകയും ഭക്തരുടെ ഭയം ഒഴിവാക്കുകയും ചെയ്യുന്ന ദേവി.</span>
+          </p>
+          <div class="deity-card-powers">
+            <span class="power-tag"><i class="bi bi-fire"></i> <span data-lang="ta">தோஷ நீக்கம்</span><span data-lang="en">Dosha Removal</span><span data-lang="hi">दोष निवारण</span><span data-lang="te">దోష నివారణ</span><span data-lang="ml">ദോഷ നിവൃത്തി</span></span>
+            <span class="power-tag"><i class="bi bi-shield-fill-x"></i> <span data-lang="ta">அச்சம் நீக்கும்</span><span data-lang="en">Fear Removal</span><span data-lang="hi">भय मुक्ति</span><span data-lang="te">భయ నివారణ</span><span data-lang="ml">ഭയ മുക്തി</span></span>
+            <span class="power-tag"><i class="bi bi-gem"></i> <span data-lang="ta">ஆதிசக்தி</span><span data-lang="en">Primal Power</span><span data-lang="hi">आदिशक्ति</span><span data-lang="te">ఆదిశక్తి</span><span data-lang="ml">ആദി ശക്തി</span></span>
+          </div>
+        </div>
+      </div> -->
+
+    </div><!-- end #deitiesGrid -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     DASHA MAHA VIDYA DETAILED
+══════════════════════════════ -->
+<section class="dasha-section">
+  <div class="dasha-section-bg"></div>
+  <div class="section-wrap" style="position:relative;z-index:1;">
+    <div class="reveal" style="text-align:center;margin-bottom:10px;">
+      <div class="section-eyebrow" style="justify-content:center;">
+        <span>
+          <span data-lang="ta">காவல் தெய்வங்கள்</span>
+          <span data-lang="en">Guardian Avatars</span>
+          <span data-lang="hi">रक्षक अवतार</span>
+          <span data-lang="te">కాపలా అవతారాలు</span>
+          <span data-lang="ml">കാവൽ അവതാരങ്ങൾ</span>
+        </span>
+      </div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-lang="ta">தச மகா வித்யா</span>
+        <span data-lang="en">Dasha Maha Vidya</span>
+        <span data-lang="hi">दश महाविद्या</span>
+        <span data-lang="te">దశ మహావిద్య</span>
+        <span data-lang="ml">ദശ മഹാ വിദ്യ</span>
+      </h2>
+      <p style="font-family:'Noto Sans Tamil',sans-serif;font-size:14px;color:rgba(255,255,255,0.45);max-width:640px;margin:0 auto;line-height:2;">
+        <span data-lang="ta">சக்தியின் பத்து அவதாரங்கள் இந்த திவ்ய ஆலயத்தின் காவலர்களாக விளங்குகின்றனர். ஒவ்வொரு மகா வித்யாவும் ஒரு தனிச்சிறப்பான சக்தியை பக்தர்களுக்கு அளிக்கிறது.</span>
+        <span data-lang="en">The ten avatars of Shakti stand as guardians of this divine temple. Each Maha Vidya bestows a unique and specific power upon devotees.</span>
+        <span data-lang="hi">शक्ति के दस अवतार इस दिव्य मंदिर के रक्षक हैं। प्रत्येक महाविद्या भक्तों को एक विशेष शक्ति प्रदान करती हैं।</span>
+        <span data-lang="te">శక్తి యొక్క పది అవతారాలు ఈ దివ్య ఆలయానికి కాపలాగా ఉన్నాయి. ప్రతి మహావిద్య భక్తులకు ఒక ప్రత్యేక శక్తిని ఇస్తుంది.</span>
+        <span data-lang="ml">ശക്തിയുടെ പത്ത് അവതാരങ്ങൾ ഈ ദിവ്യ ക്ഷേത്രത്തിന്റെ കാവൽക്കാരാണ്. ഓരോ മഹാ വിദ്യയും ഭക്തർക്ക് ഒരു പ്രത്യേക ശക്തി പ്രദാനം ചെയ്യുന്നു.</span>
+      </p>
+      <div class="section-rule center" style="margin-top:20px;"></div>
+    </div>
+
+    <div class="dasha-grid">
+      <!-- 1 -->
+      <div class="dasha-card reveal d1">
+        <div class="dasha-card-num">01</div>
+        <div class="dasha-card-en">Kali</div>
+        <div class="dasha-card-ta"><span data-lang="ta">காளி</span><span data-lang="en">Kali — Time & Transformation</span><span data-lang="hi">काली</span><span data-lang="te">కాళి</span><span data-lang="ml">കാളി</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">காலத்தின் அதிபதி — தீமையை அழிக்கும் சக்தி</span><span data-lang="en">Mistress of time, destroyer of all evil forces</span><span data-lang="hi">काल की स्वामिनी — सभी बुराइयों को नाश करती हैं</span><span data-lang="te">కాల స్వరూపిణి — అన్ని చెడులను నాశనం చేసే శక్తి</span><span data-lang="ml">കാലത്തിന്റെ ദേവി — തിന്മ നശിപ്പിക്കുന്ന ശക്തി</span></p>
+        <span class="dasha-card-power"><i class="bi bi-fire"></i> <span data-lang="ta">காலசக்தி</span><span data-lang="en">Temporal Power</span><span data-lang="hi">कालशक्ति</span><span data-lang="te">కాలశక్తి</span><span data-lang="ml">കാലശക്തി</span></span>
+      </div>
+      <!-- 2 -->
+      <div class="dasha-card reveal d2">
+        <div class="dasha-card-num">02</div>
+        <div class="dasha-card-en">Tara</div>
+        <div class="dasha-card-ta"><span data-lang="ta">தாரா</span><span data-lang="en">Tara — Liberation & Guidance</span><span data-lang="hi">तारा</span><span data-lang="te">తార</span><span data-lang="ml">താര</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">வழிகாட்டும் தேவி — ஆன்மீக முக்தி அருள்வாள்</span><span data-lang="en">The guiding star who bestows liberation and spiritual deliverance</span><span data-lang="hi">मार्गदर्शक देवी — मोक्ष और आध्यात्मिक मुक्ति प्रदान करती हैं</span><span data-lang="te">మార్గం చూపించే దేవి — ముక్తి ప్రసాదించే తార</span><span data-lang="ml">വഴി കാണിക്കുന്ന ദേവി — മോക്ഷ ദായിനി</span></p>
+        <span class="dasha-card-power"><i class="bi bi-stars"></i> <span data-lang="ta">ஞான சக்தி</span><span data-lang="en">Wisdom Power</span><span data-lang="hi">ज्ञानशक्ति</span><span data-lang="te">జ్ఞానశక్తి</span><span data-lang="ml">ജ്ഞാന ശക്തി</span></span>
+      </div>
+      <!-- 3 -->
+      <div class="dasha-card reveal d3">
+        <div class="dasha-card-num">03</div>
+        <div class="dasha-card-en">Tripura Sundari</div>
+        <div class="dasha-card-ta"><span data-lang="ta">திரிபுர சுந்தரி</span><span data-lang="en">Tripura Sundari — Beauty & Bliss</span><span data-lang="hi">त्रिपुर सुंदरी</span><span data-lang="te">త్రిపుర సుందరి</span><span data-lang="ml">ത്രിപുര സുന്ദരി</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">முத்தொகை அழகின் அதிபதி — பேரின்பம் அருள்வாள்</span><span data-lang="en">Goddess of supreme beauty and eternal bliss of the three realms</span><span data-lang="hi">तीनों लोकों की सुंदरी — परमानंद की दात्री</span><span data-lang="te">మూడు లోకాల సుందరి — పరమానందం ఇచ్చే దేవి</span><span data-lang="ml">മൂന്ന് ലോകങ്ങളുടെ സൗന്ദര്യ ദേവി — ആനന്ദ ദായിനി</span></p>
+        <span class="dasha-card-power"><i class="bi bi-gem"></i> <span data-lang="ta">அழகு சக்தி</span><span data-lang="en">Beauty Power</span><span data-lang="hi">सौंदर्यशक्ति</span><span data-lang="te">సౌందర్యశక్తి</span><span data-lang="ml">സൗന്ദര്യ ശക്തി</span></span>
+      </div>
+      <!-- 4 -->
+      <div class="dasha-card reveal d4">
+        <div class="dasha-card-num">04</div>
+        <div class="dasha-card-en">Bhuvaneshwari</div>
+        <div class="dasha-card-ta"><span data-lang="ta">புவனேஸ்வரி</span><span data-lang="en">Bhuvaneshwari — World Goddess</span><span data-lang="hi">भुवनेश्वरी</span><span data-lang="te">భువనేశ్వరి</span><span data-lang="ml">ഭുവനേശ്വരി</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">உலகின் அதிபதி — அனைத்தையும் ஆளும் மகா சக்தி</span><span data-lang="en">Sovereign of the universe — the great power that governs all creation</span><span data-lang="hi">ब्रह्मांड की अधिष्ठात्री — समस्त सृष्टि की शासक</span><span data-lang="te">విశ్వం యొక్క అధిష్ఠాన దేవి — సృష్టిని పాలించే మహాశక్తి</span><span data-lang="ml">പ്രപഞ്ചത്തിന്റെ ദേവി — സൃഷ്ടിയെ ഭരിക്കുന്ന മഹാ ശക്തി</span></p>
+        <span class="dasha-card-power"><i class="bi bi-globe2"></i> <span data-lang="ta">புவன சக்தி</span><span data-lang="en">World Power</span><span data-lang="hi">ब्रह्मांड शक्ति</span><span data-lang="te">విశ్వ శక్తి</span><span data-lang="ml">ലോക ശക്തി</span></span>
+      </div>
+      <!-- 5 -->
+      <div class="dasha-card reveal d5">
+        <div class="dasha-card-num">05</div>
+        <div class="dasha-card-en">Bhairavi</div>
+        <div class="dasha-card-ta"><span data-lang="ta">பைரவி</span><span data-lang="en">Bhairavi — Fierce Protector</span><span data-lang="hi">भैरवी</span><span data-lang="te">భైరవి</span><span data-lang="ml">ഭൈരവി</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">உக்ர வடிவத்தில் காக்கும் தெய்வம் — எதிரிகளை வெல்லும் சக்தி</span><span data-lang="en">The fierce protector who conquers all enemies and removes every obstacle</span><span data-lang="hi">उग्र रूप में रक्षा करने वाली देवी — शत्रुओं पर विजय दिलाती हैं</span><span data-lang="te">ఉగ్ర రూపంలో కాపాడే దేవి — శత్రువులను జయించే శక్తి</span><span data-lang="ml">ഉഗ്ര ഭാവത്തിൽ കാക്കുന്ന ദേവി — ശത്രുക്കളെ ജയിക്കുന്ന ശക്തി</span></p>
+        <span class="dasha-card-power"><i class="bi bi-shield-fill-check"></i> <span data-lang="ta">உக்ர சக்தி</span><span data-lang="en">Fierce Power</span><span data-lang="hi">उग्रशक्ति</span><span data-lang="te">ఉగ్రశక్తి</span><span data-lang="ml">ഉഗ്ര ശക്തി</span></span>
+      </div>
+      <!-- 6 -->
+      <div class="dasha-card reveal d6">
+        <div class="dasha-card-num">06</div>
+        <div class="dasha-card-en">Chhinnamasta</div>
+        <div class="dasha-card-ta"><span data-lang="ta">சின்னமஸ்தா</span><span data-lang="en">Chhinnamasta — Self Sacrifice</span><span data-lang="hi">छिन्नमस्ता</span><span data-lang="te">ఛిన్నమస్త</span><span data-lang="ml">ഛിന്നമസ്ത</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">தியாகத்தின் உருவம் — அகங்காரத்தை நீக்கும் உக்ர சக்தி</span><span data-lang="en">The embodiment of self-sacrifice, cutting the ego and granting transformation</span><span data-lang="hi">त्याग की मूर्ति — अहंकार को नाश कर रूपांतरण देती हैं</span><span data-lang="te">త్యాగ స్వరూపం — అహంకారాన్ని నాశనం చేసే ఉగ్ర శక్తి</span><span data-lang="ml">ത്യാഗത്തിന്റെ സ്വരൂപം — അഹങ്കാരം ഇല്ലാതാക്കുന്ന ഉഗ്ര ശക്തി</span></p>
+        <span class="dasha-card-power"><i class="bi bi-arrow-repeat"></i> <span data-lang="ta">மாற்றம்</span><span data-lang="en">Transformation</span><span data-lang="hi">परिवर्तन</span><span data-lang="te">పరివర్తన</span><span data-lang="ml">പരിവർത്തനം</span></span>
+      </div>
+      <!-- 7 -->
+      <div class="dasha-card reveal d1">
+        <div class="dasha-card-num">07</div>
+        <div class="dasha-card-en">Dhumavati</div>
+        <div class="dasha-card-ta"><span data-lang="ta">தூமாவதி</span><span data-lang="en">Dhumavati — The Elder Crone</span><span data-lang="hi">धूमावती</span><span data-lang="te">ధూమావతి</span><span data-lang="ml">ധൂമാവതി</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">வேதனை நீக்கும் தெய்வம் — கஷ்டங்களை போக்கும் தாய்</span><span data-lang="en">The smoke-robed goddess who removes all suffering and grants the wisdom born of hardship</span><span data-lang="hi">धुएं में लिपटी देवी — दुःख हरती और कठिनाई की ज्ञान देती हैं</span><span data-lang="te">కష్టాలను పోగొట్టే దేవి — వేదన నీకి జ్ఞానం ఇచ్చే తల్లి</span><span data-lang="ml">ദുഃഖം ഒഴിവാക്കുന്ന ദേവി — കഷ്ടതയിൽ നിന്ന് ജ്ഞാനം നൽകുന്ന അമ്മ</span></p>
+        <span class="dasha-card-power"><i class="bi bi-cloud-fill"></i> <span data-lang="ta">வேதனை நீக்கம்</span><span data-lang="en">Suffering Relief</span><span data-lang="hi">दुःखमुक्ति</span><span data-lang="te">వేదన నివారణ</span><span data-lang="ml">ദുഃഖ മുക്തി</span></span>
+      </div>
+      <!-- 8 -->
+      <div class="dasha-card reveal d2">
+        <div class="dasha-card-num">08</div>
+        <div class="dasha-card-en">Bagalamukhi</div>
+        <div class="dasha-card-ta"><span data-lang="ta">பகளாமுகி</span><span data-lang="en">Bagalamukhi — Paralyzer of Foes</span><span data-lang="hi">बगलामुखी</span><span data-lang="te">బగళాముఖి</span><span data-lang="ml">ബഗളാമുഖി</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">எதிரிகளை வீழ்த்தும் தெய்வம் — வழக்கில் வெற்றி அருள்வாள்</span><span data-lang="en">Paralyzed the enemies of devotees — grants victory in legal disputes and court cases</span><span data-lang="hi">शत्रुओं को पराजित करती हैं — कानूनी मामलों में विजय दिलाती हैं</span><span data-lang="te">శత్రువులను ఓడించే దేవి — న్యాయ వివాదాలలో విజయం ఇస్తుంది</span><span data-lang="ml">ശത്രുക്കളെ തോൽപ്പിക്കുന്ന ദേവി — നിയമ തർക്കങ്ങളിൽ വിജയം നൽകുന്നു</span></p>
+        <span class="dasha-card-power"><i class="bi bi-trophy-fill"></i> <span data-lang="ta">வழக்கு வெற்றி</span><span data-lang="en">Legal Victory</span><span data-lang="hi">वाद विजय</span><span data-lang="te">వ్యాజ్యం విజయం</span><span data-lang="ml">നിയമ വിജയം</span></span>
+      </div>
+      <!-- 9 -->
+      <div class="dasha-card reveal d3">
+        <div class="dasha-card-num">09</div>
+        <div class="dasha-card-en">Matangi</div>
+        <div class="dasha-card-ta"><span data-lang="ta">மாதங்கி</span><span data-lang="en">Matangi — Arts & Dominion</span><span data-lang="hi">मातंगी</span><span data-lang="te">మాతంగి</span><span data-lang="ml">മാതംഗി</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">கலை, சங்கீதம் மற்றும் ஞானத்தின் தெய்வம் — வாக்கு சித்தி அருள்வாள்</span><span data-lang="en">Goddess of arts, music, and wisdom — she grants the power of speech, eloquence, and command</span><span data-lang="hi">कला, संगीत और ज्ञान की देवी — वाक् सिद्धि प्रदान करती हैं</span><span data-lang="te">కళ, సంగీతం, జ్ఞానం యొక్క దేవి — వాక్ సిద్ధి ఇచ్చే తల్లి</span><span data-lang="ml">കല, സംഗീതം, ജ്ഞാനം — വാഗ്ദേവി, ഭാഷണ ശക്തി നൽകുന്നു</span></p>
+        <span class="dasha-card-power"><i class="bi bi-music-note-beamed"></i> <span data-lang="ta">கலை சித்தி</span><span data-lang="en">Arts Mastery</span><span data-lang="hi">कलासिद्धि</span><span data-lang="te">కళాసిద్ధి</span><span data-lang="ml">കലാ സിദ്ധി</span></span>
+      </div>
+      <!-- 10 -->
+      <div class="dasha-card reveal d4">
+        <div class="dasha-card-num">10</div>
+        <div class="dasha-card-en">Kamala</div>
+        <div class="dasha-card-ta"><span data-lang="ta">கமலா</span><span data-lang="en">Kamala — Tantric Lakshmi</span><span data-lang="hi">कमला</span><span data-lang="te">కమల</span><span data-lang="ml">കമല</span></div>
+        <p class="dasha-card-desc"><span data-lang="ta">செல்வம் மற்றும் மங்கலம் அருள்வாள் — தாந்த்ரீக லட்சுமி, ஐஸ்வர்யம் பெருக்கும் தெய்வம்</span><span data-lang="en">Tantric Lakshmi who bestows wealth, abundance, and auspiciousness upon devoted seekers</span><span data-lang="hi">तांत्रिक लक्ष्मी — धन, समृद्धि और मंगल की दात्री देवी</span><span data-lang="te">తాంత్రిక లక్ష్మి — సంపద, మంగళం ఇచ్చే దేవి</span><span data-lang="ml">താന്ത്രിക ലക്ഷ്മി — ധനം, ഐശ്വര്യം, മംഗളം നൽകുന്ന ദേവി</span></p>
+        <span class="dasha-card-power"><i class="bi bi-currency-rupee"></i> <span data-lang="ta">செல்வ சக்தி</span><span data-lang="en">Wealth Power</span><span data-lang="hi">धनशक्ति</span><span data-lang="te">ధనశక్తి</span><span data-lang="ml">ധന ശക്തി</span></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     STHAL DETAILS
+══════════════════════════════ -->
+<section class="sthal-section">
+  <div class="section-wrap">
+    <div class="sthal-hero-grid">
+      <div class="reveal-left">
+        <div class="section-eyebrow">
+          <span>
+            <span data-lang="ta">ஸ்தல விவரங்கள்</span>
+            <span data-lang="en">Sacred Details</span>
+            <span data-lang="hi">स्थल विवरण</span>
+            <span data-lang="te">స్థల వివరాలు</span>
+            <span data-lang="ml">സ്ഥല വിവരങ്ങൾ</span>
+          </span>
+        </div>
+        <h2 class="section-title">
+          <span data-lang="ta">ஆலய ஸ்தல சிறப்புகள்</span>
+          <span data-lang="en">Sacred Temple Details</span>
+          <span data-lang="hi">मंदिर स्थल विशेषताएं</span>
+          <span data-lang="te">ఆలయ స్థల విశేషాలు</span>
+          <span data-lang="ml">ക്ഷേത്ര സ്ഥല വിശേഷം</span>
+        </h2>
+        <div class="section-rule"></div>
+        <div class="sthal-info-list">
+          <div class="sthal-info-item reveal d1">
+            <div class="sthal-info-icon"><i class="bi bi-tree-fill"></i></div>
+            <div class="sthal-info-text">
+              <strong><span data-lang="ta">ஸ்தல விருட்சம்</span><span data-lang="en">Sthala Vriksham</span><span data-lang="hi">स्थल वृक्ष</span><span data-lang="te">స్థల వృక్షం</span><span data-lang="ml">സ്ഥല വൃക്ഷം</span></strong>
+              <p>
+                <span data-lang="ta">மகா வில்வம் மற்றும் ருதிராக்ஷம் — தெய்வீக சக்தி நிரம்பிய மரங்கள்</span>
+                <span data-lang="en">Maha Vilva and Rudraksha — trees charged with divine power</span>
+                <span data-lang="hi">महाविल्व और रुद्राक्ष — दिव्य शक्ति से परिपूर्ण वृक्ष</span>
+                <span data-lang="te">మహా విల్వం మరియు రుద్రాక్ష — దివ్య శక్తితో నిండిన వృక్షాలు</span>
+                <span data-lang="ml">മഹാ ബില്വവും രുദ്രാക്ഷവും — ദൈവ ശക്തി നിറഞ്ഞ വൃക്ഷങ്ങൾ</span>
+              </p>
+            </div>
+          </div>
+          <div class="sthal-info-item reveal d2">
+            <div class="sthal-info-icon"><i class="bi bi-droplet-fill"></i></div>
+            <div class="sthal-info-text">
+              <strong><span data-lang="ta">ஸ்தல தீர்த்தம்</span><span data-lang="en">Sthala Theertham</span><span data-lang="hi">स्थल तीर्थ</span><span data-lang="te">స్థల తీర్థం</span><span data-lang="ml">സ്ഥല തീർഥം</span></strong>
+              <p>
+                <span data-lang="ta">பாதாள கங்கை தீர்த்தம் — நோய்களை நீக்கும் புனித தீர்த்தம்</span>
+                <span data-lang="en">Pathala Ganga Theertham — the sacred well that heals ailments</span>
+                <span data-lang="hi">पाताल गंगा तीर्थ — रोग निवारक पवित्र जल</span>
+                <span data-lang="te">పాతాళ గంగ తీర్థం — రోగాలు తగ్గించే పవిత్ర తీర్థం</span>
+                <span data-lang="ml">പാതാള ഗംഗ തീർഥം — രോഗ ശമനകരമായ പുണ്യ തീർഥം</span>
+              </p>
+            </div>
+          </div>
+          <div class="sthal-info-item reveal d3">
+            <div class="sthal-info-icon"><i class="bi bi-gem"></i></div>
+            <div class="sthal-info-text">
+              <strong><span data-lang="ta">ஸ்ரீ சக்ர விமானம்</span><span data-lang="en">Sri Chakra Vimanam</span><span data-lang="hi">श्री चक्र विमान</span><span data-lang="te">శ్రీ చక్ర విమానం</span><span data-lang="ml">ശ്രീ ചക്ര വിമാനം</span></strong>
+              <p>
+                <span data-lang="ta">ஸ்ரீ சக்ரமே விமானமாக கோபுரமாக அமைந்த உலகில் அரிய ஆலயம்</span>
+                <span data-lang="en">The Sri Chakra itself forms the Vimanam and Gopuram — a rarity found nowhere else</span>
+                <span data-lang="hi">श्री चक्र ही विमान और गोपुरम के रूप में — विश्व में अनूठा</span>
+                <span data-lang="te">శ్రీ చక్రమే విమానంగా, గోపురంగా — ప్రపంచంలో అరుదైన ఆలయం</span>
+                <span data-lang="ml">ശ്രീ ചക്രം വിമാനവും ഗോപുരവുമായ — ലോകത്ത് അപൂർവ്വ ക്ഷേത്രം</span>
+              </p>
+            </div>
+          </div>
+          <div class="sthal-info-item reveal d4">
+            <div class="sthal-info-icon"><i class="bi bi-moon-stars-fill"></i></div>
+            <div class="sthal-info-text">
+              <strong><span data-lang="ta">சிறப்பு அம்சம்</span><span data-lang="en">Special Feature</span><span data-lang="hi">विशेष विशेषता</span><span data-lang="te">ప్రత్యేక అంశం</span><span data-lang="ml">പ്രത്യേക വിശേഷം</span></strong>
+              <p>
+                <span data-lang="ta">குலதெய்வம் தெரியாதவர்கள் வணங்க, குலதெய்வம் இருக்கும் திசை சொப்பனத்தில் காண்பிக்கும்</span>
+                <span data-lang="en">Those who do not know their Kula Deivam — the direction is revealed to them in a dream</span>
+                <span data-lang="hi">जो अपना कुलदेवता नहीं जानते — स्वप्न में दिशा प्रकट होती है</span>
+                <span data-lang="te">కుల దేవత తెలియనివారికి స్వప్నంలో దిశ వెల్లడి అవుతుంది</span>
+                <span data-lang="ml">കുലദേവത അറിയാത്തവർക്ക് സ്വപ്നത്തിൽ ദിശ കാണിക്കപ്പെടും</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sthal-img-stack reveal-right">
+        <div class="sthal-img-frame"></div>
+        <div class="sthal-img-main">
+          <img src="assets/img/temple.jpg" alt="Temple">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CTA BAND
+══════════════════════════════ -->
+<div class="deities-cta">
+  <div class="deities-cta-inner reveal">
+    <span class="deities-cta-icon"><i class="bi bi-calendar2-heart-fill"></i></span>
+    <h2>
+      <span data-lang="ta">தெய்வீக தரிசனத்திற்கு வாருங்கள்</span>
+      <span data-lang="en">Come for Divine Darshan</span>
+      <span data-lang="hi">दिव्य दर्शन के लिए आएं</span>
+      <span data-lang="te">దివ్య దర్శనానికి రండి</span>
+      <span data-lang="ml">ദിവ്യ ദർശനത്തിന് വരൂ</span>
+    </h2>
+    <div class="deities-cta-ta">
+      <span data-lang="ta">ஜாதி மதம் இன்றி அனைவரும் வந்து அன்னையின் அருள் பெறலாம்</span>
+      <span data-lang="en">Irrespective of caste or religion — all are welcome</span>
+      <span data-lang="hi">जाति-धर्म से परे — सभी का स्वागत है</span>
+      <span data-lang="te">కులమతభేదం లేకుండా అందరూ స్వాగతం</span>
+      <span data-lang="ml">ജാതിമത ഭേദമില്ലാതെ ഏവരും സ്വാഗതം</span>
+    </div>
+    <p>
+      <span data-lang="ta">பரிகார பூஜைகளுக்கு முன் அனுமதி பெற்ற பிறகே நடைபெறும். அனைத்து வழிபாடும் கட்டணமின்றி நடைபெறும். உங்கள் விவரங்களை பதிவிட்டு அன்னையின் அருளை நேரில் பெறுங்கள்.</span>
+      <span data-lang="en">Prior permission is required before parihara pujas. All worship services are conducted free of charge. Register your details and receive the blessings of the Mother in person.</span>
+      <span data-lang="hi">परिहार पूजाओं से पहले अनुमति आवश्यक है। सभी पूजाएं निःशुल्क हैं। अपना विवरण दर्ज करें और माता की कृपा प्रत्यक्ष पाएं।</span>
+      <span data-lang="te">పరిహార పూజలకు ముందు అనుమతి అవసరం. అన్ని పూజలు ఉచితం. మీ వివరాలు నమోదు చేసి అమ్మ అనుగ్రహం నేరుగా పొందండి.</span>
+      <span data-lang="ml">പരിഹാര പൂജകൾക്ക് മുൻ അനുമതി ആവശ്യം. എല്ലാ പൂജകളും സൗജന്യം. വിവരങ്ങൾ നൽകി അമ്മ അനുഗ്രഹം നേരിട്ട് ലഭിക്കൂ.</span>
+    </p>
+    <div class="cta-btn-row">
+      <a href="index.html#booking" class="btn-gold">
+        <i class="bi bi-calendar3"></i>
+        <span data-lang="ta">முன் பதிவு செய்க</span>
+        <span data-lang="en">Book a Visit</span>
+        <span data-lang="hi">दर्शन बुक करें</span>
+        <span data-lang="te">సందర్శన బుక్</span>
+        <span data-lang="ml">ദർശനം ബുക്ക് ചെയ്യൂ</span>
+      </a>
+      <!-- <a href="tel:+918012709645" class="btn-ghost" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8);">
+        <i class="bi bi-telephone-fill"></i> +91 80127 09645
+      </a> -->
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-logo">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்<br>
+        <span style="font-size:12px;color:var(--cream);font-family:'Raleway',sans-serif">Sri Kaar Irul Kanapadai Bhadrakali Amman Temple</span>
+      </div>
+      <p class="footer-brand-sub">திருமங்கலம் டு திண்டுக்கல் நான்கு வழி சாலை, ஆஸ்டின்பட்டி பிரிவு, தனக்கன்குளம், மதுரை</p>
+      <div class="footer-trust"><i class="bi bi-patch-check-fill" style="color:var(--cream)"></i> Trust Reg: 51/2017 &bull; 12AA &bull; 80G</div>
+    <div class="footer-trust" style="margin-top:8px;">
+  <i class="bi bi-clock" style="color:var(--cream)"></i>
+  <span data-lang="ta">நடை திறக்கும் நேரம் : காலை 9.30 – மாலை 6.00</span>
+  <span data-lang="en">Gate Opening Hours: 9:30 AM – 6:00 PM</span>
+  <span data-lang="hi">प्रवेश द्वार समय: सुबह 9:30 – शाम 6:00</span>
+  <span data-lang="te">గేటు తెరిచే సమయం: ఉదయం 9:30 – సాయంత్రం 6:00</span>
+  <span data-lang="ml">ഗേറ്റ് തുറക്കുന്ന സമയം: രാവിലെ 9:30 – വൈകുന്നേരം 6:00</span>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+        <li><a href="deities.html"><i class="bi bi-chevron-right"></i> Deities</a></li>
+        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+        <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+        <li><a href="index.html#booking"><i class="bi bi-chevron-right"></i> Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Deities</h4>
+      <ul>
+        <li><a href="deities.html#bhadrakali"><i class="bi bi-flower1"></i> Bhadrakali Amman</a></li>
+        <li><a href="deities.html#navagraha"><i class="bi bi-star"></i> Navagraha Vinayagar</a></li>
+        <li><a href="deities.html#sapta"><i class="bi bi-people"></i> Sapta Mathas</a></li>
+        <li><a href="deities.html#unmatha"><i class="bi bi-shield"></i> Unmatha Bhairava</a></li>
+        <li><a href="deities.html#velapper"><i class="bi bi-lightning"></i> Velapper</a></li>
+        <li><a href="deities.html#jata"><i class="bi bi-moon-stars"></i> Jata Muneeswar</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <!-- <li><a href="tel:+918012709645"><i class="bi bi-telephone"></i> +91 80127 09645</a></li>
+        <li><a href="https://wa.me/918012709645"><i class="bi bi-whatsapp"></i> WhatsApp</a></li> -->
+        <li><a href="deities.html#poojas"><i class="bi bi-moon"></i> Pournami</a></li>
+        <li><a href="deities.html#poojas"><i class="bi bi-circle"></i> Amavasai</a></li>
+        <li><a href="deities.html#poojas"><i class="bi bi-sun"></i> Aadi 18</a></li>
+        <li><a href="deities.html#poojas"><i class="bi bi-stars"></i> Masi Sivaratri</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில், மதுரை. All rights reserved.</p>
+   <p>Developed by <a href="https://softwaredevelopmentandgraphicdesign.tech/" target="_blank" style="color:#C9920A; text-decoration:none;">SDGD</a></p>
+  </div>
+</footer>
+
+<!-- BOTTOM MOBILE NAV -->
+<nav class="bottom-nav">
+  <a href="index.html" class="bottom-nav-item">
+    <i class="bi bi-house-fill"></i>
+  </a>
+  <a href="about.html" class="bottom-nav-item">
+    <i class="bi bi-info-circle-fill"></i>
+  </a>
+  <a href="deities.html" class="bottom-nav-item">
+    <i class="bi bi-flower2" style="color:var(--deep)"></i>
+  </a>
+  <a href="gallery.html" class="bottom-nav-item">
+    <i class="bi bi-images"></i>
+  </a>
+  <a href="contact.html" class="bottom-nav-item">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+</nav>
+
+<!-- FLOATING BUTTONS -->
+<!-- <div class="float-group">
+  <a href="tel:+918012709645" class="float-btn float-call" title="Call Us"><i class="bi bi-telephone-fill"></i></a>
+  <a href="https://wa.me/918012709645" target="_blank" class="float-btn float-whatsapp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="float-btn float-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top"><i class="bi bi-chevron-up"></i></button>
+</div> -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

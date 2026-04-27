@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில்</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;700;900&family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/script.css">
+
+</head>
+<body>
+
+<!-- TRUST MARQUEE BAR -->
+<div class="trust-bar">
+  <div class="trust-marquee" id="trustMarquee"></div>
+</div>
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('ta')">தமிழ்</button>
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+  <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+  <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+  <button class="lang-btn" onclick="setLang('ml')">മലയ</button>
+</div>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><i class="bi bi-flower1"></i></div>
+      <div class="nav-logo-text">
+        <div data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்</div>
+        <div data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Temple</div>
+        <div data-lang="hi">श्री भद्रकाळी अम्मन मंदिर</div>
+        <div data-lang="te">శ్రీ భద్రకాళి అమ్మన్ ఆలయం</div>
+        <div data-lang="ml">ശ്രീ ഭദ്രകാളി അമ്മൻ ക്ഷേത്രം</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+      <a href="about.html"><span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span></a>
+      <a href="deities.html"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></a>
+      <a href="gallery.html"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></a>
+      <a href="contact.html" style="color:var(--gold2)"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></a>
+      <a href="index.html#booking" class="nav-cta">
+        <span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span>
+      </a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+    <a href="about.html" onclick="toggleMenu()"><span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span></a>
+    <a href="deities.html" onclick="toggleMenu()"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേవതകൾ</span></a>
+    <a href="gallery.html" onclick="toggleMenu()"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></a>
+    <a href="contact.html" onclick="toggleMenu()"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></a>
+    <a href="index.html#booking" onclick="toggleMenu()"><span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span></a>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<div class="contact-hero">
+  <div class="contact-hero-bg"></div>
+  <div class="contact-hero-om">ॐ</div>
+  <div class="contact-hero-content">
+    <div class="contact-hero-breadcrumb">
+      <a href="index.html"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+      <span class="sep">›</span>
+      <span class="current"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></span>
+    </div>
+    <div class="contact-hero-badge">
+      <i class="bi bi-geo-alt-fill"></i>
+      <span data-lang="ta">தனக்கன்குளம், மதுரை</span>
+      <span data-lang="en">Thanakkankulam, Madurai</span>
+      <span data-lang="hi">थनक्कन्कुलम, मदुरई</span>
+      <span data-lang="te">థనక్కన్‌కులం, మదురై</span>
+      <span data-lang="ml">തനക്കൻകുളം, മധുര</span>
+    </div>
+    <h1 class="contact-hero-title">
+      <span data-lang="ta">தொடர்பு கொள்ளுங்கள்</span>
+      <span data-lang="en">Get In Touch</span>
+      <span data-lang="hi">संपर्क करें</span>
+      <span data-lang="te">సంప్రదించండి</span>
+      <span data-lang="ml">ബന്ധപ്പെടുക</span>
+    </h1>
+    <p class="contact-hero-subtitle">
+      <span data-lang="ta">பூசை முன்பதிவு, பரிகார வழிகாட்டல் அல்லது வருகை திட்டமிட — அன்னையின் அருளை நேரில் பெற வாருங்கள்</span>
+      <span data-lang="en">For puja bookings, parihara guidance, or planning your visit — come and receive the Mother's grace in person</span>
+      <span data-lang="hi">पूजा बुकिंग, परिहार मार्गदर्शन या दर्शन योजना के लिए — माता की कृपा प्रत्यक्ष प्राप्त करें</span>
+      <span data-lang="te">పూజ బుకింగ్, పరిహార మార్గదర్శకత్వం లేదా సందర్శన ప్రణాళికకు — అమ్మ అనుగ్రహం స్వయంగా పొందండి</span>
+      <span data-lang="ml">പൂജ ബുക്കിംഗ്, പരിഹാര മార്ഗദർശനം, സന്ദർശന ആസൂത്രണം — അമ്മ അനുഗ്രഹം നേരിൽ ലഭിക്കൂ</span>
+    </p>
+    <div class="contact-hero-line"></div>
+  </div>
+  <div class="contact-scroll-hint">
+    <i class="bi bi-chevron-double-down"></i>
+    <span>Scroll</span>
+  </div>
+</div>
+
+<!-- ═══════════════ QUICK REACH BAND ═══════════════ -->
+<div class="quick-reach-band">
+  <div class="quick-reach-inner">
+    <div class="quick-reach-item">
+  <div class="quick-reach-icon"><i class="bi bi-door-open-fill"></i></div>
+  <div>
+    <div class="quick-reach-label">
+      <span data-lang="ta">நடை திறக்கும் நேரம்</span>
+      <span data-lang="en">Gate Opening Hours</span>
+      <span data-lang="hi">प्रवेश द्वार समय</span>
+      <span data-lang="te">గేటు తెరిచే సమయం</span>
+      <span data-lang="ml">ഗേറ്റ് തുറക്കുന്ന സമയം</span>
+    </div>
+    <div class="quick-reach-value small">
+      <span data-lang="ta">காலை 9.30 – மாலை 6.00</span>
+      <span data-lang="en">9:30 AM – 6:00 PM</span>
+      <span data-lang="hi">सुबह 9:30 – शाम 6:00</span>
+      <span data-lang="te">ఉదయం 9:30 – సాయంత్రం 6:00</span>
+      <span data-lang="ml">രാവിലെ 9:30 – വൈകുന്നേരം 6:00</span>
+    </div>
+  </div>
+</div>
+    <!-- <a href="tel:+918012709645" class="quick-reach-item">
+      <div class="quick-reach-icon"><i class="bi bi-telephone-fill"></i></div>
+      <div>
+        <div class="quick-reach-label"><span data-lang="ta">தொலைபேசி</span><span data-lang="en">Phone</span><span data-lang="hi">फ़ोन</span><span data-lang="te">ఫోన్</span><span data-lang="ml">ഫോൺ</span></div>
+        <div class="quick-reach-value">+91 80127 09645</div>
+      </div>
+    </a>
+    <a href="https://wa.me/918012709645" target="_blank" class="quick-reach-item">
+      <div class="quick-reach-icon"><i class="bi bi-whatsapp"></i></div>
+      <div>
+        <div class="quick-reach-label">WhatsApp</div>
+        <div class="quick-reach-value">+91 80127 09645</div>
+      </div>
+    </a> -->
+    <div class="quick-reach-item">
+      <div class="quick-reach-icon"><i class="bi bi-clock-fill"></i></div>
+      <div>
+        <div class="quick-reach-label"><span data-lang="ta">பூசை நேரம்</span><span data-lang="en">Puja Days</span><span data-lang="hi">पूजा दिन</span><span data-lang="te">పూజా రోజులు</span><span data-lang="ml">പൂജ ദിനങ്ങൾ</span></div>
+        <div class="quick-reach-value small">
+          <span data-lang="ta">பௌர்ணமி, அமாவாசை &amp; சிறப்பு தினங்கள்</span>
+          <span data-lang="en">Pournami, Amavasai &amp; Special Days</span>
+          <span data-lang="hi">पौर्णमि, अमावस्या &amp; विशेष दिन</span>
+          <span data-lang="te">పౌర్ణమి, అమావాస్య &amp; ప్రత్యేక రోజులు</span>
+          <span data-lang="ml">പൗർണ്ണമി, അമാവാസ്യ &amp; പ്രത്യേക ദിവസങ്ങൾ</span>
+        </div>
+      </div>
+    </div>
+    <div class="quick-reach-item">
+      <div class="quick-reach-icon"><i class="bi bi-patch-check-fill"></i></div>
+      <div>
+        <div class="quick-reach-label">Trust Reg.</div>
+        <div class="quick-reach-value small">51/2017 · 12AA · 80G</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MAIN CONTACT SECTION ═══════════════ -->
+<section class="contact-main-section">
+  <div class="contact-main-inner">
+
+    <!-- LEFT: INFO STACK -->
+    <div class="contact-info-stack">
+
+      <!-- Hero info card -->
+      <div class="contact-info-hero-card reveal-left">
+        <div class="contact-card-eyebrow"><span data-lang="ta">ஆலய முகவரி</span><span data-lang="en">Temple Address</span><span data-lang="hi">मंदिर का पता</span><span data-lang="te">ఆలయ చిరునామా</span><span data-lang="ml">ക്ഷേത്ര വിലാസം</span></div>
+        <div class="contact-info-hero-name">
+          <span data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்</span>
+          <span data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Amman Temple</span>
+          <span data-lang="hi">श्री कार इरुल कणपडै भद्रकाळी अम्मन मंदिर</span>
+          <span data-lang="te">శ్రీ కార్ ఇరుల్ కణపడై భద్రకాళి అమ్మన్ ఆలయం</span>
+          <span data-lang="ml">ശ്രീ കാർ ഇരുൾ കണപടൈ ഭദ്രകാളി അമ്മൻ ക്ഷേത്രം</span>
+        </div>
+        <div class="contact-info-hero-sub">
+          <span data-lang="ta">திருமங்கலம் டு திண்டுக்கல் நான்கு வழி சாலை, ஆஸ்டின்பட்டி பிரிவு, தனக்கன்குளம், மதுரை</span>
+          <span data-lang="en">Thirumangalam to Dindigul Four-Lane Highway, Austinpatti Division, Thanakkankulam, Madurai</span>
+          <span data-lang="hi">थिरुमंगलम–दिंडिगुल फोर-लेन हाइवे, ऑस्टिनपट्टी डिवीज़न, थनक्कन्कुलम, मदुरई</span>
+          <span data-lang="te">థిరుమంగలం–దిండిగల్ ఫోర్-లేన్ హైవే, ఆస్టిన్‌పట్టి డివిజన్, థనక్కన్‌కులం, మదురై</span>
+          <span data-lang="ml">തിരുമംഗലം–ദിണ്ടിക്കൽ ഫോർ-ലേൻ ഹൈവേ, ഓസ്റ്റിൻപട്ടി ഡിവിഷൻ, തനക്കൻകുളം, മധുര</span>
+        </div>
+
+        <!-- <div class="contact-detail-row">
+          <div class="contact-detail-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div>
+            <div class="contact-detail-label"><span data-lang="ta">தொலைபேசி</span><span data-lang="en">Phone</span><span data-lang="hi">फ़ोन</span><span data-lang="te">ఫోన్</span><span data-lang="ml">ഫോൺ</span></div>
+            <div class="contact-detail-value"><a href="tel:+918012709645">+91 80127 09645</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon"><i class="bi bi-whatsapp"></i></div>
+          <div>
+            <div class="contact-detail-label">WhatsApp</div>
+            <div class="contact-detail-value"><a href="https://wa.me/918012709645" target="_blank">+91 80127 09645</a></div>
+          </div>
+        </div> -->
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div>
+            <div class="contact-detail-label"><span data-lang="ta">முகவரி</span><span data-lang="en">Address</span><span data-lang="hi">पता</span><span data-lang="te">చిరునామా</span><span data-lang="ml">വിലാസം</span></div>
+            <div class="contact-detail-value">
+              <span class="ta" data-lang="ta">திருமங்கலம் டு திண்டுக்கல் நான்கு வழி சாலை, ஆஸ்டின்பட்டி பிரிவு, தனக்கன்குளம், மதுரை</span>
+              <span data-lang="en">Thirumangalam–Dindigul Four-Lane Highway, Austinpatti Division, Thanakkankulam, Madurai</span>
+              <span data-lang="hi">थिरुमंगलम–दिंडिगुल हाइवे, ऑस्टिनपट्टी, थनक्कन्कुलम, मदुरई</span>
+              <span data-lang="te">థిరుమంగలం–దిండిగల్ హైవే, ఆస్టిన్‌పట్టి, థనక్కన్‌కులం, మదురై</span>
+              <span data-lang="ml">തിരുമംഗലം–ദിണ്ടിക്കൽ ഹൈവേ, ഓസ്റ്റിൻപട്ടി, തനക്കൻകുളം, മധുര</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+          <div>
+            <div class="contact-detail-label">Trust Registration</div>
+            <div class="contact-detail-value">Reg. No. 51/2017 &nbsp;&bull;&nbsp; 12AA &nbsp;&bull;&nbsp; 80G</div>
+          </div>
+        </div>
+
+        <div class="contact-trust-row" style="margin-top:20px;">
+          <span class="contact-trust-badge"><i class="bi bi-patch-check-fill"></i> Reg: 51/2017</span>
+          <span class="contact-trust-badge"><i class="bi bi-shield-check"></i> 12AA</span>
+          <span class="contact-trust-badge"><i class="bi bi-heart-fill"></i> 80G</span>
+          <span class="contact-trust-badge"><i class="bi bi-gift-fill"></i> <span data-lang="ta">கட்டணமில்லை</span><span data-lang="en">Free Pujas</span><span data-lang="hi">निःशुल्क</span><span data-lang="te">ఉచితం</span><span data-lang="ml">സൗജന്യം</span></span>
+        </div>
+      </div>
+
+      <!-- Puja Days card -->
+      <div class="contact-pujadays-card reveal-left" style="transition-delay:.15s">
+        <div class="contact-pujadays-title">
+          <i class="bi bi-calendar3" style="color:var(--gold)"></i>
+          <span data-lang="ta">சிறப்பு பூசை நாட்கள்</span>
+          <span data-lang="en">Special Puja Days</span>
+          <span data-lang="hi">विशेष पूजा दिन</span>
+          <span data-lang="te">ప్రత్యేక పూజా రోజులు</span>
+          <span data-lang="ml">പ്രത്യേക പൂജ ദിനങ്ങൾ</span>
+        </div>
+        <div class="pujaday-pills">
+          <span class="pujaday-pill"><i class="bi bi-moon-fill"></i> <span data-lang="ta">பௌர்ணமி</span><span data-lang="en">Pournami</span><span data-lang="hi">पौर्णमि</span><span data-lang="te">పౌర్ణమి</span><span data-lang="ml">പൗർണ്ണമി</span></span>
+          <span class="pujaday-pill"><i class="bi bi-circle"></i> <span data-lang="ta">அமாவாசை</span><span data-lang="en">Amavasai</span><span data-lang="hi">अमावस्या</span><span data-lang="te">అమావాస్య</span><span data-lang="ml">അമാവാസ്യ</span></span>
+          <span class="pujaday-pill"><i class="bi bi-sun-fill"></i> <span data-lang="ta">ஆடி 18</span><span data-lang="en">Aadi 18</span><span data-lang="hi">आदि 18</span><span data-lang="te">ఆది 18</span><span data-lang="ml">ആടി 18</span></span>
+          <span class="pujaday-pill"><i class="bi bi-stars"></i> <span data-lang="ta">மாசி சிவராத்திரி</span><span data-lang="en">Masi Sivaratri</span><span data-lang="hi">मासी शिवरात्रि</span><span data-lang="te">మాసి శివరాత్రి</span><span data-lang="ml">മാസി ശിവരാത്രി</span></span>
+          <span class="pujaday-pill"><i class="bi bi-flower3"></i> <span data-lang="ta">பங்குனி உத்திரம்</span><span data-lang="en">Panguni Uthiram</span><span data-lang="hi">पंगुनि उत्तिरम</span><span data-lang="te">పంగుని ఉత్తిరం</span><span data-lang="ml">പങ്കുനി ഉത്തിരം</span></span>
+          <span class="pujaday-pill"><i class="bi bi-eye-fill"></i> <span data-lang="ta">வைகுண்ட ஏகாதசி</span><span data-lang="en">Vaikunta Ekadasi</span><span data-lang="hi">वैकुंठ एकादशी</span><span data-lang="te">వైకుంఠ ఏకాదశి</span><span data-lang="ml">വൈകുണ്ഠ ഏകാദശി</span></span>
+        </div>
+      </div>
+
+      <!-- Connect card -->
+      <div class="contact-connect-card reveal-left" style="transition-delay:.25s">
+        <div class="contact-connect-label">
+          <span data-lang="ta">உடனே தொடர்பு கொள்ளுங்கள்</span>
+          <span data-lang="en">Reach Us Directly</span>
+          <span data-lang="hi">सीधे संपर्क करें</span>
+          <span data-lang="te">నేరుగా సంప్రదించండి</span>
+          <span data-lang="ml">നേരിട്ട് ബന്ധപ്പെടുക</span>
+          <p>
+            <span data-lang="ta">பரிகார பூஜைகளுக்கு முன் அனுமதி அவசியம்</span>
+            <span data-lang="en">Prior permission required for parihara pujas</span>
+            <span data-lang="hi">परिहार पूजाओं के लिए पूर्व अनुमति आवश्यक</span>
+            <span data-lang="te">పరిహార పూజలకు ముందస్తు అనుమతి అవసరం</span>
+            <span data-lang="ml">പരിഹാര പൂജകൾക്ക് മുൻ അനുമതി ആവശ്യം</span>
+          </p>
+        </div>
+        <!-- <div class="connect-btns">
+          <a href="tel:+918012709645" class="connect-btn connect-btn-call"><i class="bi bi-telephone-fill"></i> Call Now</a>
+          <a href="https://wa.me/918012709645" target="_blank" class="connect-btn connect-btn-wa"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div> -->
+      </div>
+
+    </div><!-- /info-stack -->
+
+    <!-- RIGHT: FORM CARD -->
+    <div class="contact-form-card reveal-right">
+      <div class="contact-form-head">
+        <div class="contact-form-head-icon"><i class="bi bi-calendar2-heart-fill"></i></div>
+        <h2>
+          <span data-lang="ta">முன் பதிவு &amp; செய்தி அனுப்புங்கள்</span>
+          <span data-lang="en">Book a Puja &amp; Send a Message</span>
+          <span data-lang="hi">पूजा बुक करें और संदेश भेजें</span>
+          <span data-lang="te">పూజ బుక్ చేయండి &amp; సందేశం పంపండి</span>
+          <span data-lang="ml">പൂജ ബുക്ക് ചെയ്ത് സന്ദേശം അയയ്ക്കൂ</span>
+        </h2>
+        <p>
+          <span data-lang="ta">கீழே உங்கள் விவரங்களை பதிவிடுங்கள். பெற்ற பின்னர் தொடர்பு கொள்வோம்.</span>
+          <span data-lang="en">Fill in your details below. We will contact you at the provided number after receiving your request.</span>
+          <span data-lang="hi">नीचे अपनी जानकारी भरें। अनुरोध मिलने के बाद संपर्क किया जाएगा।</span>
+          <span data-lang="te">వివరాలు నమోదు చేయండి. అభ్యర్థన అందిన తర్వాత సంప్రదిస్తాం.</span>
+          <span data-lang="ml">വിവരങ്ങൾ നൽകൂ. അഭ്യർഥന ലഭിച്ചശേഷം ബന്ധപ്പെടും.</span>
+        </p>
+        <!-- Form Tabs -->
+        <div class="form-tabs">
+          <button class="form-tab-btn active" onclick="switchTab('booking', this)">
+            <i class="bi bi-calendar3"></i>&nbsp;
+            <span data-lang="ta">பூசை பதிவு</span><span data-lang="en">Puja Booking</span><span data-lang="hi">पूजा बुकिंग</span><span data-lang="te">పూజ బుకింగ్</span><span data-lang="ml">പൂജ ബുക്കിംഗ്</span>
+          </button>
+          <button class="form-tab-btn" onclick="switchTab('message', this)">
+            <i class="bi bi-envelope"></i>&nbsp;
+            <span data-lang="ta">செய்தி அனுப்பு</span><span data-lang="en">Send Message</span><span data-lang="hi">संदेश भेजें</span><span data-lang="te">సందేశం పంపు</span><span data-lang="ml">സന്ദേശം അയക്കൂ</span>
+          </button>
+          <button class="form-tab-btn" onclick="switchTab('direction', this)">
+            <i class="bi bi-signpost-2"></i>&nbsp;
+            <span data-lang="ta">வழி அறிக</span><span data-lang="en">Directions</span><span data-lang="hi">मार्ग</span><span data-lang="te">దిశలు</span><span data-lang="ml">ദിശകൾ</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="contact-form-body">
+
+        <!-- TAB 1: BOOKING -->
+        <div class="form-panel active" id="panel-booking">
+          <div id="bookingFormInner">
+            <div class="cf-row">
+              <div class="cf-group">
+                <label><i class="bi bi-person-fill"></i> <span data-lang="ta">உங்கள் பெயர்</span><span data-lang="en">Full Name</span><span data-lang="hi">पूरा नाम</span><span data-lang="te">పూర్తి పేరు</span><span data-lang="ml">മുഴുവൻ പേര്</span></label>
+                <input type="text" id="bkName" placeholder="Enter your full name">
+              </div>
+              <div class="cf-group">
+                <label><i class="bi bi-telephone-fill"></i> <span data-lang="ta">தொலைபேசி</span><span data-lang="en">Phone</span><span data-lang="hi">फ़ोन</span><span data-lang="te">ఫోన్</span><span data-lang="ml">ഫോൺ</span></label>
+                <input type="tel" id="bkPhone" placeholder="+91 XXXXX XXXXX">
+              </div>
+            </div>
+            <div class="cf-row">
+              <div class="cf-group">
+                <label><i class="bi bi-calendar3"></i> <span data-lang="ta">வருகை தேதி</span><span data-lang="en">Visit Date</span><span data-lang="hi">तारीख</span><span data-lang="te">తేదీ</span><span data-lang="ml">തീയതി</span></label>
+                <input type="date" id="bkDate">
+              </div>
+              <div class="cf-group">
+                <label><i class="bi bi-flower1"></i> <span data-lang="ta">பூசை வகை</span><span data-lang="en">Puja Type</span><span data-lang="hi">पूजा प्रकार</span><span data-lang="te">పూజ రకం</span><span data-lang="ml">പൂജ തരം</span></label>
+                <select id="bkPuja">
+                  <option value="">-- Select / தேர்ந்தெடுக்கவும் --</option>
+                  <option>Pournami Puja / பௌர்ணமி பூசை</option>
+                  <option>Amavasai Puja / அமாவாசை பூசை</option>
+                  <option>Kula Deiva Puja / குல தெய்வ பூசை</option>
+                  <option>Vettu Puja / வெட்டு பூசை</option>
+                  <option>Parihara Puja / பரிகார பூசை</option>
+                  <option>Aadi 18 Puja / ஆடி 18 பூசை</option>
+                  <option>Vaikunta Ekadasi / வைகுண்ட ஏகாதசி</option>
+                  <option>General Visit / பொது வருகை</option>
+                </select>
+              </div>
+            </div>
+            <div class="cf-group">
+              <label><i class="bi bi-chat-text-fill"></i> <span data-lang="ta">கோரிக்கை விவரம்</span><span data-lang="en">Prayer Request / Details</span><span data-lang="hi">प्रार्थना अनुरोध</span><span data-lang="te">ప్రార్థన వివరాలు</span><span data-lang="ml">പ്രാർഥനാ വിവരങ്ങൾ</span></label>
+              <textarea id="bkMsg" placeholder="Describe your prayer request or purpose of visit…"></textarea>
+            </div>
+            <button class="cf-submit" onclick="submitBooking()">
+              <i class="bi bi-send-fill"></i>
+              <span data-lang="ta">பதிவு செய்க</span>
+              <span data-lang="en">Submit Booking</span>
+              <span data-lang="hi">बुकिंग सबमिट करें</span>
+              <span data-lang="te">బుకింగ్ సమర్పించు</span>
+              <span data-lang="ml">ബുക്കിംഗ് സമർപ്പിക്കൂ</span>
+            </button>
+          </div>
+          <div class="cf-success" id="bookingSuccess">
+            <i class="bi bi-check-circle-fill" style="color:var(--teal2)"></i>
+            <h4><span data-lang="ta">பதிவு வெற்றிகரமாக பெறப்பட்டது!</span><span data-lang="en">Booking Received Successfully!</span><span data-lang="hi">बुकिंग सफलतापूर्वक प्राप्त हुई!</span><span data-lang="te">బుకింగ్ విజయవంతంగా అందింది!</span><span data-lang="ml">ബുക്കിംഗ് വിജയകരമായി ലഭിച്ചു!</span></h4>
+            <p><span data-lang="ta">குறிப்பிட்ட எண்ணில் விரைவில் தொடர்பு கொள்வோம். நன்றி!</span><span data-lang="en">We will contact you at the provided number shortly. Thank you!</span><span data-lang="hi">जल्द ही दिए गए नंबर पर संपर्क किया जाएगा। धन्यवाद!</span><span data-lang="te">త్వరలో మీ నంబర్‌లో సంప్రదిస్తాం. ధన్యవాదాలు!</span><span data-lang="ml">ഉടൻ ബന്ധപ്പെടും. നന്ദി!</span></p>
+          </div>
+          <p class="cf-note">
+            <span data-lang="ta">* பரிகார பூஜைகளுக்கு முன் அனுமதி அவசியம். அனைத்து பூசைகளும் கட்டணமில்லாமல் நடைபெறும்.</span>
+            <span data-lang="en">* Prior permission required for parihara pujas. All pujas are free of charge.</span>
+            <span data-lang="hi">* परिहार पूजाओं के लिए अनुमति आवश्यक। सभी पूजाएं निःशुल्क हैं।</span>
+            <span data-lang="te">* పరిహార పూజలకు అనుమతి అవసరం. అన్ని పూజలు ఉచితం.</span>
+            <span data-lang="ml">* പരിഹാര പൂജകൾക്ക് അനുമതി ആവശ്യം. എല്ലാ പൂജകളും സൗജന്യം.</span>
+          </p>
+        </div>
+
+        <!-- TAB 2: MESSAGE -->
+        <div class="form-panel" id="panel-message">
+          <div id="msgFormInner">
+            <div class="cf-row">
+              <div class="cf-group">
+                <label><i class="bi bi-person-fill"></i> <span data-lang="ta">பெயர்</span><span data-lang="en">Name</span><span data-lang="hi">नाम</span><span data-lang="te">పేరు</span><span data-lang="ml">പേര്</span></label>
+                <input type="text" id="msgName" placeholder="Your name">
+              </div>
+              <div class="cf-group">
+                <label><i class="bi bi-telephone-fill"></i> <span data-lang="ta">தொலைபேசி</span><span data-lang="en">Phone</span><span data-lang="hi">फ़ोन</span><span data-lang="te">ఫోన్</span><span data-lang="ml">ഫോൺ</span></label>
+                <input type="tel" id="msgPhone" placeholder="+91 XXXXX XXXXX">
+              </div>
+            </div>
+            <div class="cf-group">
+              <label><i class="bi bi-tag-fill"></i> <span data-lang="ta">விஷயம்</span><span data-lang="en">Subject</span><span data-lang="hi">विषय</span><span data-lang="te">విషయం</span><span data-lang="ml">വിഷയം</span></label>
+              <select id="msgSubject">
+                <option value="">-- Select Subject --</option>
+                <option>General Enquiry / பொது கேள்வி</option>
+                <option>Kula Deivam Guidance / குலதெய்வம் வழிகாட்டல்</option>
+                <option>Parihara Guidance / பரிகார வழிகாட்டல்</option>
+                <option>Donation / நன்கொடை</option>
+                <option>Festival Information / திருவிழா தகவல்</option>
+                <option>Other / மற்றவை</option>
+              </select>
+            </div>
+            <div class="cf-group">
+              <label><i class="bi bi-chat-text-fill"></i> <span data-lang="ta">செய்தி</span><span data-lang="en">Message</span><span data-lang="hi">संदेश</span><span data-lang="te">సందేశం</span><span data-lang="ml">സന്ദേശം</span></label>
+              <textarea id="msgBody" placeholder="Write your message here…" style="min-height:130px;"></textarea>
+            </div>
+            <button class="cf-submit" onclick="submitMessage()">
+              <i class="bi bi-envelope-fill"></i>
+              <span data-lang="ta">செய்தி அனுப்பு</span>
+              <span data-lang="en">Send Message</span>
+              <span data-lang="hi">संदेश भेजें</span>
+              <span data-lang="te">సందేశం పంపు</span>
+              <span data-lang="ml">സന്ദേശം അയക്കൂ</span>
+            </button>
+          </div>
+          <div class="cf-success" id="msgSuccess">
+            <i class="bi bi-check-circle-fill" style="color:var(--teal2)"></i>
+            <h4><span data-lang="ta">செய்தி அனுப்பப்பட்டது!</span><span data-lang="en">Message Sent!</span><span data-lang="hi">संदेश भेजा गया!</span><span data-lang="te">సందేశం పంపబడింది!</span><span data-lang="ml">സന്ദേശം അയച്ചു!</span></h4>
+            <p><span data-lang="ta">விரைவில் தொடர்பு கொள்வோம். நன்றி!</span><span data-lang="en">We will get back to you shortly. Thank you!</span><span data-lang="hi">जल्द ही वापस संपर्क करेंगे। धन्यवाद!</span><span data-lang="te">త్వరలో సంప్రదిస్తాం. ధన్యవాదాలు!</span><span data-lang="ml">ഉടൻ ബന്ധപ്പെടും. നന്ദി!</span></p>
+          </div>
+        </div>
+
+        <!-- TAB 3: DIRECTIONS -->
+        <div class="form-panel" id="panel-direction">
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div class="cf-group">
+              <label><i class="bi bi-geo-alt-fill"></i> <span data-lang="ta">உங்கள் இடத்திலிருந்து வழி</span><span data-lang="en">Get Directions From Your Location</span><span data-lang="hi">अपने स्थान से मार्ग पाएं</span><span data-lang="te">మీ స్థానం నుండి దిశలు</span><span data-lang="ml">നിങ്ങളുടെ ലൊക്കേഷനിൽ നിന്ന് ദിശകൾ</span></label>
+              <input type="text" id="fromLocation" placeholder="Enter your city or area…">
+            </div>
+            <a class="cf-submit" href="https://maps.google.com/?q=Thanakkankulam+Madurai+Temple" target="_blank" style="text-decoration:none; margin-top:0;">
+              <i class="bi bi-map-fill"></i>
+              <span data-lang="ta">Google Maps-ல் திற</span>
+              <span data-lang="en">Open in Google Maps</span>
+              <span data-lang="hi">Google Maps में खोलें</span>
+              <span data-lang="te">Google Maps లో తెరవండి</span>
+              <span data-lang="ml">Google Maps-ൽ തുറക്കൂ</span>
+            </a>
+
+            <div style="background:var(--gold-pale); border:1px solid var(--border); border-radius:12px; padding:20px 18px;">
+              <div style="font-family:'Cinzel',serif; font-size:11px; font-weight:700; color:var(--gold); letter-spacing:1px; text-transform:uppercase; margin-bottom:12px; display:flex; align-items:center; gap:6px;">
+                <i class="bi bi-signpost-2"></i>
+                <span data-lang="ta">வழி மைல்கற்கள்</span><span data-lang="en">Key Landmarks</span><span data-lang="hi">मुख्य मील के पत्थर</span><span data-lang="te">ముఖ్య మైలురాళ్ళు</span><span data-lang="ml">പ്രധാന ലാൻഡ്‌മാർക്കുകൾ</span>
+              </div>
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:10px;">
+                <li style="display:flex; gap:10px; align-items:flex-start; font-family:'Raleway',sans-serif; font-size:12.5px; color:var(--teal); font-weight:600;">
+                  <i class="bi bi-circle-fill" style="color:var(--gold); font-size:0.5rem; margin-top:5px; flex-shrink:0;"></i>
+                  <span data-lang="ta">திருமங்கலம் — திண்டுக்கல் நான்கு வழி சாலையில்</span><span data-lang="en">On Thirumangalam–Dindigul Four-Lane Highway</span><span data-lang="hi">थिरुमंगलम–दिंडिगुल फोर-लेन हाइवे पर</span><span data-lang="te">థిరుమంగలం–దిండిగల్ ఫోర్-లేన్ హైవేపై</span><span data-lang="ml">തിരുമംഗലം–ദിണ്ടിക്കൽ ഫോർ-ലേൻ ഹൈവേയിൽ</span>
+                </li>
+                <li style="display:flex; gap:10px; align-items:flex-start; font-family:'Raleway',sans-serif; font-size:12.5px; color:var(--teal); font-weight:600;">
+                  <i class="bi bi-circle-fill" style="color:var(--gold); font-size:0.5rem; margin-top:5px; flex-shrink:0;"></i>
+                  <span data-lang="ta">ஆஸ்டின்பட்டி பிரிவு, தனக்கன்குளம்</span><span data-lang="en">Austinpatti Division, Thanakkankulam</span><span data-lang="hi">ऑस्टिनपट्टी डिवीज़न, थनक्कन्कुलम</span><span data-lang="te">ఆస్టిన్‌పట్టి డివిజన్, థనక్కన్‌కులం</span><span data-lang="ml">ഓസ്റ്റിൻപട്ടി ഡിവിഷൻ, തനക്കൻകുളം</span>
+                </li>
+                <li style="display:flex; gap:10px; align-items:flex-start; font-family:'Raleway',sans-serif; font-size:12.5px; color:var(--teal); font-weight:600;">
+                  <i class="bi bi-circle-fill" style="color:var(--gold); font-size:0.5rem; margin-top:5px; flex-shrink:0;"></i>
+                  <span data-lang="ta">மதுரை நகரிலிருந்து சுமார் 25 கி.மீ</span><span data-lang="en">Approx. 25 km from Madurai city</span><span data-lang="hi">मदुरई शहर से लगभग 25 किमी</span><span data-lang="te">మదురై నగరం నుండి సుమారు 25 కి.మీ</span><span data-lang="ml">മധുര നഗരത്തിൽ നിന്ന് ഏകദേശം 25 കി.മീ</span>
+                </li>
+              </ul>
+            </div>
+
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="tel:+918012709645" class="connect-btn connect-btn-call" style="flex:1; justify-content:center; min-width:140px;">
+                <i class="bi bi-telephone-fill"></i>
+                <span data-lang="ta">வழி கேட்க அழைக்கவும்</span>
+                <span data-lang="en">Call for Directions</span>
+                <span data-lang="hi">मार्ग के लिए कॉल करें</span>
+                <span data-lang="te">దిశకు కాల్ చేయండి</span>
+                <span data-lang="ml">ദിശ ചോദിക്കാൻ വിളിക്കൂ</span>
+              </a>
+              <!-- <a href="https://wa.me/918012709645" target="_blank" class="connect-btn connect-btn-wa" style="flex:1; justify-content:center; min-width:140px;">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /form-card -->
+
+  </div>
+</section>
+
+<!-- ═══════════════ MAP SECTION ═══════════════ -->
+<section class="map-section">
+  <div class="map-section-inner">
+    <div class="map-header reveal">
+      <div class="section-eyebrow">
+        <span data-lang="ta">நிலை &amp; வழிகாட்டல்</span>
+        <span data-lang="en">Location &amp; Directions</span>
+        <span data-lang="hi">स्थान &amp; दिशा</span>
+        <span data-lang="te">స్థానం &amp; దిశలు</span>
+        <span data-lang="ml">സ്ഥാനവും ദിശകളും</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="ta">ஆலயத்தை எப்படி அடைவது</span>
+        <span data-lang="en">How to Reach the Temple</span>
+        <span data-lang="hi">मंदिर कैसे पहुंचें</span>
+        <span data-lang="te">ఆలయాన్ని ఎలా చేరుకోవాలి</span>
+        <span data-lang="ml">ക്ഷേത്രത്തിലെത്തുന്നത് എങ്ങനെ</span>
+      </h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="map-grid reveal">
+      <!-- Left info panel -->
+      <div class="map-info-panel">
+        <div class="map-info-card">
+          <div class="map-info-title"><i class="bi bi-signpost-2-fill"></i>
+            <span data-lang="ta">வழிகாட்டல்</span>
+            <span data-lang="en">Directions</span>
+            <span data-lang="hi">मार्ग</span>
+            <span data-lang="te">దిశలు</span>
+            <span data-lang="ml">ദിശകൾ</span>
+          </div>
+          <ul class="map-directions-list">
+            <li><i class="bi bi-arrow-right-circle-fill"></i>
+              <span>
+                <span data-lang="ta">மதுரை → திருமங்கலம் → ஆஸ்டின்பட்டி பிரிவு</span>
+                <span data-lang="en">Madurai → Thirumangalam → Austinpatti Division</span>
+                <span data-lang="hi">मदुरई → थिरुमंगलम → ऑस्टिनपट्टी</span>
+                <span data-lang="te">మదురై → థిరుమంగలం → ఆస్టిన్‌పట్టి</span>
+                <span data-lang="ml">മധുര → തിരുമംഗലം → ഓസ്റ്റിൻപട്ടി</span>
+              </span>
+            </li>
+            <li><i class="bi bi-arrow-right-circle-fill"></i>
+              <span>
+                <span data-lang="ta">திண்டுக்கல் → திருமங்கலம் → தனக்கன்குளம்</span>
+                <span data-lang="en">Dindigul → Thirumangalam → Thanakkankulam</span>
+                <span data-lang="hi">दिंडिगुल → थिरुमंगलम → थनक्कन्कुलम</span>
+                <span data-lang="te">దిండిగల్ → థిరుమంగలం → థనక్కన్‌కులం</span>
+                <span data-lang="ml">ദിണ്ടിക്കൽ → തിരുമംഗലം → തനക്കൻകുളം</span>
+              </span>
+            </li>
+            <li><i class="bi bi-telephone-fill"></i>
+              <span>
+                <span data-lang="ta">தெளிவான வழிகாட்டலுக்கு: +91 80127 09645</span>
+                <span data-lang="en">For clear directions call: +91 80127 09645</span>
+                <span data-lang="hi">स्पष्ट मार्ग के लिए: +91 80127 09645</span>
+                <span data-lang="te">స్పష్టమైన దిశల కోసం: +91 80127 09645</span>
+                <span data-lang="ml">വ്യക്തമായ ദിശകൾക്ക്: +91 80127 09645</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="map-info-card">
+          <div class="map-info-title"><i class="bi bi-clock-fill"></i>
+            <span data-lang="ta">பூசை நேரம்</span>
+            <span data-lang="en">Puja Schedule</span>
+            <span data-lang="hi">पूजा समय</span>
+            <span data-lang="te">పూజ సమయం</span>
+            <span data-lang="ml">പൂജ ഷെഡ്യൂൾ</span>
+          </div>
+          <div class="map-hours-grid">
+            <div class="map-hours-row">
+  <span class="map-hours-day">
+    <span data-lang="ta">நடை திறக்கும் நேரம்</span>
+    <span data-lang="en">Gate Hours</span>
+    <span data-lang="hi">प्रवेश समय</span>
+    <span data-lang="te">గేటు సమయం</span>
+    <span data-lang="ml">ഗേറ്റ് സമയം</span>
+  </span>
+  <span class="map-hours-time">
+    <span data-lang="ta">காலை 9.30 – மாலை 6.00</span>
+    <span data-lang="en">9:30 AM – 6:00 PM</span>
+    <span data-lang="hi">9:30 – 6:00</span>
+    <span data-lang="te">9:30 – 6:00</span>
+    <span data-lang="ml">9:30 – 6:00</span>
+  </span>
+</div>
+            <div class="map-hours-row">
+              <span class="map-hours-day"><span data-lang="ta">பௌர்ணமி</span><span data-lang="en">Pournami</span><span data-lang="hi">पौर्णमि</span><span data-lang="te">పౌర్ణమి</span><span data-lang="ml">പൗർണ്ണമി</span></span>
+              <span class="map-hours-time"><span data-lang="ta">விடியல் முதல்</span><span data-lang="en">From dawn</span><span data-lang="hi">भोर से</span><span data-lang="te">తెల్లవారు నుండి</span><span data-lang="ml">പ്രഭാതം മുതൽ</span></span>
+            </div>
+            <div class="map-hours-row">
+              <span class="map-hours-day"><span data-lang="ta">அமாவாசை</span><span data-lang="en">Amavasai</span><span data-lang="hi">अमावस्या</span><span data-lang="te">అమావాస్య</span><span data-lang="ml">അമാവാസ്യ</span></span>
+              <span class="map-hours-time"><span data-lang="ta">விடியல் முதல்</span><span data-lang="en">From dawn</span><span data-lang="hi">भोर से</span><span data-lang="te">తెల్లవారు నుండి</span><span data-lang="ml">പ്രഭാതം മുതൽ</span></span>
+            </div>
+            <div class="map-hours-row">
+              <span class="map-hours-day"><span data-lang="ta">ஆடி 18</span><span data-lang="en">Aadi 18</span><span data-lang="hi">आदि 18</span><span data-lang="te">ఆది 18</span><span data-lang="ml">ആടി 18</span></span>
+              <span class="map-hours-time"><span data-lang="ta">சிறப்பு திருவிழா</span><span data-lang="en">Grand Festival</span><span data-lang="hi">महोत्सव</span><span data-lang="te">మహోత్సవం</span><span data-lang="ml">മഹോത്സവം</span></span>
+            </div>
+            <div class="map-hours-row">
+              <span class="map-hours-day"><span data-lang="ta">சிவராத்திரி</span><span data-lang="en">Sivaratri</span><span data-lang="hi">शिवरात्रि</span><span data-lang="te">శివరాత్రి</span><span data-lang="ml">ശിവരാത്രി</span></span>
+              <span class="map-hours-time"><span data-lang="ta">இரவு முழுவதும்</span><span data-lang="en">All Night</span><span data-lang="hi">सारी रात</span><span data-lang="te">రాత్రంతా</span><span data-lang="ml">രാത്രി മുഴുവൻ</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Map iframe -->
+      <div class="map-frame-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0!2d77.95!3d9.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnMTIuMCJOIDc3wrA1NycwMC4wIkU!5e0!3m2!1sen!2sin!4v1617000000000!5m2!1sen!2sin"
+          allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Sri Kaar Irul Kanapadai Bhadrakali Amman Temple Location">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ DIVIDER ═══════════════ -->
+<div class="contact-divider">
+  <div class="contact-divider-inner">
+    <blockquote>
+      <span data-lang="ta">"அன்னையை நேரில் தரிசிப்பதற்கு எந்த நாளும், எந்த நேரமும் தகுந்த நாளே"</span>
+      <span data-lang="en">"Any day, any moment is the right time to seek the Mother's divine presence"</span>
+      <span data-lang="hi">"कोई भी दिन, कोई भी पल माता के दर्शन का उचित समय है"</span>
+      <span data-lang="te">"ఏ రోజైనా, ఏ సమయంలోనైనా అమ్మను దర్శించుకోవడానికి సరైన వేళే"</span>
+      <span data-lang="ml">"ഏത് ദിനവും, ഏത് നിമിഷവും അമ്മ ദർശനത്തിന് അനുയോജ്യം"</span>
+    </blockquote>
+    <cite>— ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில், மதுரை</cite>
+  </div>
+</div>
+
+<!-- ═══════════════ FAQ SECTION ═══════════════ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="reveal" style="text-align:center; margin-bottom:10px;">
+      <div class="section-eyebrow" style="justify-content:center;">
+        <span data-lang="ta">அடிக்கடி கேட்கப்படும் கேள்விகள்</span>
+        <span data-lang="en">Frequently Asked Questions</span>
+        <span data-lang="hi">अक्सर पूछे जाने वाले प्रश्न</span>
+        <span data-lang="te">తరచుగా అడిగే ప్రశ్నలు</span>
+        <span data-lang="ml">പതിവ് ചോദ്യങ്ങൾ</span>
+      </div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-lang="ta">உங்கள் கேள்விகளுக்கு பதில்</span>
+        <span data-lang="en">Answers to Your Questions</span>
+        <span data-lang="hi">आपके प्रश्नों के उत्तर</span>
+        <span data-lang="te">మీ ప్రశ్నలకు సమాధానాలు</span>
+        <span data-lang="ml">നിങ്ങളുടെ ചോദ്യങ്ങൾക്ക് ഉത്തരങ്ങൾ</span>
+      </h2>
+      <div class="section-rule center"></div>
+    </div>
+    <div class="faq-grid" id="faqGrid">
+
+      <div class="faq-item reveal d1" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <div class="faq-question-text">
+            <span data-lang="ta" class="ta">அனைத்து பூசைகளும் உண்மையிலேயே கட்டணமின்றி நடைபெறுமா?</span>
+            <span data-lang="en">Are all pujas truly free of charge?</span>
+            <span data-lang="hi">क्या सभी पूजाएं वाकई निःशुल्क हैं?</span>
+            <span data-lang="te">అన్ని పూజలు నిజంగా ఉచితమా?</span>
+            <span data-lang="ml">എല്ലാ പൂജകളും ശരിക്കും സൗജന്യമോ?</span>
+          </div>
+          <div class="faq-toggle"><i class="bi bi-plus-lg"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>
+            <span data-lang="ta">ஆம். இந்த ஆலயத்தில் அனைத்து வழிபாடுகளும் பரிகாரங்களும் முற்றிலும் கட்டணமின்றி நடைபெறும். நன்கொடை கொடுக்க விரும்புவோர் கொடுக்கலாம் — ஆனால் அது கட்டாயமில்லை.</span>
+            <span data-lang="en">Yes. All worship services and parihara rituals at this temple are conducted completely free of charge. Donations are welcome but never compulsory.</span>
+            <span data-lang="hi">हाँ। इस मंदिर में सभी पूजाएं और परिहार पूर्णतः निःशुल्क हैं। दान स्वैच्छिक है।</span>
+            <span data-lang="te">అవును. ఈ ఆలయంలో అన్ని పూజలు మరియు పరిహారాలు పూర్తిగా ఉచితంగా నిర్వహించబడతాయి.</span>
+            <span data-lang="ml">അതെ. ഈ ക്ഷേത്രത്തിൽ എല്ലാ ആരാധനകളും പരിഹാരങ്ങളും പൂർണ്ണ സൗജന്യമാണ്. സംഭാവന ഐഛികം.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d2" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <div class="faq-question-text">
+            <span data-lang="ta" class="ta">குலதெய்வம் தெரியாவிட்டால் என்ன செய்வது?</span>
+            <span data-lang="en">What if I don't know my Kula Deivam?</span>
+            <span data-lang="hi">अगर मुझे कुलदेवता नहीं पता तो?</span>
+            <span data-lang="te">నాకు కులదేవత తెలియకపోతే ఏమి చేయాలి?</span>
+            <span data-lang="ml">കുലദേവത അറിയില്ലെങ്കിൽ?</span>
+          </div>
+          <div class="faq-toggle"><i class="bi bi-plus-lg"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>
+            <span data-lang="ta">இந்த ஆலயத்தில் குலதெய்வம் தெரியாதவர்களுக்கு சிறப்பு பூசை நடைபெறும். அன்னையின் அருளால் குலதெய்வம் இருக்கும் திசை மற்றும் இடம் சொப்பனத்தில் காண்பிக்கும். முன்பதிவு செய்தால் போதுமானது.</span>
+            <span data-lang="en">A special puja is conducted for those who do not know their ancestral deity. Through the Mother's grace, the direction and location of the Kula Deivam is revealed in a dream. Simply book in advance.</span>
+            <span data-lang="hi">जो लोग अपना कुलदेवता नहीं जानते, उनके लिए विशेष पूजा होती है। माता की कृपा से सपने में कुलदेवता का स्थान दिखाया जाता है।</span>
+            <span data-lang="te">కులదేవత తెలియనివారికి ప్రత్యేక పూజ నిర్వహించబడుతుంది. అమ్మ అనుగ్రహంతో స్వప్నంలో కులదేవత దిశ చూపించబడుతుంది.</span>
+            <span data-lang="ml">കുലദേവത അറിയാത്തവർക്ക് പ്രത്യേക പൂജ നടത്തപ്പെടുന്നു. അമ്മ അനുഗ്രഹത്തിൽ സ്വപ്നത്തിൽ കുലദേവതയുടെ ദിശ കാണിക്കുന്നു.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d3" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <div class="faq-question-text">
+            <span data-lang="ta" class="ta">ஜாதி மதம் பாராமல் அனைவரும் வரலாமா?</span>
+            <span data-lang="en">Is everyone welcome regardless of caste or religion?</span>
+            <span data-lang="hi">क्या जाति-धर्म से परे सभी आ सकते हैं?</span>
+            <span data-lang="te">కులమతభేదం లేకుండా అందరూ రావచ్చా?</span>
+            <span data-lang="ml">ജാതിമത ഭേദമില്ലാതെ ഏവർക്കും വരാമോ?</span>
+          </div>
+          <div class="faq-toggle"><i class="bi bi-plus-lg"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>
+            <span data-lang="ta">ஆம், நிச்சயமாக. இந்த ஆலயம் ஜாதி, மதம், மொழி வேறுபாடு இன்றி அனைவருக்கும் திறந்திருக்கிறது. அன்னையின் அருள் எல்லோருக்கும் சமம்.</span>
+            <span data-lang="en">Yes, absolutely. This temple is open to everyone regardless of caste, religion, or language. The Mother's grace belongs equally to all.</span>
+            <span data-lang="hi">हाँ, बिल्कुल। यह मंदिर जाति, धर्म, भाषा के भेद के बिना सभी के लिए खुला है।</span>
+            <span data-lang="te">అవును, తప్పకుండా. ఈ ఆలయం కులమతభేదం లేకుండా అందరికీ తెరచి ఉంది.</span>
+            <span data-lang="ml">അതെ, തീർച്ചയായും. ഈ ക്ഷേത്രം ജാതി-മത ഭേദമില്ലാതെ ഏവർക്കും തുറന്നതാണ്.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d4" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <div class="faq-question-text">
+            <span data-lang="ta" class="ta">பரிகார பூஜைக்கு முன் அனுமதி ஏன் தேவை?</span>
+            <span data-lang="en">Why is prior permission needed for parihara pujas?</span>
+            <span data-lang="hi">परिहार पूजा के लिए अनुमति क्यों ज़रूरी है?</span>
+            <span data-lang="te">పరిహార పూజకు ముందస్తు అనుమతి ఎందుకు అవసరం?</span>
+            <span data-lang="ml">പരിഹാര പൂജകൾക്ക് മുൻ അനുമതി ഏതിനു?</span>
+          </div>
+          <div class="faq-toggle"><i class="bi bi-plus-lg"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>
+            <span data-lang="ta">பரிகார பூஜைகள் தனிப்பட்ட ஆய்வு மற்றும் வழிகாட்டலுடன் நடைபெறும். எனவே முன்பதிவு மூலம் சரியான நேரத்தில் சரியான வழிகாட்டல் கிடைக்கும்.</span>
+            <span data-lang="en">Parihara pujas involve personal assessment and specific guidance. Prior booking ensures you receive proper attention and the right ritual at the right time.</span>
+            <span data-lang="hi">परिहार पूजाओं में व्यक्तिगत मूल्यांकन और विशेष मार्गदर्शन शामिल है। अग्रिम बुकिंग से सही समय पर सही सहायता मिलती है।</span>
+            <span data-lang="te">పరిహార పూజలలో వ్యక్తిగత మూల్యాంకనం మరియు నిర్దిష్ట మార్గదర్శకత్వం ఉంటుంది.</span>
+            <span data-lang="ml">പരിഹാര പൂജകൾ വ്യക്തിഗത വിലയിരുത്തൽ ഉൾക്കൊള്ളുന്നു. മുൻ ബുക്കിംഗ് ശരിയായ ശ്രദ്ധ ഉറപ്പാക്കുന്നു.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d5" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <div class="faq-question-text">
+            <span data-lang="ta" class="ta">ஆலயத்தை சாதாரண நாட்களில் தரிசிக்கலாமா?</span>
+            <span data-lang="en">Can I visit the temple on regular days?</span>
+            <span data-lang="hi">क्या सामान्य दिनों में मंदिर जा सकते हैं?</span>
+            <span data-lang="te">సాధారణ రోజులలో ఆలయాన్ని దర్శించవచ్చా?</span>
+            <span data-lang="ml">സാധാരണ ദിവസങ്ങളിൽ ക്ഷേത്രം സന്ദർശിക്കാമോ?</span>
+          </div>
+          <div class="faq-toggle"><i class="bi bi-plus-lg"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>
+            <span data-lang="ta">ஆம். சாதாரண தரிசனத்திற்கு எந்த நாளும் வரலாம். சிறப்பு பூசைகளுக்கு மட்டும் குறிப்பிட்ட நாட்களில் வர வேண்டும். முன்பதிவு இல்லாமல் வந்தாலும் வரவேற்கப்படுவீர்கள்.</span>
+            <span data-lang="en">Yes. You may come for a general darshan on any day. Special pujas are held on designated festival days. Walk-in visitors are always welcome.</span>
+            <span data-lang="hi">हाँ। सामान्य दर्शन के लिए किसी भी दिन आ सकते हैं। विशेष पूजाएं निर्धारित दिनों पर होती हैं। बिना बुकिंग के भी स्वागत है।</span>
+            <span data-lang="te">అవును. సాధారణ దర్శనానికి ఏ రోజైనా రావచ్చు. ప్రత్యేక పూజలు నిర్ణీత రోజులలో జరుగుతాయి.</span>
+            <span data-lang="ml">അതെ. സാധാരണ ദർശനത്തിന് ഏത് ദിവസവും വരാം. പ്രത്യേക പൂജകൾ നിശ്ചിത ദിവസങ്ങളിൽ. ബുക്കിംഗ് ഇല്ലാതെ വരുന്നവർക്കും സ്വാഗതം.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d6" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          <div class="faq-question-text">
+            <span data-lang="ta" class="ta">80G சான்றிதழ் என்றால் என்ன பயன்?</span>
+            <span data-lang="en">What is the benefit of the 80G certification?</span>
+            <span data-lang="hi">80G प्रमाण पत्र का क्या लाभ है?</span>
+            <span data-lang="te">80G సర్టిఫికేషన్ వల్ల ఏమి ప్రయోజనం?</span>
+            <span data-lang="ml">80G സർട്ടിഫിക്കേഷന്റെ ഗുണം എന്ത്?</span>
+          </div>
+          <div class="faq-toggle"><i class="bi bi-plus-lg"></i></div>
+        </div>
+        <div class="faq-answer">
+          <p>
+            <span data-lang="ta">80G சான்றிதழ் மூலம் இந்த ஆலயத்திற்கு நன்கொடை கொடுக்கும் நபர்கள் வருமான வரி தள்ளுபடி பெறலாம். 12AA சான்றிதழ் இந்த ஆலயத்தை அரசாங்கத்தால் அங்கீகரிக்கப்பட்ட நம்பகமான நிறுவனம் என்று உறுதிப்படுத்துகிறது.</span>
+            <span data-lang="en">Donations made to this temple under the 80G certification are eligible for income tax deductions. The 12AA certification confirms the temple's status as a government-recognised charitable trust.</span>
+            <span data-lang="hi">80G प्रमाण पत्र के तहत दान पर आयकर में छूट मिलती है। 12AA प्रमाण पत्र मंदिर की सरकारी मान्यता की पुष्टि करता है।</span>
+            <span data-lang="te">80G సర్టిఫికేషన్ కింద చేసే విరాళాలు ఆదాయపు పన్ను మినహాయింపుకు అర్హత పొందుతాయి.</span>
+            <span data-lang="ml">80G സർട്ടിഫിക്കേഷൻ പ്രകാരം ദൾ ചെയ്യുന്ന സംഭാവനകൾ ആദായ നികുതി ഇളവിന് അർഹമാണ്.</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-logo">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்<br>
+        <span style="font-size:12px; color:var(--cream); font-family:'Raleway',sans-serif">Sri Kaar Irul Kanapadai Bhadrakali Amman Temple</span>
+      </div>
+      <p class="footer-brand-sub">திருமங்கலம் டு திண்டுக்கல் நான்கு வழி சாலை, ஆஸ்டின்பட்டி பிரிவு, தனக்கன்குளம், மதுரை</p>
+      <div class="footer-trust"><i class="bi bi-patch-check-fill" style="color:var(--cream)"></i> Trust Reg: 51/2017 &bull; 12AA &bull; 80G</div>
+    <div class="footer-trust" style="margin-top:8px;">
+  <i class="bi bi-clock" style="color:var(--cream)"></i>
+  <span data-lang="ta">நடை திறக்கும் நேரம் : காலை 9.30 – மாலை 6.00</span>
+  <span data-lang="en">Gate Opening Hours: 9:30 AM – 6:00 PM</span>
+  <span data-lang="hi">प्रवेश द्वार समय: सुबह 9:30 – शाम 6:00</span>
+  <span data-lang="te">గేటు తెరిచే సమయం: ఉదయం 9:30 – సాయంత్రం 6:00</span>
+  <span data-lang="ml">ഗേറ്റ് തുറക്കുന്ന സമയം: രാവിലെ 9:30 – വൈകുന്നേരം 6:00</span>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+        <li><a href="deities.html"><i class="bi bi-chevron-right"></i> Deities</a></li>
+        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+        <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+        <li><a href="contact.html#booking"><i class="bi bi-chevron-right"></i> Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Puja Days</h4>
+      <ul>
+        <li><a href="index.html#pujadays"><i class="bi bi-moon"></i> Pournami</a></li>
+        <li><a href="index.html#pujadays"><i class="bi bi-circle"></i> Amavasai</a></li>
+        <li><a href="index.html#pujadays"><i class="bi bi-sun"></i> Aadi 18</a></li>
+        <li><a href="index.html#pujadays"><i class="bi bi-stars"></i> Masi Sivaratri</a></li>
+        <li><a href="index.html#pujadays"><i class="bi bi-flower1"></i> Panguni Uthiram</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <!-- <li><a href="tel:+918012709645"><i class="bi bi-telephone-fill"></i> +91 80127 09645</a></li>
+        <li><a href="https://wa.me/918012709645" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a></li> -->
+        <li><a href="contact.html"><i class="bi bi-geo-alt-fill"></i> Thanakkankulam, Madurai</a></li>
+        <li><a href="contact.html"><i class="bi bi-patch-check-fill"></i> Reg: 51/2017</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில், மதுரை. All rights reserved.</p>
+    <p>Developed by <a href="https://softwaredevelopmentandgraphicdesign.tech/" target="_blank" style="color:#C9920A; text-decoration:none;">SDGD</a></p>
+  </div>
+</footer>
+
+<!-- BOTTOM MOBILE NAV -->
+<nav class="bottom-nav">
+  <a href="index.html" class="bottom-nav-item">
+    <i class="bi bi-house-fill"></i>
+  </a>
+  <a href="about.html" class="bottom-nav-item">
+    <i class="bi bi-info-circle-fill"></i>
+  </a>
+  <a href="deities.html" class="bottom-nav-item">
+    <i class="bi bi-flower2"></i>
+  </a>
+  <a href="gallery.html" class="bottom-nav-item">
+    <i class="bi bi-images"></i>
+  </a>
+  <a href="contact.html" class="bottom-nav-item">
+    <i class="bi bi-telephone-fill" style="color:var(--deep)"></i>
+  </a>
+</nav>
+
+<!-- FLOATING BUTTONS -->
+<!-- <div class="float-group">
+  <a href="tel:+918012709645" class="float-btn float-call" title="Call Us"><i class="bi bi-telephone-fill"></i></a>
+  <a href="https://wa.me/918012709645" target="_blank" class="float-btn float-whatsapp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="float-btn float-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top"><i class="bi bi-chevron-up"></i></button>
+</div>
+ -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

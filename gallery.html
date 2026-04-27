@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில்</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;700;900&family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/script.css">
+
+</head>
+<body>
+
+<!-- TRUST MARQUEE BAR -->
+<div class="trust-bar">
+  <div class="trust-marquee" id="trustMarquee"></div>
+</div>
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('ta')">தமிழ்</button>
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+  <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+  <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+  <button class="lang-btn" onclick="setLang('ml')">മലയ</button>
+</div>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><i class="bi bi-flower1"></i></div>
+      <div class="nav-logo-text">
+        <div data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்</div>
+        <div data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Temple</div>
+        <div data-lang="hi">श्री भद्रकाळी अम्मन मंदिर</div>
+        <div data-lang="te">శ్రీ భద్రకాళి అమ్మన్ ఆలయం</div>
+        <div data-lang="ml">ശ്രീ ഭദ്രകാളി അമ്മൻ ക്ഷേത്രം</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+      <a href="about.html"><span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span></a>
+      <a href="deities.html"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></a>
+      <a href="gallery.html" style="color:var(--gold2)"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></a>
+      <a href="contact.html"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></a>
+      <a href="index.html#booking" class="nav-cta">
+        <span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span>
+      </a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+    <a href="about.html" onclick="toggleMenu()"><span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span></a>
+    <a href="deities.html" onclick="toggleMenu()"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></a>
+    <a href="gallery.html" onclick="toggleMenu()"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></a>
+    <a href="contact.html" onclick="toggleMenu()"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></a>
+    <a href="index.html#booking" onclick="toggleMenu()"><span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span></a>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<div class="gallery-hero">
+  <div class="gallery-hero-bg"></div>
+  <div class="gallery-hero-om">ॐ</div>
+  <div class="gallery-hero-content">
+    <div class="gallery-hero-breadcrumb">
+      <a href="index.html"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+      <span class="sep">›</span>
+      <span class="current"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></span>
+    </div>
+    <div class="gallery-hero-badge">
+      <i class="bi bi-images"></i>
+      <span data-lang="ta">தெய்வீக தரிசன படங்கள்</span>
+      <span data-lang="en">Divine Darshan Gallery</span>
+      <span data-lang="hi">दिव्य दर्शन</span>
+      <span data-lang="te">దివ్య దర్శనం</span>
+      <span data-lang="ml">ദിവ്യ ദർശനം</span>
+    </div>
+    <h1 class="gallery-hero-title">
+      <span data-lang="ta">படங்கள்</span>
+      <span data-lang="en">Sacred Gallery</span>
+      <span data-lang="hi">गैलरी</span>
+      <span data-lang="te">గ్యాలరీ</span>
+      <span data-lang="ml">ഗ്യാലറി</span>
+    </h1>
+    <p class="gallery-hero-subtitle">
+      <span data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளியம்மன் திருக்கோவிலின் தெய்வீக தரிசன படங்கள், திருவிழா நிகழ்வுகள் மற்றும் பூசை காட்சிகள்</span>
+      <span data-lang="en">Divine darshan images, festival moments, and sacred puja ceremonies of Sri Kaar Irul Kanapadai Bhadrakali Amman Temple</span>
+      <span data-lang="hi">दिव्य दर्शन, उत्सव क्षण और पवित्र पूजा समारोह</span>
+      <span data-lang="te">దివ్య దర్శన చిత్రాలు, ఉత్సవ క్షణాలు మరియు పవిత్ర పూజ వేడుకలు</span>
+      <span data-lang="ml">ദിവ്യ ദർശന ചിത്രങ്ങൾ, ഉത്സവ നിമിഷങ്ങൾ, പൂജ ചടങ്ങുകൾ</span>
+    </p>
+    <div class="gallery-hero-line"></div>
+  </div>
+  <div class="gallery-scroll-hint">
+    <i class="bi bi-chevron-double-down"></i>
+    <span>Scroll</span>
+  </div>
+</div>
+
+<!-- ═══════════════ STATS BAND ═══════════════ -->
+<div class="gallery-stats-band">
+  <div class="gallery-stats-inner">
+    <div class="gallery-stat-item">
+      <span class="gallery-stat-num" id="statTotal">9+</span>
+      <div class="gallery-stat-label"><span data-lang="ta">மொத்த படங்கள்</span><span data-lang="en">Total Images</span><span data-lang="hi">कुल चित्र</span><span data-lang="te">మొత్తం చిత్రాలు</span><span data-lang="ml">ആകെ ചിത്രങ്ങൾ</span></div>
+    </div>
+    <div class="gallery-stat-item">
+      <span class="gallery-stat-num">9</span>
+      <div class="gallery-stat-label"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></div>
+    </div>
+    <div class="gallery-stat-item">
+      <span class="gallery-stat-num">6</span>
+      <div class="gallery-stat-label"><span data-lang="ta">திருவிழாக்கள்</span><span data-lang="en">Festivals</span><span data-lang="hi">उत्सव</span><span data-lang="te">పండుగలు</span><span data-lang="ml">ഉത്സവങ്ങൾ</span></div>
+    </div>
+    <div class="gallery-stat-item">
+      <span class="gallery-stat-num">2024</span>
+      <div class="gallery-stat-label"><span data-lang="ta">குடமுழுக்கம்</span><span data-lang="en">Kumbhabhishekam</span><span data-lang="hi">कुंभाभिषेकम</span><span data-lang="te">కుంభాభిషేకం</span><span data-lang="ml">കുംഭാഭിഷേകം</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ FILTER BAR ═══════════════ -->
+<div class="gallery-filter-section">
+  <div class="gallery-filter-inner">
+    <div class="gallery-filter-top">
+      <div class="gallery-filter-heading">
+        <span data-lang="ta">தேடுக &amp; வடிகட்டுக</span>
+        <span data-lang="en">Browse &amp; Filter</span>
+        <span data-lang="hi">खोजें &amp; फ़िल्टर करें</span>
+        <span data-lang="te">శోధించు &amp; వడపోయి</span>
+        <span data-lang="ml">തിരയുക &amp; ഫിൽട്ടർ ചെയ്യുക</span>
+      </div>
+      <div class="gallery-view-toggle">
+        <button class="view-btn active" onclick="setView('masonry')" title="Masonry"><i class="bi bi-grid-3x3-gap"></i></button>
+        <button class="view-btn" onclick="setView('grid2')" title="2-Column"><i class="bi bi-grid-1x2"></i></button>
+        <button class="view-btn" onclick="setView('grid4')" title="4-Column"><i class="bi bi-grid-3x3"></i></button>
+      </div>
+    </div>
+    <div class="filter-tabs" id="filterTabs">
+      <button class="filter-tab active" data-filter="all" onclick="filterGallery('all', this)">
+        <i class="bi bi-grid-fill"></i>
+        <span data-lang="ta">அனைத்தும்</span><span data-lang="en">All</span><span data-lang="hi">सभी</span><span data-lang="te">అన్నీ</span><span data-lang="ml">എല്ലാം</span>
+        <span class="filter-tab-count" id="countAll">9</span>
+      </button>
+      <button class="filter-tab" data-filter="deities" onclick="filterGallery('deities', this)">
+        <i class="bi bi-flower1"></i>
+        <span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span>
+        <span class="filter-tab-count" id="countDeities">5</span>
+      </button>
+      <button class="filter-tab" data-filter="temple" onclick="filterGallery('temple', this)">
+        <i class="bi bi-building"></i>
+        <span data-lang="ta">ஆலயம்</span><span data-lang="en">Temple</span><span data-lang="hi">मंदिर</span><span data-lang="te">ఆలయం</span><span data-lang="ml">ക്ഷേത്രം</span>
+        <span class="filter-tab-count" id="countTemple">2</span>
+      </button>
+      <!-- <button class="filter-tab" data-filter="festival" onclick="filterGallery('festival', this)">
+        <i class="bi bi-stars"></i>
+        <span data-lang="ta">திருவிழா</span><span data-lang="en">Festival</span><span data-lang="hi">उत्सव</span><span data-lang="te">ఉత్సవం</span><span data-lang="ml">ഉത്സവം</span>
+        <span class="filter-tab-count" id="countFestival">2</span>
+      </button> -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MAIN GALLERY ═══════════════ -->
+<section class="gallery-main-section">
+  <div class="gallery-main-inner">
+
+    <!-- Section: Deities -->
+    <div class="gallery-section-label" id="labelDeities">
+      <div class="gallery-section-label-line"></div>
+      <div class="gallery-section-label-text">
+        <span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Sacred Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span>
+      </div>
+      <div class="gallery-section-label-line"></div>
+    </div>
+
+    <div class="gallery-grid-masonry" id="galleryGrid">
+
+      <!-- 1. Bhadrakali Amman — FEATURED -->
+      <div class="gallery-card featured reveal d1" data-category="deities" data-index="0">
+        <div class="diya-badge"><i class="bi bi-fire"></i> மூலவர்</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/kaarirulbathrakali.jpeg" alt="Sri Kaar Irul Ganapadai Bhadrakali Amman" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">மூலவர்</span><span data-lang="en">Principal Deity</span><span data-lang="hi">मूलवर</span><span data-lang="te">మూలవర్</span><span data-lang="ml">മൂലവർ</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன்</span><span data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Amman</span><span data-lang="hi">श्री भद्रकाळी अम्मन</span><span data-lang="te">శ్రీ భద్రకాళి అమ్మన్</span><span data-lang="ml">ശ്രീ ഭദ്രകാളി അമ്മൻ</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-category" style="color:var(--gold2)"><span data-lang="ta">மூலவர்</span><span data-lang="en">Principal Deity</span><span data-lang="hi">मूलवर</span><span data-lang="te">మూలవర్</span><span data-lang="ml">മൂലവർ</span></div>
+            <div class="gallery-card-title" style="font-size:15px; margin-bottom:0"><span data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன்</span><span data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Amman</span><span data-lang="hi">श्री भद्रकाळी अम्मन</span><span data-lang="te">శ్రీ భద్రకాళి అమ్మన్</span><span data-lang="ml">ശ്രീ ഭദ്രകാളി അമ്മൻ</span></div>
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">உலகில் வேறு எங்கும் தரிசிக்க முடியாத ஆதி வடிவம்</span><span data-lang="en">A divine form found nowhere else in the world</span><span data-lang="hi">विश्व में अद्वितीय आदि स्वरूप</span><span data-lang="te">ప్రపంచంలో మరెక్కడా లేని ఆది స్వరూపం</span><span data-lang="ml">ലോകത്ത് മറ്റെങ്ങും ഇല്ലാത്ത ആദി സ്വരൂപം</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(0, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+              <button class="gallery-action-btn"><i class="bi bi-share"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO CARD — first item -->
+<div class="gallery-card featured reveal d1" data-category="temple" data-index="vid1" onclick="openVideoLightbox()" style="cursor:pointer;">
+  <div class="diya-badge"><i class="bi bi-play-circle-fill"></i> <span data-lang="ta">வீடியோ</span><span data-lang="en">Video</span><span data-lang="hi">वीडियो</span><span data-lang="te">వీడియో</span><span data-lang="ml">വീഡിയോ</span></div>
+  <div class="gallery-card-zoom-icon"><i class="bi bi-play-circle"></i></div>
+
+  <!-- Replace the src with your actual video thumbnail image -->
+  <img src="assets/img/temple.jpg" alt="Temple Video" class="gallery-card-img" style="filter: brightness(0.75);">
+
+  <!-- Big play button overlay -->
+  <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:3;">
+    <div style="width:72px; height:72px; border-radius:50%; background:rgba(0,0,0,0.55); border:3px solid rgba(255,220,100,0.85); display:flex; align-items:center; justify-content:center;">
+      <i class="bi bi-play-fill" style="font-size:30px; color:#f5c842; margin-left:4px;"></i>
+    </div>
+  </div>
+
+  <div class="gallery-card-label-wrap">
+    <div class="gallery-card-category">
+      <span data-lang="ta">ஆலய வீடியோ</span><span data-lang="en">Temple Video</span><span data-lang="hi">मंदिर वीडियो</span><span data-lang="te">ఆలయ వీడియో</span><span data-lang="ml">ക്ഷേത്ര വീഡിയോ</span>
+    </div>
+    <div class="gallery-card-title">
+      <span data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில்</span>
+      <span data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Temple</span>
+      <span data-lang="hi">श्री भद्रकाळी अम्मन मंदिर</span>
+      <span data-lang="te">శ్రీ భద్రకాళి అమ్మన్ ఆలయం</span>
+      <span data-lang="ml">ശ്രീ ഭദ്രകാളി അമ്മൻ ക്ഷേത്രം</span>
+    </div>
+  </div>
+</div>
+
+      <!-- 2. Vinayagar -->
+      <div class="gallery-card tall reveal d2" data-category="deities" data-index="1">
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/vinayagar.jpg" alt="Navagraha Vinayagar" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">விநாயகர்</span><span data-lang="en">Vinayagar</span><span data-lang="hi">विनायगर</span><span data-lang="te">వినాయగర్</span><span data-lang="ml">വിനായകർ</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">நவகிரக விநாயகர்</span><span data-lang="en">Navagraha Vinayagar</span><span data-lang="hi">नवग्रह विनायगर</span><span data-lang="te">నవగ్రహ వినాయగర్</span><span data-lang="ml">നവഗ്രഹ വിനായകർ</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">ஒன்பது கிரகங்களின் அதிபதியாக விளங்கும் விநாயகர்</span><span data-lang="en">Lord of the nine planetary forces</span><span data-lang="hi">नव ग्रहों के स्वामी</span><span data-lang="te">నవ గ్రహాల అధిపతి</span><span data-lang="ml">നവ ഗ്രഹങ്ങളുടെ അധിപൻ</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(1, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Naga Bhootham -->
+      <div class="gallery-card medium reveal d3" data-category="deities" data-index="6">
+        <!-- <div class="diya-badge"><i class="bi bi-flower3"></i> <span data-lang="ta">திருவிழா</span><span data-lang="en">Festival</span><span data-lang="hi">उत्सव</span><span data-lang="te">ఉత్సవం</span><span data-lang="ml">ഉത്സവം</span></div> -->
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/vedhalam.jpg" alt="Naga Bhootham" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">நாக தெய்வம்</span><span data-lang="en">Serpent Deity</span><span data-lang="hi">नाग देवता</span><span data-lang="te">నాగ దేవత</span><span data-lang="ml">നാഗ ദേവത</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">நாக பூதம்</span><span data-lang="en">Naga Bhootham</span><span data-lang="hi">नाग भूतम</span><span data-lang="te">నాగ భూతం</span><span data-lang="ml">നാഗ ഭൂതം</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">நாக பூதம் — பாம்பு வடிவில் கோவிலை காக்கும் புனிதமான தெய்வீக சக்தி</span><span data-lang="en">Naga Bhootham — the sacred serpent spirit that guards and protects the temple</span><span data-lang="hi">नाग भूतम — सर्प रूप में मंदिर की रक्षा करने वाली पवित्र दिव्य शक्ति</span><span data-lang="te">నాగ భూతం — సర్ప రూపంలో దేవాలయాన్ని కాపాడే పవిత్ర దైవ శక్తి</span><span data-lang="ml">നാഗ ഭൂതം — സർപ്പ രൂപത്തിൽ ക്ഷേത്രം കാക്കുന്ന പവിത്രമായ ദൈവിക ശക്തി</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(6, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agni Bhootham -->
+      <div class="gallery-card medium reveal d3" data-category="deities" data-index="110">
+        <div class="diya-badge"><i class="bi bi-flower3"></i> <span data-lang="ta">திருவிழா</span><span data-lang="en">Festival</span><span data-lang="hi">उत्सव</span><span data-lang="te">ఉత్సవం</span><span data-lang="ml">ഉത്സवം</span></div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/vedhalamfemale.jpg" alt="Agni Bhootham" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">அக்கினி தெய்வம்</span><span data-lang="en">Fire Deity</span><span data-lang="hi">अग्नि देवता</span><span data-lang="te">అగ్ని దేవత</span><span data-lang="ml">അഗ്നി ദേവത</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">அக்கினி பூதம்</span><span data-lang="en">Agni Bhootham</span><span data-lang="hi">अग्नि भूतम</span><span data-lang="te">అగ్ని భూతం</span><span data-lang="ml">അഗ്നി ഭൂതം</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">அக்கினி பூதம் — நெருப்பு வடிவில் கோவிலை காக்கும் புனிதமான தெய்வீக சக்தி</span><span data-lang="en">Agni Bhootham — the sacred fire spirit that guards and purifies the temple</span><span data-lang="hi">अग्नि भूतम — अग्नि रूप में मंदिर की रक्षा और शुद्धि करने वाली पवित्र दिव्य शक्ति</span><span data-lang="te">అగ్ని భూతం — అగ్ని రూపంలో దేవాలయాన్ని కాపాడే మరియు శుద్ధి చేసే పవిత్ర దైవ శక్తి</span><span data-lang="ml">അഗ്നി ഭൂതം — അഗ്നി രൂപത്തിൽ ക്ഷേത്രം കാക്കുകയും ശുദ്ധീകരിക്കുകയും ചെയ്യുന്ന പവിത്ര ദൈവിക ശക്തി</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(110, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rasathala Vedali -->
+<div class="gallery-card tall reveal d4" data-category="deities" data-index="111">
+  <!-- <div class="diya-badge"><i class="bi bi-flower3"></i> <span data-lang="ta">திருவிழா</span><span data-lang="en">Festival</span><span data-lang="hi">उत्सव</span><span data-lang="te">ఉత్సవం</span><span data-lang="ml">ഉത്സവം</span></div> -->
+  <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+  <img src="assets/img/vedhafemale.jpg" alt="Rasathala Vedali" class="gallery-card-img">
+  <div class="gallery-card-label-wrap">
+    <div class="gallery-card-category">
+      <span data-lang="ta">பாதாள தெய்வம்</span>
+      <span data-lang="en">Nether Deity</span>
+      <span data-lang="hi">पाताल देवी</span>
+      <span data-lang="te">పాతాళ దేవత</span>
+      <span data-lang="ml">പാതാള ദേവത</span>
+    </div>
+    <div class="gallery-card-title">
+      <span data-lang="ta">ரசாதள வேதாளி</span>
+      <span data-lang="en">Rasathala Vedali</span>
+      <span data-lang="hi">रसातल वेताली</span>
+      <span data-lang="te">రసాతల వేతాళి</span>
+      <span data-lang="ml">രസാതല വേതാളി</span>
+    </div>
+  </div>
+  <div class="gallery-card-overlay">
+    <div class="gallery-card-overlay-content">
+      <div class="gallery-card-desc-overlay">
+        <span data-lang="ta">ரசாதள வேதாளி — ரசாதள உலகை ஆளும் உக்ர தேவி, பக்தர்களை தீய சக்திகளிலிருந்து காக்கும் பாதாள காவல் சக்தி</span>
+        <span data-lang="en">Rasathala Vedali — the fierce goddess ruling the Rasathala realm, protecting devotees from evil forces</span>
+        <span data-lang="hi">रसातल वेताली — रसातल लोक पर शासन करने वाली उग्र देवी, भक्तों को दुष्ट शक्तियों से बचाने वाली पाताल रक्षक</span>
+        <span data-lang="te">రసాతల వేతాళి — రసాతల లోకాన్ని పాలించే ఉగ్ర దేవి, భక్తులను దుష్ట శక్తుల నుండి కాపాడే పాతాళ కాపలా శక్తి</span>
+        <span data-lang="ml">രസാതല വേതാളി — രസാതല ലോകം ഭരിക്കുന്ന ഉഗ്ര ദേവി, ഭക്തരെ ദുഷ്ട ശക്തികളിൽ നിന്ന് കാക്കുന്ന പാതാള കാവൽ ശക്തി</span>
+      </div>
+      <div class="gallery-card-actions">
+        <button class="gallery-action-btn" onclick="openLightbox(111, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Thalatala Vedalam -->
+<div class="gallery-card tall reveal d4" data-category="deities" data-index="112">
+  <!-- <div class="diya-badge"><i class="bi bi-flower3"></i> <span data-lang="ta">திருவிழா</span><span data-lang="en">Festival</span><span data-lang="hi">उत्सव</span><span data-lang="te">ఉత్సవం</span><span data-lang="ml">ഉത്സവം</span></div> -->
+  <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+  <img src="assets/img/vedhamale.jpg" alt="Thalatala Vedalam" class="gallery-card-img">
+  <div class="gallery-card-label-wrap">
+    <div class="gallery-card-category">
+      <span data-lang="ta">பாதாள தெய்வம்</span>
+      <span data-lang="en">Nether Deity</span>
+      <span data-lang="hi">पाताल देवता</span>
+      <span data-lang="te">పాతాళ దేవత</span>
+      <span data-lang="ml">പാതാള ദേവത</span>
+    </div>
+    <div class="gallery-card-title">
+      <span data-lang="ta">தலாதள வேதாளம்</span>
+      <span data-lang="en">Thalatala Vedalam</span>
+      <span data-lang="hi">तलातल वेताळम</span>
+      <span data-lang="te">తలాతల వేతాళం</span>
+      <span data-lang="ml">തലാതല വേതാളം</span>
+    </div>
+  </div>
+  <div class="gallery-card-overlay">
+    <div class="gallery-card-overlay-content">
+      <div class="gallery-card-desc-overlay">
+        <span data-lang="ta">தலாதள வேதாளம் — தலாதள உலகில் வாழும் வீரமிக்க ஆவி சக்தி, இருளை விரட்டி பக்தர்களை காக்கும் மகாசக்தி</span>
+        <span data-lang="en">Thalatala Vedalam — the mighty spirit of the Thalatala realm, banishing darkness and shielding all devoted worshippers</span>
+        <span data-lang="hi">तलातल वेताळम — तलातल लोक की वीर आत्मा शक्ति, अंधकार दूर कर भक्तों की रक्षा करने वाली महाशक्ति</span>
+        <span data-lang="te">తలాతల వేతాళం — తలాతల లోకపు వీర ఆత్మ శక్తి, చీకటిని తరిమి భక్తులను కాపాడే మహాశక్తి</span>
+        <span data-lang="ml">തലാതല വേതാളം — തലാതല ലോകത്തിലെ വീര ആത്മ ശക്തി, ഇരുൾ തുരത്തി ഭക്തരെ കാക്കുന്ന മഹാശക്തി</span>
+      </div>
+      <div class="gallery-card-actions">
+        <button class="gallery-action-btn" onclick="openLightbox(112, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- 3. Sapta Mathas -->
+      <div class="gallery-card medium reveal d3" data-category="deities" data-index="2">
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/Sapta Mathas.jpg" alt="Sapta Mathas" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">சப்த மாதாக்கள்</span><span data-lang="en">Sapta Mathas</span><span data-lang="hi">सप्त माताएं</span><span data-lang="te">సప్త మాతలు</span><span data-lang="ml">സപ്ത മാതൃക്കൾ</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">ஏழு தாய் தெய்வங்கள்</span><span data-lang="en">The Seven Divine Mothers</span><span data-lang="hi">सात दिव्य माताएं</span><span data-lang="te">ఏడు దివ్య మాతలు</span><span data-lang="ml">ഏഴ് ദിവ്യ മാതൃദേവതകൾ</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">ஏழு தாய் தெய்வங்கள் — அனைத்து நலன்களையும் அருளும் சக்திகள்</span><span data-lang="en">Seven divine mothers granting all blessings</span><span data-lang="hi">सातों दिव्य माताएं सभी कल्याण प्रदान करती हैं</span><span data-lang="te">ఏడు దివ్య మాతలు — అన్ని శుభాలను అనుగ్రహించే శక్తులు</span><span data-lang="ml">ഏഴ് ദിവ്യ അമ്മദേവതകൾ — സർവ്വ ഐശ്വര്യം നൽകുന്നവർ</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(2, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Bhairava — TALL -->
+      <div class="gallery-card tall reveal d4" data-category="deities" data-index="3">
+  <div class="gallery-card-zoom-icon">
+    <i class="bi bi-arrows-fullscreen"></i>
+  </div>
+
+  <img src="assets/img/bhairavar.jpeg" alt="Unmatha Bhairavar" class="gallery-card-img">
+
+  <div class="gallery-card-label-wrap">
+    <div class="gallery-card-category">
+      <span data-lang="ta">காவல் தெய்வம்</span>
+      <span data-lang="en">Guardian Deity</span>
+      <span data-lang="hi">रक्षक देवता</span>
+      <span data-lang="te">కాపలా దేవత</span>
+      <span data-lang="ml">കാവൽ ദേവൻ</span>
+    </div>
+
+    <div class="gallery-card-title">
+      <span data-lang="ta">உன்மத்த பைரவர்</span>
+      <span data-lang="en">Unmatha Bhairavar</span>
+      <span data-lang="hi">उन्मत्त भैरव</span>
+      <span data-lang="te">ఉన్మత్త భైరవ</span>
+      <span data-lang="ml">ഉന്മത്ത ഭൈരവൻ</span>
+    </div>
+  </div>
+
+  <div class="gallery-card-overlay">
+    <div class="gallery-card-overlay-content">
+      <div class="gallery-card-desc-overlay">
+        <span data-lang="ta">உன்மத்த பைரவர் — தீமைகளை அழித்து பக்தர்களை காக்கும் சக்தி வாய்ந்த காவல் தெய்வம்</span>
+        
+        <span data-lang="en">Unmatha Bhairavar — a fierce guardian who destroys negativity and protects devotees</span>
+        
+        <span data-lang="hi">उन्मत्त भैरव — बुराइयों का नाश कर भक्तों की रक्षा करने वाले शक्तिशाली रक्षक</span>
+        
+        <span data-lang="te">ఉన్మత్త భైరవుడు — దుష్ట శక్తులను నాశనం చేసి భక్తులను కాపాడే శక్తివంతమైన దేవుడు</span>
+        
+        <span data-lang="ml">ഉന്മത്ത ഭൈരവൻ — ദോഷങ്ങളെ നശിപ്പിച്ച് ഭക്തരെ കാക്കുന്ന ശക്തനായ ദേവൻ</span>
+      </div>
+
+      <div class="gallery-card-actions">
+        <button class="gallery-action-btn" onclick="openLightbox(3, event)">
+          <i class="bi bi-arrows-fullscreen"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- 5. Velapper -->
+      <div class="gallery-card medium reveal d5" data-category="deities" data-index="4">
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/Velapper.jpg" alt="Velapper Murugan" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">வேலப்பர்</span><span data-lang="en">Velapper</span><span data-lang="hi">वेलप्पर</span><span data-lang="te">వేలప్పర్</span><span data-lang="ml">വേലപ്പർ</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">வேல் ஏந்திய முருகன்</span><span data-lang="en">Velapper — Lord Murugan</span><span data-lang="hi">वेलप्पर — भगवान मुरुगन</span><span data-lang="te">వేలప్పర్ — మురుగన్</span><span data-lang="ml">വേലപ്പർ — ഭഗവാൻ മുരുഗൻ</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">வேல் ஏந்திய அழகிய முருகன் — ஆற்றல் மற்றும் வெற்றி தரும் தெய்வம்</span><span data-lang="en">Lord of strength and victory bearing the divine Vel</span><span data-lang="hi">दिव्य वेल धारक — शक्ति और विजय के देवता</span><span data-lang="te">దివ్య వేల్ ధారకుడు — శక్తి, విజయ దేవత</span><span data-lang="ml">ദിവ്യ വേൽ ധരിക്കുന്ന ശക്തി-വിജയ ദേവൻ</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(4, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIVIDER inside grid — section label for Temple -->
+      <div class="gallery-section-label" id="labelTemple" style="grid-column:1/-1; display:none; margin-top: 20px;">
+        <div class="gallery-section-label-line"></div>
+        <div class="gallery-section-label-text">
+          <span data-lang="ta">ஆலயம்</span><span data-lang="en">Temple</span><span data-lang="hi">मंदिर</span><span data-lang="te">ఆలయం</span><span data-lang="ml">ക്ഷേത്രം</span>
+        </div>
+        <div class="gallery-section-label-line"></div>
+      </div>
+
+      <!-- 6. Temple -->
+      <div class="gallery-card medium reveal d1" data-category="temple" data-index="5">
+        <div class="diya-badge"><i class="bi bi-building"></i> <span data-lang="ta">ஆலயம்</span><span data-lang="en">Temple</span><span data-lang="hi">मंदिर</span><span data-lang="te">ఆలయం</span><span data-lang="ml">ക്ഷേത്രം</span></div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/temple.jpg" alt="Temple View" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">ஆலய காட்சி</span><span data-lang="en">Temple View</span><span data-lang="hi">मंदिर दृश्य</span><span data-lang="te">ఆలయ దృశ్యం</span><span data-lang="ml">ക്ഷേത്ര ദൃശ്യം</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">திருக்கோவில் முகப்பு</span><span data-lang="en">Temple Entrance</span><span data-lang="hi">मंदिर का प्रवेश द्वार</span><span data-lang="te">ఆలయ ప్రవేశం</span><span data-lang="ml">ക്ഷേത്ര ഗോപുരം</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">ஸ்ரீ சக்ர விமானம் அமைந்த தேவலோக சிற்ப ஆலயம்</span><span data-lang="en">Sri Chakra Vimanam built in Devaloka Shilpa tradition</span><span data-lang="hi">देवलोक शिल्प में निर्मित श्री चक्र विमान</span><span data-lang="te">దేవలోక శిల్ప సంప్రదాయంలో శ్రీ చక్ర విమానం</span><span data-lang="ml">ദേവലോക ശില്പ ശ്രീ ചക്ര വിമാനം</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(5, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 8. Vana Pechi -->
+      <div class="gallery-card medium reveal d3" data-category="deities" data-index="7">
+        <div class="diya-badge"><i class="bi bi-flower3"></i> <span data-lang="ta">திருவிழா</span><span data-lang="en">Festival</span><span data-lang="hi">उत्सव</span><span data-lang="te">ఉత్సవం</span><span data-lang="ml">ഉत्सवം</span></div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/vanapechi.jpeg" alt="Vana Pechi" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">வன பேச்சி</span><span data-lang="en">Vana Pechi</span><span data-lang="hi">वन पेच्चि</span><span data-lang="te">వన పేచ్చి</span><span data-lang="ml">വന പേച്ചി</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">வன பேச்சியம்மன்</span><span data-lang="en">Vana Pechi Amman</span><span data-lang="hi">वन पेच्चि अम्मन</span><span data-lang="te">వన పేచ్చి అమ్మన్</span><span data-lang="ml">വന പേച്ചി അമ്മൻ</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">குழந்தைகள் மற்றும் குடும்பத்தை காக்கும் தெய்வம்</span><span data-lang="en">Protector of children and family well-being</span><span data-lang="hi">बच्चों और परिवार की रक्षक देवी</span><span data-lang="te">పిల్లలు మరియు కుటుంబాన్ని రక్షించే దేవత</span><span data-lang="ml">കുട്ടികളും കുടുംബവും കാക്കുന്ന ദേവത</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(7, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Jada Muneeswar -->
+      <div class="gallery-card medium reveal d4" data-category="deities" data-index="8">
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/jadamuneshwar.jpeg" alt="Jada Muneeswar" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">முனீஸ்வரன்</span><span data-lang="en">Muneeswar</span><span data-lang="hi">मुनीश्वर</span><span data-lang="te">మునీశ్వర్</span><span data-lang="ml">മുനീശ്വർ</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">ஜடா முனீஸ்வரன்</span><span data-lang="en">Jada Muneeswar</span><span data-lang="hi">जटा मुनीश्वर</span><span data-lang="te">జటా మునీశ్వర్</span><span data-lang="ml">ജടാ മുനീശ്വർ</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">ஞானம் மற்றும் முக்தி அருளும் முனிவர் தெய்வம்</span><span data-lang="en">The sage deity bestowing wisdom and liberation</span><span data-lang="hi">ज्ञान और मोक्ष देने वाले मुनि देवता</span><span data-lang="te">జ్ఞానం మరియు మోక్షం ఇచ్చే మునీ దేవత</span><span data-lang="ml">ജ്ഞാനവും മോക്ഷവും നൽകുന്ന മുനി ദേവൻ</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(8, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Malaiyal Karupasami -->
+      <div class="gallery-card medium reveal d5" data-category="deities" data-index="9">
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/malaiyalakarupu.jpeg" alt="Malaiyal Karupasami" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">கருப்பசாமி</span><span data-lang="en">Karupasami</span><span data-lang="hi">करुप्पस्वामी</span><span data-lang="te">కరుప్పస్వామి</span><span data-lang="ml">കരുപ്പ സ്വാമി</span></div>
+          <div class="gallery-card-title"><span data-lang="ta">மலையாள கருப்பசாமி</span><span data-lang="en">Malaiyal Karupasami</span><span data-lang="hi">मलैयाल करुप्पस्वामी</span><span data-lang="te">మలయాళ కరుప్పస్వామి</span><span data-lang="ml">മലയാള കരുപ്പ സ്വാമി</span></div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay"><span data-lang="ta">மலைகளின் அதிபதி — காவல் மற்றும் வளம் தரும் கருப்பசாமி</span><span data-lang="en">Lord of mountains — guardian and giver of abundance</span><span data-lang="hi">पहाड़ों के स्वामी — रक्षक और समृद्धिदाता</span><span data-lang="te">పర్వతాల అధిపతి — కాపలా మరియు సమృద్ధి ఇచ్చే దేవత</span><span data-lang="ml">മലകളുടെ അധിപൻ — കാവൽ നൽകുന്ന ദേവൻ</span></div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(9, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Empty state -->
+    <div class="gallery-empty" id="galleryEmpty">
+      <i class="bi bi-images"></i>
+      <p>No images found for this category.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ DASHA MAHA VIDYA GALLERY SECTION ═══════════════ -->
+<section class="gallery-main-section">
+  <div class="gallery-main-inner">
+
+    <!-- Section Label -->
+    <div class="gallery-section-label" id="labelDashaMahaVidya">
+      <div class="gallery-section-label-line"></div>
+      <div class="gallery-section-label-text">
+        <span data-lang="ta">தஷ மஹா வித்யா</span>
+        <span data-lang="en">Dasha Maha Vidya</span>
+        <span data-lang="hi">दश महाविद्या</span>
+        <span data-lang="te">దశ మహావిద్య</span>
+        <span data-lang="ml">ദശ മഹാവിദ്യ</span>
+      </div>
+      <div class="gallery-section-label-line"></div>
+    </div>
+
+    <div class="gallery-grid-masonry gal-grid" id="dashaMahaVidyaGrid">
+
+      <!-- #1 — Maha Kali -->
+      <div class="gallery-card tall reveal d1" data-category="deities" data-index="10">
+        <div class="diya-badge"><i class="bi bi-fire"></i> 1</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/mahakali.jpg" alt="Arulmigu Sri Maha Kali" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">தெய்வம்</span><span data-lang="en">Goddess</span><span data-lang="hi">देवी</span><span data-lang="te">దేవత</span><span data-lang="ml">ദേവി</span></div>
+          <div class="gallery-card-title">
+            <span data-lang="ta">அருள்மிகு ஸ்ரீ மகா காளி</span>
+            <span data-lang="en">Arulmigu Sri Maha Kali</span>
+            <span data-lang="hi">अरुलमिगु श्री महाकाली</span>
+            <span data-lang="te">అరుల్మిగు శ్రీ మహాకాళి</span>
+            <span data-lang="ml">അരുൾമിഗു ശ്രീ മഹാകാളി</span>
+          </div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay">
+              <span data-lang="ta">மகா காளி — சக்தியின் உக்ர வடிவம், அனைத்து தீமைகளையும் அழிக்கும் அன்னை</span>
+              <span data-lang="en">Maha Kali — the supreme form of Shakti, destroyer of all evil and darkness</span>
+              <span data-lang="hi">महाकाली — शक्ति का परम उग्र स्वरूप, समस्त अंधकार का नाश करने वाली</span>
+              <span data-lang="te">మహాకాళి — శక్తి యొక్క పరమ ఉగ్ర స్వరూపం, సర్వ చెడును నాశనం చేసేది</span>
+              <span data-lang="ml">മഹാകാളി — ശക്തിയുടെ പരമമായ ഉഗ്രരൂപം, സർവ്വ തിന്മയും നശിപ്പിക്കുന്നവൾ</span>
+            </div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(10, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!-- #2 — Thiriloka Taradevi -->
+<div class="gallery-card tall reveal d2" data-category="deities" data-index="11">
+  <div class="diya-badge"><i class="bi bi-fire"></i> 2</div>
+  <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+  <img src="assets/img/mahakaalli.jpg" alt="Arulmigu Sri Thiriloka Taradevi" class="gallery-card-img">
+
+  <div class="gallery-card-label-wrap">
+    <div class="gallery-card-category">
+      <span data-lang="ta">தெய்வம்</span>
+      <span data-lang="en">Goddess</span>
+      <span data-lang="hi">देवी</span>
+      <span data-lang="te">దేవత</span>
+      <span data-lang="ml">ദേവി</span>
+    </div>
+
+    <div class="gallery-card-title">
+      <span data-lang="ta">அருள்மிகு ஸ்ரீ திரிலோக தாராதேவி</span>
+      <span data-lang="en">Arulmigu Sri Thiriloka Taradevi</span>
+      <span data-lang="hi">अरुलमिगु श्री त्रिलोक तारा देवी</span>
+      <span data-lang="te">అరుల్మిగు శ్రీ త్రిలోక తారాదేవి</span>
+      <span data-lang="ml">അരുള്മിഗു ശ്രീ ത്രിലോക താരാദേവി</span>
+    </div>
+  </div>
+
+  <div class="gallery-card-overlay">
+    <div class="gallery-card-overlay-content">
+      <div class="gallery-card-desc-overlay">
+        <span data-lang="ta">மூன்று உலகங்களையும் காக்கும் தாரா சக்தி</span>
+        <span data-lang="en">The radiant goddess who guides and protects across all three worlds</span>
+        <span data-lang="hi">तीनों लोकों की रक्षा करने वाली तेजस्वी तारा देवी</span>
+        <span data-lang="te">మూడు లోకాలను కాపాడే తేజోమయ తారా దేవి</span>
+        <span data-lang="ml">മൂന്നു ലോകങ്ങളെയും രക്ഷിക്കുന്ന തേജോമയ താരാ ദേവി</span>
+      </div>
+
+      <div class="gallery-card-actions">
+        <button class="gallery-action-btn" onclick="openLightbox(11, event)">
+          <i class="bi bi-arrows-fullscreen"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- #3 — Raja Rajeshwari -->
+      <div class="gallery-card tall reveal d3" data-category="deities" data-index="12">
+        <div class="diya-badge"><i class="bi bi-fire"></i> 3</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/rajeshwari.jpg" alt="Arulmigu Sri Raja Rajeshwari" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">தெய்வம்</span><span data-lang="en">Goddess</span><span data-lang="hi">देवी</span><span data-lang="te">దేవత</span><span data-lang="ml">ദേവി</span></div>
+          <div class="gallery-card-title">
+            <span data-lang="ta">அருள்மிகு ஸ்ரீ ராஜ ராஜேஸ்வரி</span>
+            <span data-lang="en">Arulmigu Sri Raja Rajeshwari</span>
+            <span data-lang="hi">अरुलमिगु श्री राजराजेश्वरी</span>
+            <span data-lang="te">అరుల్మిగు శ్రీ రాజ రాజేశ్వరి</span>
+            <span data-lang="ml">അരുൾമിഗു ശ്രീ രാജ രാജേശ്വരി</span>
+          </div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay">
+              <span data-lang="ta">அனைத்து அரசுகளையும் ஆளும் தெய்வீக அன்னை ராஜேஸ்வரி</span>
+              <span data-lang="en">The supreme queen goddess who reigns over all worlds and beings</span>
+              <span data-lang="hi">समस्त लोकों पर राज करने वाली परम रानी देवी राजेश्वरी</span>
+              <span data-lang="te">సమస్త లోకాలను పాలించే పరమ రాజేశ్వరి దేవి</span>
+              <span data-lang="ml">സർവ ലോകങ്ങളിലും രാജ്ഞിയായ ദിവ്യ ദേവി രാജേശ്വരി</span>
+            </div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(12, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #4 — Bhuvaneshwari -->
+      <div class="gallery-card tall reveal d4" data-category="deities" data-index="13">
+        <div class="diya-badge"><i class="bi bi-fire"></i> 4</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/Bhuneshwari.jpg" alt="Arulmigu Sri Bhuvaneshwari" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">தெய்வம்</span><span data-lang="en">Goddess</span><span data-lang="hi">देवी</span><span data-lang="te">దేవత</span><span data-lang="ml">ദേവി</span></div>
+          <div class="gallery-card-title">
+            <span data-lang="ta">அருள்மிகு ஸ்ரீ புவனேஸ்வரி அம்பாள்</span>
+            <span data-lang="en">Arulmigu Sri Bhuvaneshwari</span>
+            <span data-lang="hi">अरुलमिगु श्री भुवनेश्वरी</span>
+            <span data-lang="te">అరుల్మిగు శ్రీ భువనేశ్వరి</span>
+            <span data-lang="ml">അരുൾമിഗു ശ്രീ ഭുവനേശ്വരി</span>
+          </div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay">
+              <span data-lang="ta">பிரபஞ்சத்தை ஆளும் தெய்வீக அன்னை புவனேஸ்வரி</span>
+              <span data-lang="en">The divine mother who rules and pervades the entire universe</span>
+              <span data-lang="hi">संपूर्ण ब्रह्मांड पर राज करने वाली दिव्य माता भुवनेश्वरी</span>
+              <span data-lang="te">సమస్త విశ్వాన్ని పరిపాలించే దివ్య మాత భువనేశ్వరి</span>
+              <span data-lang="ml">സർവ പ്രപഞ്ചത്തെ നിയന്ത്രിക്കുന്ന ദിവ്യ അമ്മ ഭുവനേശ്വരി</span>
+            </div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(13, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #5 — Tripura Bhairavi -->
+      <div class="gallery-card tall reveal d5" data-category="deities" data-index="14">
+        <div class="diya-badge"><i class="bi bi-fire"></i> 5</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/thiripurabhairavi.jpg" alt="Arulmigu Sri Tripura Bhairavi" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">தெய்வம்</span><span data-lang="en">Goddess</span><span data-lang="hi">देवी</span><span data-lang="te">దేవత</span><span data-lang="ml">ദേവി</span></div>
+          <div class="gallery-card-title">
+            <span data-lang="ta">அருள்மிகு ஸ்ரீ திரிபுர பைரவி</span>
+            <span data-lang="en">Arulmigu Sri Tripura Bhairavi</span>
+            <span data-lang="hi">अरुलमिगु श्री त्रिपुर भैरवी</span>
+            <span data-lang="te">అరుల్మిగు శ్రీ త్రిపుర భైరవి</span>
+            <span data-lang="ml">അരുൾമിഗു ശ്രീ ത്രിപുര ഭൈരവി</span>
+          </div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay">
+              <span data-lang="ta">மூன்று உலகங்களிலும் பக்தர்களை காக்கும் உக்ர திரிபுர பைரவி</span>
+              <span data-lang="en">The fierce guardian goddess protecting all devotees across three worlds</span>
+              <span data-lang="hi">तीनों लोकों में भक्तों की रक्षा करने वाली प्रचंड त्रिपुर भैरवी</span>
+              <span data-lang="te">మూడు లోకాలలో భక్తులను రక్షించే ఉగ్ర త్రిపుర భైరవి</span>
+              <span data-lang="ml">മൂന്നു ലോകങ്ങളിലും ഭക്തരെ കാക്കുന്ന ഉഗ്ര ത്രിപുര ഭൈരവി</span>
+            </div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(14, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #6 — Chinnamasta -->
+      <div class="gallery-card tall reveal d1" data-category="deities" data-index="15">
+        <div class="diya-badge"><i class="bi bi-fire"></i> 6</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/chinnamasta.jpg" alt="Arulmigu Sri Chinnamasta" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">தெய்வம்</span><span data-lang="en">Goddess</span><span data-lang="hi">देवी</span><span data-lang="te">దేవత</span><span data-lang="ml">ദേവി</span></div>
+          <div class="gallery-card-title">
+            <span data-lang="ta">அருள்மிகு ஸ்ரீ சின்னமஸ்தா</span>
+            <span data-lang="en">Arulmigu Sri Chinnamasta</span>
+            <span data-lang="hi">अरुलमिगु श्री छिन्नमस्ता</span>
+            <span data-lang="te">అరుల్మిగు శ్రీ ఛిన్నమస్త</span>
+            <span data-lang="ml">അരുൾമിഗു ശ്രീ ഛിന്നമസ്ത</span>
+          </div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay">
+              <span data-lang="ta">தன் தலையை அறுத்து உயிரினங்களுக்கு உணவளிக்கும் தியாக தேவி</span>
+              <span data-lang="en">The self-decapitated goddess symbolising sacrifice and the cycle of life</span>
+              <span data-lang="hi">स्वयं का शीश काटकर जीवन-चक्र का प्रतीक बनने वाली देवी</span>
+              <span data-lang="te">స్వయంగా శిరస్సు తీసుకొని జీవన చక్రాన్ని సూచించే దేవి</span>
+              <span data-lang="ml">സ്വന്തം ശിരസ്സ് ഛേദിച്ച് ജീവചക്രത്തെ പ്രതീകപ്പെടുത്തുന്ന ദേവി</span>
+            </div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(15, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #7 — Dhoomavathi -->
+      <div class="gallery-card tall reveal d2" data-category="deities" data-index="16">
+        <div class="diya-badge"><i class="bi bi-fire"></i> 7</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/thuvamathi.jpg" alt="Arulmigu Sri Dhoomavathi" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">தெய்வம்</span><span data-lang="en">Goddess</span><span data-lang="hi">देवी</span><span data-lang="te">దేవత</span><span data-lang="ml">ദേവി</span></div>
+          <div class="gallery-card-title">
+            <span data-lang="ta">அருள்மிகு ஸ்ரீ தூமாவதி</span>
+            <span data-lang="en">Arulmigu Sri Dhoomavathi</span>
+            <span data-lang="hi">अरुलमिगु श्री धूमावती</span>
+            <span data-lang="te">అరుల్మిగు శ్రీ ధూమావతి</span>
+            <span data-lang="ml">അരുൾമിഗു ശ്രീ ധൂമാവതി</span>
+          </div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay">
+              <span data-lang="ta">புகையில் உறையும் வைராக்கியத்தின் அதிதேவி தூமாவதி</span>
+              <span data-lang="en">The goddess of renunciation and wisdom who dwells beyond worldly illusions</span>
+              <span data-lang="hi">वैराग्य और ज्ञान की देवी, सांसारिक मोह से परे विराजमान धूमावती</span>
+              <span data-lang="te">వైరాగ్యం మరియు జ్ఞానానికి అధిదేవత ధూమావతి</span>
+              <span data-lang="ml">വൈരാഗ്യത്തിന്റെയും ജ്ഞാനത്തിന്റെയും ദേവി ധൂമാവതി</span>
+            </div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(16, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #8 — Bagalamuki -->
+      <div class="gallery-card tall reveal d3" data-category="deities" data-index="17">
+        <div class="diya-badge"><i class="bi bi-fire"></i> 8</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/pagalamathi.jpg" alt="Arulmigu Sri Bagalamuki" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">தெய்வம்</span><span data-lang="en">Goddess</span><span data-lang="hi">देवी</span><span data-lang="te">దేవత</span><span data-lang="ml">ദേവി</span></div>
+          <div class="gallery-card-title">
+            <span data-lang="ta">அருள்மிகு ஸ்ரீ பகளாமுகி</span>
+            <span data-lang="en">Arulmigu Sri Bagalamuki</span>
+            <span data-lang="hi">अरुलमिगु श्री बगलामुखी</span>
+            <span data-lang="te">అరుల్మిగు శ్రీ బగళాముఖి</span>
+            <span data-lang="ml">അരുൾമിഗു ശ്രീ ബഗളാമുഖി</span>
+          </div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay">
+              <span data-lang="ta">எதிரிகளை அடக்கும் வல்லமை கொண்ட பகளாமுகி அம்மன்</span>
+              <span data-lang="en">The powerful goddess who paralyses and subdues all enemies and evil forces</span>
+              <span data-lang="hi">शत्रुओं को स्तंभित करने वाली शक्तिशाली देवी बगलामुखी</span>
+              <span data-lang="te">శత్రువులను స్తంభింపజేసే శక్తివంతమైన బగళాముఖి దేవి</span>
+              <span data-lang="ml">ശത്രുക്കളെ സ്തംഭിപ്പിക്കുന്ന ശക്തിയുള്ള ബഗളാമുഖി ദേവി</span>
+            </div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(17, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #9 — Ugra Matangi -->
+      <div class="gallery-card tall reveal d4" data-category="deities" data-index="18">
+        <div class="diya-badge"><i class="bi bi-fire"></i> 9</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/ukramathangi.jpg" alt="Arulmigu Sri Ugra Matangi" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">தெய்வம்</span><span data-lang="en">Goddess</span><span data-lang="hi">देवी</span><span data-lang="te">దేవత</span><span data-lang="ml">ദേവി</span></div>
+          <div class="gallery-card-title">
+            <span data-lang="ta">அருள்மிகு ஸ்ரீ உக்ர மாதங்கி</span>
+            <span data-lang="en">Arulmigu Sri Ugra Matangi</span>
+            <span data-lang="hi">अरुलमिगु श्री उग्र मातंगी</span>
+            <span data-lang="te">అరుల్మిగు శ్రీ ఉగ్ర మాతంగి</span>
+            <span data-lang="ml">അരുൾമിഗു ശ്രീ ഉഗ്ര മാതംഗി</span>
+          </div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay">
+              <span data-lang="ta">கலை, இசை மற்றும் ஞானத்தின் உக்ர சக்தியாக விளங்கும் மாதங்கி</span>
+              <span data-lang="en">The fierce form of Matangi, goddess of arts, music and divine wisdom</span>
+              <span data-lang="hi">कला, संगीत और दिव्य ज्ञान की उग्र शक्ति उग्र मातंगी</span>
+              <span data-lang="te">కళలు, సంగీతం మరియు దివ్య జ్ఞానానికి అధిదేవత ఉగ్ర మాతంగి</span>
+              <span data-lang="ml">കല, സംഗീതം, ദിവ്യജ്ഞാനം എന്നിവയുടെ ഉഗ്രരൂപിണി ഉഗ്ര മാതംഗി</span>
+            </div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(18, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #10 — Kamala -->
+      <div class="gallery-card tall reveal d5" data-category="deities" data-index="19">
+        <div class="diya-badge"><i class="bi bi-fire"></i> 10</div>
+        <div class="gallery-card-zoom-icon"><i class="bi bi-arrows-fullscreen"></i></div>
+        <img src="assets/img/kamala.jpg" alt="Arulmigu Sri Kamala" class="gallery-card-img">
+        <div class="gallery-card-label-wrap">
+          <div class="gallery-card-category"><span data-lang="ta">தெய்வம்</span><span data-lang="en">Goddess</span><span data-lang="hi">देवी</span><span data-lang="te">దేవత</span><span data-lang="ml">ദేవി</span></div>
+          <div class="gallery-card-title">
+            <span data-lang="ta">அருள்மிகு ஸ்ரீ கமலா</span>
+            <span data-lang="en">Arulmigu Sri Kamala</span>
+            <span data-lang="hi">अरुलमिगु श्री कमला</span>
+            <span data-lang="te">అరుల్మిగు శ్రీ కమల</span>
+            <span data-lang="ml">അരുൾമിഗു ശ്രീ കമല</span>
+          </div>
+        </div>
+        <div class="gallery-card-overlay">
+          <div class="gallery-card-overlay-content">
+            <div class="gallery-card-desc-overlay">
+              <span data-lang="ta">தாமரையில் வீற்றிருக்கும் செல்வமும் அருளும் வழங்கும் அன்னை கமலா</span>
+              <span data-lang="en">The lotus goddess of abundance, grace and prosperity</span>
+              <span data-lang="hi">कमल पर विराजमान समृद्धि और कृपा की देवी कमला</span>
+              <span data-lang="te">తామరపై వెలసిన సమృద్ధి మరియు అనుగ్రహ దేవత కమల</span>
+              <span data-lang="ml">താമരയിൽ വസിക്കുന്ന സമൃദ്ധിയുടെയും അനുഗ്രഹത്തിന്റെയും ദേവി കമല</span>
+            </div>
+            <div class="gallery-card-actions">
+              <button class="gallery-action-btn" onclick="openLightbox(19, event)"><i class="bi bi-arrows-fullscreen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /dashaMahaVidyaGrid -->
+  </div><!-- /gallery-main-inner -->
+</section>
+<!-- ═══════════════ END DASHA MAHA VIDYA ═══════════════ -->
+
+<!-- ═══════════════ DIVIDER QUOTE ═══════════════ -->
+<div class="gallery-divider">
+  <div class="gallery-divider-inner">
+    <blockquote>
+      <span data-lang="ta">"தெய்வீக தரிசனம் கண்ணுக்கும் மனதுக்கும் அமைதியை தருகிறது"</span>
+      <span data-lang="en">"A divine darshan brings peace to both the eyes and the mind"</span>
+      <span data-lang="hi">"दिव्य दर्शन आँखों और मन दोनों को शांति देता है"</span>
+      <span data-lang="te">"దివ్య దర్శనం కళ్ళకు మరియు మనస్సుకు శాంతి ఇస్తుంది"</span>
+      <span data-lang="ml">"ദിവ്യ ദർശനം കണ്ണിനും മനസ്സിനും ശാന്തി നൽകുന്നു"</span>
+    </blockquote>
+    <cite>— ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில், மதுரை</cite>
+  </div>
+</div>
+
+<!-- ═══════════════ CTA BAND ═══════════════ -->
+<div class="gallery-cta-band">
+  <div class="gallery-cta-band-inner reveal">
+    <div style="font-size:2rem; color:var(--deep); margin-bottom:14px;"><i class="bi bi-calendar2-heart-fill"></i></div>
+    <h2>
+      <span data-lang="ta">நேரில் தரிசிக்க வாருங்கள்</span>
+      <span data-lang="en">Come Experience the Divine in Person</span>
+      <span data-lang="hi">प्रत्यक्ष दर्शन के लिए पधारें</span>
+      <span data-lang="te">స్వయంగా దర్శించడానికి రండి</span>
+      <span data-lang="ml">നേരിൽ ദർശിക്കാൻ വരൂ</span>
+    </h2>
+    <p>
+      <span data-lang="ta">இந்த படங்களை விட நேரில் தரிசிப்பது ஆயிரம் மடங்கு புனிதமானது. ஜாதி மதம் பாராமல் அனைவரும் வரலாம்.</span>
+      <span data-lang="en">Nothing compares to the divine grace felt in person. All are welcome — regardless of caste or faith.</span>
+      <span data-lang="hi">प्रत्यक्ष दर्शन की दिव्यता से कुछ भी तुलनीय नहीं। जाति-धर्म के बिना सभी का स्वागत है।</span>
+      <span data-lang="te">స్వయంగా అనుభవించే దివ్యత్వంతో ఏదీ పోల్చుకోలేదు. కులమతభేదం లేకుండా అందరూ రావచ్చు.</span>
+      <span data-lang="ml">നേrിൽ അനുഭവിക്കുന്ന ദൈവ കൃപ ഒന്നിനോടും ഒപ്പം വയ്ക്കാനില്ല. ജാതി-മതഭേദം ഇല്ലാതെ ഏവരും.</span>
+    </p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="index.html#booking" class="btn-dark" style="display:inline-flex; align-items:center; gap:8px;">
+        <i class="bi bi-calendar3"></i>
+        <span data-lang="ta">முன் பதிவு செய்க</span>
+        <span data-lang="en">Book a Visit</span>
+        <span data-lang="hi">दर्शन बुक करें</span>
+        <span data-lang="te">సందర్శన బుక్</span>
+        <span data-lang="ml">ദർശനം ബുക്ക് ചെയ്യൂ</span>
+      </a>
+      <!-- <a href="tel:+918012709645" class="btn-outline-dark" style="display:inline-flex; align-items:center; gap:8px;">
+        <i class="bi bi-telephone-fill"></i> +91 80127 09645
+      </a> -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-logo">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்<br>
+        <span style="font-size:12px; color:var(--cream); font-family:'Raleway',sans-serif">Sri Kaar Irul Kanapadai Bhadrakali Amman Temple</span>
+      </div>
+      <p class="footer-brand-sub">திருமங்கலம் டு திண்டுக்கல் நான்கு வழி சாலை, ஆஸ்டின்பட்டி பிரிவு, தனக்கன்குளம், மதுரை</p>
+      <div class="footer-trust"><i class="bi bi-patch-check-fill" style="color:var(--cream)"></i> Trust Reg: 51/2017 &bull; 12AA &bull; 80G</div>
+    <div class="footer-trust" style="margin-top:8px;">
+  <i class="bi bi-clock" style="color:var(--cream)"></i>
+  <span data-lang="ta">நடை திறக்கும் நேரம் : காலை 9.30 – மாலை 6.00</span>
+  <span data-lang="en">Gate Opening Hours: 9:30 AM – 6:00 PM</span>
+  <span data-lang="hi">प्रवेश द्वार समय: सुबह 9:30 – शाम 6:00</span>
+  <span data-lang="te">గేటు తెరిచే సమయం: ఉదయం 9:30 – సాయంత్రం 6:00</span>
+  <span data-lang="ml">ഗേറ്റ് തുറക്കുന്ന സമയം: രാവിലെ 9:30 – വൈകുന്നേരം 6:00</span>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+        <li><a href="deities.html"><i class="bi bi-chevron-right"></i> Deities</a></li>
+        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+        <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+        <li><a href="gallery.html#booking"><i class="bi bi-chevron-right"></i> Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Puja Days</h4>
+      <ul>
+        <li><a href="deities.html#poojas"><i class="bi bi-moon"></i> Pournami</a></li>
+        <li><a href="deities.html#poojas"><i class="bi bi-circle"></i> Amavasai</a></li>
+        <li><a href="deities.html#poojas"><i class="bi bi-sun"></i> Aadi 18</a></li>
+        <li><a href="deities.html#poojas"><i class="bi bi-stars"></i> Masi Sivaratri</a></li>
+        <li><a href="deities.html#poojas"><i class="bi bi-flower1"></i> Panguni Uthiram</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <!-- <li><a href="tel:+918012709645"><i class="bi bi-telephone-fill"></i> +91 80127 09645</a></li>
+        <li><a href="https://wa.me/918012709645" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a></li> -->
+        <li><a href="contact.html"><i class="bi bi-geo-alt-fill"></i> Thanakkankulam, Madurai</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில், மதுரை. All rights reserved.</p>
+    <p>Developed by <a href="https://softwaredevelopmentandgraphicdesign.tech/" target="_blank" style="color:#C9920A; text-decoration:none;">SDGD</a></p>
+  </div>
+</footer>
+
+<!-- BOTTOM MOBILE NAV -->
+<nav class="bottom-nav">
+  <a href="index.html" class="bottom-nav-item">
+    <i class="bi bi-house-fill"></i>
+  </a>
+  <a href="about.html" class="bottom-nav-item">
+    <i class="bi bi-info-circle-fill"></i>
+  </a>
+  <a href="deities.html" class="bottom-nav-item">
+    <i class="bi bi-flower2"></i>
+  </a>
+  <a href="gallery.html" class="bottom-nav-item">
+    <i class="bi bi-images" style="color:var(--deep)"></i>
+  </a>
+  <a href="contact.html" class="bottom-nav-item">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+</nav>
+
+<!-- ═══════════════ FLOATING BUTTONS ═══════════════ -->
+<!-- <div class="float-group">
+  <a href="tel:+918012709645" class="float-btn float-call" title="Call Us"><i class="bi bi-telephone-fill"></i></a>
+  <a href="https://wa.me/918012709645" target="_blank" class="float-btn float-whatsapp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="float-btn float-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top"><i class="bi bi-chevron-up"></i></button>
+</div> -->
+
+<!-- ═══════════════ LIGHTBOX ═══════════════ -->
+<div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightboxOnBg(event)">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+  <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)"><i class="bi bi-chevron-left"></i></button>
+  <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)"><i class="bi bi-chevron-right"></i></button>
+  <div class="lightbox-inner">
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+    <div class="lightbox-info">
+      <div class="lightbox-title" id="lightboxTitle"></div>
+      <div class="lightbox-subtitle" id="lightboxSubtitle"></div>
+      <div class="lightbox-dots" id="lightboxDots"></div>
+    </div>
+  </div>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<!-- ═══ VIDEO LIGHTBOX ═══ -->
+<div id="videoLightboxOverlay" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.92); align-items:center; justify-content:center;">
+  <button onclick="closeVideoLightbox()" style="position:absolute; top:18px; right:22px; background:none; border:none; color:#fff; font-size:28px; cursor:pointer; z-index:10000; line-height:1;">
+    <i class="bi bi-x-lg"></i>
+  </button>
+  <div style="position:relative; width:min(90vw, 900px); max-height:85vh;">
+    <video
+      id="templeVideo"
+      controls
+      playsinline
+      preload="metadata"
+      style="width:100%; max-height:85vh; border-radius:10px; background:#000; display:block;"
+    >
+      <!-- ✅ Replace this src with your actual video file path -->
+      <source src="assets/img/vdo (1).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<script>
+function openVideoLightbox() {
+  var overlay = document.getElementById('videoLightboxOverlay');
+  var vid = document.getElementById('templeVideo');
+  overlay.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  vid.play(); // ← add this line
+}
+function closeVideoLightbox() {
+  var overlay = document.getElementById('videoLightboxOverlay');
+  var vid = document.getElementById('templeVideo');
+  vid.pause();
+  vid.currentTime = 0;
+  overlay.style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.getElementById('videoLightboxOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeVideoLightbox();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeVideoLightbox();
+});
+</script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

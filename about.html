@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில்</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;700;900&family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/script.css">
+</head>
+<body>
+
+<!-- TRUST MARQUEE BAR -->
+<div class="trust-bar">
+  <div class="trust-marquee" id="trustMarquee"></div>
+</div>
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('ta')">தமிழ்</button>
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+  <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+  <button class="lang-btn" onclick="setLang('te')">తెలుగు</button>
+  <button class="lang-btn" onclick="setLang('ml')">മലയ</button>
+</div>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><i class="bi bi-flower1"></i></div>
+      <div class="nav-logo-text">
+        <div data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்</div>
+        <div data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Temple</div>
+        <div data-lang="hi">श्री भद्रकाळी अम्मन मंदिर</div>
+        <div data-lang="te">శ్రీ భద్రకాళి అమ్మన్ ఆలయం</div>
+        <div data-lang="ml">ശ്രീ ഭദ്രകാളി അമ്മൻ ക്ഷേത്രം</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+      <a href="about.html" style="color:var(--gold2)"><span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span></a>
+      <a href="deities.html"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></a>
+      <a href="gallery.html"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></a>
+      <a href="contact.html"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></a>
+      <a href="index.html#booking" class="nav-cta">
+        <span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span>
+      </a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+    <a href="about.html" onclick="toggleMenu()"><span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span></a>
+    <a href="deities.html" onclick="toggleMenu()"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></a>
+    <a href="gallery.html" onclick="toggleMenu()"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></a>
+    <a href="contact.html" onclick="toggleMenu()"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></a>
+    <a href="index.html#booking" onclick="toggleMenu()"><span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span></a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-pattern"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html" id="breadHome"></a>
+      <span>›</span>
+      <span class="current" id="breadCurrent"></span>
+    </div>
+    <h1 class="page-hero-title" id="heroTitle"></h1>
+    <p class="page-hero-subtitle" id="heroSubtitle"></p>
+    <div class="page-hero-line"></div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro-section" id="about">
+  <div class="section-wrap">
+    <div class="intro-grid">
+      <div class="reveal-left">
+        <div class="section-eyebrow"><span id="eyeAbout"></span></div>
+        <h2 class="section-title" id="titleAbout"></h2>
+        <div class="section-rule"></div>
+        <div class="trust-chips">
+          <span class="trust-chip"><i class="bi bi-patch-check-fill"></i> Trust Reg: 51/2017</span>
+          <span class="trust-chip"><i class="bi bi-shield-check"></i> 12AA Certified</span>
+          <span class="trust-chip"><i class="bi bi-heart-fill"></i> 80G Certified</span>
+        </div>
+        <p class="para-text" id="aboutP1"></p>
+        <div class="pull-quote reveal">
+          <p id="pullQuoteText"></p>
+        </div>
+        <p class="para-text" id="aboutP2"></p>
+      </div>
+      <div class="intro-img-wrap reveal-right">
+        <div class="intro-img-frame"></div>
+        <div class="intro-img-main">
+          <img src="assets/img/temple.jpg" alt="Temple">
+          <div class="intro-badge">
+            <span class="intro-badge-num">2018</span>
+            <div class="intro-badge-label" id="badgeLabel"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTES -->
+<div class="quotes-section">
+  <div class="section-wrap">
+    <div class="quotes-header reveal">
+      <div class="section-eyebrow"><span id="eyeQuotes"></span></div>
+      <h2 class="section-title" id="titleQuotes"></h2>
+      <div class="section-rule center"></div>
+    </div>
+    <div class="quotes-grid" id="quotesGrid"></div>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<section class="timeline-section">
+  <div class="section-wrap">
+    <div class="reveal" style="margin-bottom:8px">
+      <div class="section-eyebrow"><span id="eyeTimeline"></span></div>
+      <h2 class="section-title" id="titleTimeline"></h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="timeline" id="timelineContainer"></div>
+  </div>
+</section>
+
+<!-- DEITY -->
+<section class="deity-section" id="deities">
+  <div class="section-wrap">
+    <div class="reveal" style="margin-bottom:40px">
+      <div class="section-eyebrow"><span id="eyeDeity"></span></div>
+      <h2 class="section-title" id="titleDeity"></h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="main-deity-card reveal" id="mainDeityCard">
+      <div class="main-deity-icon"><i class="bi bi-flower1"></i></div>
+      <div>
+        <div class="main-deity-label" id="deityLabel"></div>
+        <div class="main-deity-name" id="deityName"></div>
+        <div class="main-deity-sub" id="deitySub"></div>
+        <p class="main-deity-desc" id="deityDesc"></p>
+      </div>
+    </div>
+    <p class="sannidhi-intro reveal" id="sannathiIntro"></p>
+    <div class="deity-chips reveal" id="deityChips"></div>
+  </div>
+</section>
+
+<!-- PUJA -->
+<section class="puja-section" id="poojas">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:44px">
+      <div class="section-eyebrow" style="justify-content:center"><span id="eyePuja"></span></div>
+      <h2 class="section-title" style="text-align:center" id="titlePuja"></h2>
+      <div class="section-rule center"></div>
+      <p class="puja-note" id="pujaNote"></p>
+    </div>
+    <div class="puja-grid" id="pujaGrid"></div>
+  </div>
+</section>
+
+<!-- UNIQUE -->
+<section class="unique-section">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:10px">
+      <div class="section-eyebrow" style="justify-content:center"><span id="eyeUnique"></span></div>
+      <h2 class="section-title" style="color:var(--gold3);text-align:center" id="titleUnique"></h2>
+      <div class="section-rule center"></div>
+    </div>
+    <div class="unique-grid" id="uniqueGrid"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="reveal" style="max-width:800px;margin:0 auto">
+    <div style="font-size:2.2rem;color:var(--deep);margin-bottom:14px"><i class="bi bi-calendar2-heart-fill"></i></div>
+    <h2 id="ctaTitle"></h2>
+    <p id="ctaDesc"></p>
+    <div class="cta-btns" style="margin-top:28px">
+      <a href="index.html#booking" class="btn-dark" id="ctaBookBtn"></a>
+      <!-- <a href="tel:+918012709645" class="btn-outline-dark"><i class="bi bi-telephone-fill"></i> +91 80127 09645</a> -->
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-logo">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்<br>
+        <span style="font-size:12px;color:var(--cream);font-family:'Raleway',sans-serif">Sri Kaar Irul Kanapadai Bhadrakali Amman Temple</span>
+      </div>
+      <p class="footer-brand-sub">திருமங்கலம் டு திண்டுக்கல் நான்கு வழி சாலை, ஆஸ்டின்பட்டி பிரிவு, தனக்கன்குளம், மதுரை</p>
+      <div class="footer-trust"><i class="bi bi-patch-check-fill" style="color:var(--cream)"></i> Trust Reg: 51/2017 &bull; 12AA &bull; 80G</div>
+      <div class="footer-trust" style="margin-top:8px;">
+  <i class="bi bi-clock" style="color:var(--cream)"></i>
+  <span data-lang="ta">நடை திறக்கும் நேரம் : காலை 9.30 – மாலை 6.00</span>
+  <span data-lang="en">Gate Opening Hours: 9:30 AM – 6:00 PM</span>
+  <span data-lang="hi">प्रवेश द्वार समय: सुबह 9:30 – शाम 6:00</span>
+  <span data-lang="te">గేటు తెరిచే సమయం: ఉదయం 9:30 – సాయంత్రం 6:00</span>
+  <span data-lang="ml">ഗേറ്റ് തുറക്കുന്ന സമയം: രാവിലെ 9:30 – വൈകുന്നേരം 6:00</span>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+        <li><a href="deities.html"><i class="bi bi-chevron-right"></i> Deities</a></li>
+        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+        <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+        <li><a href="about.html#booking"><i class="bi bi-chevron-right"></i> Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Puja Days</h4>
+      <ul>
+        <li><a href="about.html#poojas"><i class="bi bi-moon"></i> Pournami</a></li>
+        <li><a href="about.html#poojas"><i class="bi bi-circle"></i> Amavasai</a></li>
+        <li><a href="about.html#poojas"><i class="bi bi-sun"></i> Aadi 18</a></li>
+        <li><a href="about.html#poojas"><i class="bi bi-stars"></i> Masi Sivaratri</a></li>
+        <li><a href="about.html#poojas"><i class="bi bi-flower1"></i> Panguni Uthiram</a></li>
+        <li><a href="about.html#poojas"><i class="bi bi-eye"></i> Vaikunta Ekadasi</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Deities</h4>
+      <ul>
+        <li><a href="deities.html"><i class="bi bi-flower1"></i> Bhadrakali Amman</a></li>
+        <li><a href="deities.html"><i class="bi bi-star"></i> Navagraha Vinayagar</a></li>
+        <li><a href="deities.html"><i class="bi bi-people"></i> Sapta Mathas</a></li>
+        <li><a href="deities.html"><i class="bi bi-shield"></i> Unmatha Bhairava</a></li>
+        <li><a href="deities.html"><i class="bi bi-lightning"></i> Velapper</a></li>
+        <li><a href="deities.html"><i class="bi bi-moon-stars"></i> Jata Muneeswar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில், மதுரை. All rights reserved.</p>
+    <p>Developed by <a href="https://softwaredevelopmentandgraphicdesign.tech/" target="_blank" style="color:#C9920A; text-decoration:none;">SDGD</a></p>
+  </div>
+</footer>
+
+<!-- BOTTOM MOBILE NAV -->
+<nav class="bottom-nav">
+  <a href="index.html" class="bottom-nav-item">
+    <i class="bi bi-house-fill"></i>
+  </a>
+  <a href="about.html" class="bottom-nav-item">
+    <i class="bi bi-info-circle-fill" style="color:var(--deep)"></i>
+  </a>
+  <a href="deities.html" class="bottom-nav-item">
+    <i class="bi bi-flower2"></i>
+  </a>
+  <a href="gallery.html" class="bottom-nav-item">
+    <i class="bi bi-images"></i>
+  </a>
+  <a href="contact.html" class="bottom-nav-item">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+</nav>
+
+<!-- FLOATS -->
+<!-- <div class="float-group">
+  <a href="tel:+918012709645" class="float-btn float-call" title="Call Us"><i class="bi bi-telephone-fill"></i></a>
+  <a href="https://wa.me/918012709645" target="_blank" class="float-btn float-whatsapp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <button class="float-btn float-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top"><i class="bi bi-chevron-up"></i></button>
+</div> -->
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

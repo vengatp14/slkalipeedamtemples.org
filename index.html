@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில் | மதுரை</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Cinzel:wght@400;600;700;900&family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="assets/css/script.css">
+
+<style>
+
+</style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-om">ॐ</div>
+  <div class="preloader-line"><div class="preloader-fill"></div></div>
+</div>
+
+<!-- TRUST MARQUEE BAR -->
+<div class="trust-bar">
+  <div class="trust-marquee" id="trustMarquee"></div>
+</div>
+
+<!-- LANGUAGE BAR -->
+<div class="lang-bar">
+  <button class="lang-btn active" data-setlang="ta">தமிழ்</button>
+  <button class="lang-btn" data-setlang="en">English</button>
+  <button class="lang-btn" data-setlang="hi">हिंदी</button>
+  <button class="lang-btn" data-setlang="te">తెలుగు</button>
+  <button class="lang-btn" data-setlang="ml">മലയ</button>
+</div>
+
+<!-- NAVBAR -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><i class="bi bi-flower1"></i></div>
+      <div class="nav-logo-text">
+        <div data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்</div>
+        <div data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Temple</div>
+        <div data-lang="hi">श्री भद्रकाळी अम्मन मंदिर</div>
+        <div data-lang="te">శ్రీ భద్రకాళి అమ్మన్ ఆలయం</div>
+        <div data-lang="ml">ശ്രീ ഭദ്രകാളി അമ്മൻ ക്ഷേത്രം</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" style="color:var(--gold2)">
+        <span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span>
+      </a>
+      <a href="about.html">
+        <span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span>
+      </a>
+      <a href="deities.html">
+        <span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span>
+      </a>
+      <a href="gallery.html">
+        <span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span>
+      </a>
+      <a href="contact.html">
+        <span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span>
+      </a>
+      <a href="#booking" class="nav-cta">
+        <span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span>
+      </a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMenu()"><span data-lang="ta">முகப்பு</span><span data-lang="en">Home</span><span data-lang="hi">होम</span><span data-lang="te">హోమ్</span><span data-lang="ml">ഹോം</span></a>
+    <a href="about.html" onclick="toggleMenu()"><span data-lang="ta">அறிமுகம்</span><span data-lang="en">About</span><span data-lang="hi">परिचय</span><span data-lang="te">పరిచయం</span><span data-lang="ml">പരിചയം</span></a>
+    <a href="deities.html" onclick="toggleMenu()"><span data-lang="ta">தெய்வங்கள்</span><span data-lang="en">Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span></a>
+    <a href="gallery.html" onclick="toggleMenu()"><span data-lang="ta">படங்கள்</span><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span><span data-lang="te">గ్యాలరీ</span><span data-lang="ml">ഗ്യാലറി</span></a>
+    <a href="contact.html" onclick="toggleMenu()"><span data-lang="ta">தொடர்பு</span><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span><span data-lang="te">సంప్రదించు</span><span data-lang="ml">ബന്ധപ്പെടുക</span></a>
+    <a href="#booking" onclick="toggleMenu()"><span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book Now</span><span data-lang="hi">बुक करें</span><span data-lang="te">బుక్ చేయండి</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span></a>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="home">
+  <div class="hero-parallax-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-decoration"></div>
+  <div class="hero-image-panel">
+    <div class="hero-img-ring hero-img-ring--outer"></div>
+    <div class="hero-img-ring hero-img-ring--inner"></div>
+    <div class="hero-img-frame">
+      <img src="assets/img/kaarirulbathrakali.jpeg" alt="Bhadrakali Amman" class="hero-img" />
+    </div>
+    <div class="hero-img-glow"></div>
+    <div class="hero-img-dots"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge reveal d1">
+      <i class="bi bi-award" style="color:var(--deep)"></i>
+      <span>Trust Reg. No: 51/2017</span>
+      <span class="hero-trust-no">12AA &bull; 80G</span>
+    </div>
+    <h1 class="hero-title reveal d2">
+      <span data-lang="ta">ஸ்ரீ கார் இருள் கணபடை<br>பத்ரகாளி அம்மன் திருக்கோவில்</span>
+      <span data-lang="en">Sri Kaar Irul Kanapadai<br>Bhadrakali Amman Temple</span>
+      <span data-lang="hi">श्री कार इरुल कणपडै<br>भद्रकाळी अम्मन मंदिर</span>
+      <span data-lang="te">శ్రీ కార్ ఇరుల్ కణపడై<br>భద్రకాళి అమ్మన్ ఆలయం</span>
+      <span data-lang="ml">ശ്രീ കാർ ഇരുൾ കണപടൈ<br>ഭദ്രകാളി അമ്മൻ ക്ഷേത്രം</span>
+    </h1>
+    <div class="hero-divider reveal d3"></div>
+    <p class="hero-desc reveal d4" data-lang="ta">
+  தேவலோக சிற்ப முறைப்படி உருவாக்கிய ஆலயம். உலகில் வேறு எங்கும் தரிசிக்க முடியாத உருவத்தில் காட்சி அளிக்கும் அன்னை மகா காளியின் ஆதி வடிவம் அமையபெற்ற திருக்கோவில். ஸ்ரீ சக்ரமே விமானமாக கோபுரமாக அமைய பெற்ற ஆலயம். தச மகா வித்யா எனும் சக்தியின் 10 அவதாரங்கள் காவலாக இருக்கும் கோவில். மந்திரம் யந்திரம் தந்திரம் போன்ற மாந்தரீக பிரச்சனைகளை உடனடி தீர்வு கிடைக்கும் கோவில். வைகுண்ட ஏகாதசி அன்று சொர்க்கவாசல் திறந்து மகா காளி அன்னை ஸ்ரீமன் விஷ்ணு ரூபத்தில் காட்சி கொடுக்கும் ஒரே ஆலயம். நவகிரக விநாயகர், சப்த மாதாக்கள், உன்மத்த வைரவர், வேலப்பர், மலையாள கருப்பசாமி, வன பேச்சி, ஜடா முனீஸ்வரன் ஆகியோர் காவலாக எழுந்தருளியிருக்கும் திவ்யமான தலம்.
+</p>
+
+<p class="hero-desc reveal d4" data-lang="en">
+  A divine temple built according to Devaloka Shilpa tradition. The only temple where Maha Kali Amman appears in her primordial form — a vision found nowhere else in the world. A temple where the Sri Chakra itself serves as the Vimana and Gopuram. The sacred abode guarded by the 10 avatars of Shakti known as Dasha Maha Vidya. A temple where immediate relief is granted for problems related to Mantra, Yantra, and Tantra. The only temple where on Vaikunta Ekadasi, the gates of heaven open and Maha Kali Amman grants darshan in the form of Sri Vishnu. This divine kshetram is also home to Navagraha Vinayagar, Sapta Mathas, Unmatha Bhairava, Velappan, Malayala Karuppasamy, Vana Pechi, and Jada Muneeswaran.
+</p>
+
+<p class="hero-desc reveal d4" data-lang="hi">
+  देवलोक शिल्प परंपरा के अनुसार निर्मित दिव्य मंदिर। विश्व में अन्यत्र कहीं भी दर्शन न होने वाले अद्वितीय रूप में विराजमान माँ महाकाली का आदि स्वरूप। श्री चक्र ही जहाँ विमान और गोपुरम के रूप में स्थापित है। दश महाविद्या अर्थात शक्ति के 10 अवतारों द्वारा संरक्षित पवित्र मंदिर। मंत्र, यंत्र और तंत्र संबंधी समस्याओं का तत्काल समाधान प्राप्त होने वाला मंदिर। একমাত্র মঞ্চ যেখানে বৈকুণ্ঠ একাদশীতে স্বর্গদ্বার খুলে মহাকালী মা শ্রীমন বিষ্ণুর আকারে দর্শন দেন। এই দিব্য ক্ষেত্রটির 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি 10টি
+
+<p class="hero-desc reveal d4" data-lang="te">
+  దేవలోక శిల్ప సంప్రదాయంలో నిర్మించిన దివ్యమైన ఆలయం. ప్రపంచంలో మరెక్కడా దర్శించలేని అద్వితీయ రూపంలో కొలువై ఉన్న మహాకాళి అమ్మవారి ఆది స్వరూపం. శ్రీ చక్రమే విమానంగా మరియు గోపురంగా అమరిన ఆలయం. దశ మహావిద్య అనే శక్తి యొక్క 10 అవతారాలు కాపలాగా ఉండే కోవెల. మంత్రం, యంత్రం, తంత్రం వంటి మాంత్రిక సమస్యలకు తక్షణ పరిష్కారం లభించే ఆలయం. వైకుంఠ ఏకాదశి నాడు స్వర్గద్వారం తెరచుకొని మహాకాళి అమ్మవారు శ్రీమన్ విష్ణు రూపంలో దర్శనమిచ్చే ఏకైక ఆలయం. నవగ్రహ వినాయకుడు, సప్త మాతలు, ఉన్మత్త భైరవుడు, వేలప్పన్, మలయాళ కరుప్పసామి, వన పేచ్చి, జటా మునీశ్వరుడు కొలువై ఉన్న పావన క్షేత్రం.
+</p>
+
+<p class="hero-desc reveal d4" data-lang="ml">
+  ദേവലോക ശില്പ രീതിയിൽ നിർമ്മിച്ച ദിവ്യ ക്ഷേത്രം. ലോകത്ത് മറ്റൊരിടത്തും ദർശിക്കാൻ കഴിയാത്ത അദ്വിതീയ രൂപത്തിൽ കുടിയിരിക്കുന്ന മഹാകാളി അമ്മയുടെ ആദിരൂപം. ശ്രീ ചക്രം തന്നെ വിമാനമായും ഗോപുരമായും അമർന്ന ആലയം. ദശ മഹാവിദ്യ എന്ന ശക്തിയുടെ 10 അവതാരങ്ങൾ കാവൽ നിൽക്കുന്ന ക്ഷേത്രം. മന്ത്രം, യന്ത്രം, തന്ത്രം എന്നീ മാന്ത്രിക പ്രശ്നങ്ങൾക്ക് ഉടനടി പരിഹാരം ലഭിക്കുന്ന ക്ഷേത്രം. വൈകുണ്ഠ ഏകാദശിയിൽ സ്വർഗ്ഗദ്വാരം തുറന്ന് മഹാകാളി ശ്രീമൻ വിഷ്ണു രൂപത്തിൽ ദർശനം നൽകുന്ന ഏകൈക ക്ഷേത്രം. നവഗ്രഹ വിനായകർ, സപ്ത മാതാക്കൾ, ഉന്മത്ത ഭൈരവർ, വേലപ്പൻ, മലയാള കരുപ്പസ്വാമി, വന പേച്ചി, ജടാ മുനീശ്വരൻ എന്നിവർ കുടിയിരിക്കുന്ന ദിവ്യമായ തലം.
+</p>
+    <div class="hero-stats reveal d5">
+      <div class="hero-stat">
+        <span class="hero-stat-num">2017</span>
+        <div class="hero-stat-label">Est. Year</div>
+      </div>
+      <div class="hero-stat-div"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">10</span>
+        <div class="hero-stat-label">Dasha Vidya</div>
+      </div>
+      <div class="hero-stat-div"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">Free</span>
+        <div class="hero-stat-label">All Pujas</div>
+      </div>
+      <div class="hero-stat-div"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">5+</span>
+        <div class="hero-stat-label">Parihara Puja</div>
+      </div>
+    </div>
+    <div class="hero-cta reveal d6">
+      <a href="deities.html" class="btn-gold">
+        <i class="bi bi-flower1"></i>
+        <span data-lang="ta">தெய்வங்களை காண்க</span><span data-lang="en">View Deities</span><span data-lang="hi">देवता देखें</span><span data-lang="te">దేవతలు చూడండి</span><span data-lang="ml">ദേവതകളെ കാണുക</span>
+      </a>
+      <a href="#booking" class="btn-ghost">
+        <i class="bi bi-calendar3"></i>
+        <span data-lang="ta">முன் பதிவு</span><span data-lang="en">Book a Visit</span><span data-lang="hi">दर्शन बुक करें</span><span data-lang="te">సందర్శన బుక్</span><span data-lang="ml">ബുക്ക് ചെയ്യുക</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <i class="bi bi-chevron-double-down"></i>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════ GOLDEN QUOTE ═══════════════ -->
+<div class="gold-band">
+  <blockquote>
+    <span data-lang="ta">"ஜாதி மதம் இன்றி அனைவரும் வந்து அன்னையின் அருள் பெறலாம்"</span>
+    <span data-lang="en">"Irrespective of caste or religion, everyone is welcome to receive the blessings of the Mother Goddess"</span>
+    <span data-lang="hi">"जाति-धर्म से परे, सभी देवी की कृपा के पात्र हैं"</span>
+    <span data-lang="te">"కులమతాల భేదమే లేకుండా అందరూ అమ్మ అనుగ్రహం పొందవచ్చు"</span>
+    <span data-lang="ml">"ജാതി-മത ഭേദമില്ലാതെ, എല്ലാവർക്കും അമ്മ അനുഗ്രഹം ലഭിക്കും"</span>
+  </blockquote>
+  <cite>— ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில், மதுரை</cite>
+</div>
+
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<section class="about-section" id="about">
+  <div class="section-wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal-left">
+        <div class="about-img-frame"></div>
+        <div class="about-img-main">
+          <img src="assets/img/temple.jpg" alt="Temple">
+          <div class="about-badge">
+            <span class="about-badge-num">51/2017</span>
+            <div class="about-badge-label">Trust Reg No.</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="section-eyebrow">
+          <span data-lang="ta">ஆலய அறிமுகம்</span><span data-lang="en">About the Temple</span><span data-lang="hi">मंदिर परिचय</span><span data-lang="te">ఆలయ పరిచయం</span><span data-lang="ml">ക്ഷേത്ര പരിചയം</span>
+        </div>
+        <h2 class="section-title" data-lang="ta">அருள்மிகு ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில்</h2>
+        <h2 class="section-title" data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Amman Thirukoil</h2>
+        <h2 class="section-title" data-lang="hi">श्री भद्रकाळी अम्मन मंदिर</h2>
+        <h2 class="section-title" data-lang="te">శ్రీ భద్రకాళి అమ్మన్ ఆలయం</h2>
+        <h2 class="section-title" data-lang="ml">ശ്രീ ഭദ്രകാളി അമ്മൻ ക്ഷേത്രം</h2>
+        <div class="section-rule"></div>
+        <div class="trust-chips">
+          <span class="trust-chip"><i class="bi bi-patch-check-fill"></i> Trust Reg: 51/2017</span>
+          <span class="trust-chip"><i class="bi bi-shield-check"></i> 12AA Certified</span>
+          <span class="trust-chip"><i class="bi bi-heart-fill"></i> 80G Certified</span>
+        </div>
+        <p class="section-body" style="font-family:'Noto Sans Tamil',sans-serif; line-height:2;" data-lang="ta">
+          தேவலோக சிற்ப முறைப்படி உருவாக்கிய ஆலயம். ஸ்ரீ சக்ரமே விமானமாக கோபுரமாக அமைய பெற்ற ஆலயம். தச மகா வித்யா எனும் சக்தியின் 10 அவதாரங்கள் காவலாக இருக்கும் கோவில். மந்திரம் யந்திரம் தந்திரம் போன்ற மாந்தரீக பிரச்சனைகளை உடனடி தீர்வு கிடைக்கும் கோவில்.
+        </p>
+        <p class="section-body" style="font-family:'Noto Sans Tamil',sans-serif; line-height:2;" data-lang="en">
+          A temple built according to Devaloka Shilpa tradition — where Sri Chakra itself forms the Vimanam and Gopuram. The 10 avatars of Shakti known as Dasha Maha Vidya stand as guardians. Immediate solutions to Mantra, Yantra, and Tantra-related problems are provided here.
+        </p>
+        <p class="section-body" style="font-family:'Noto Sans Tamil',sans-serif; line-height:2;" data-lang="hi">
+          देवलोक शिल्प परंपरा के अनुसार निर्मित मंदिर। श्री चक्र ही विमान और गोपुरम के रूप में स्थापित है। दश महाविद्या के 10 अवतार रक्षक के रूप में यहाँ विराजमान हैं।
+        </p>
+        <p class="section-body" style="font-family:'Noto Sans Tamil',sans-serif; line-height:2;" data-lang="te">
+          దేవలోక శిల్ప సంప్రదాయంలో నిర్మించిన ఆలయం. శ్రీ చక్రమే విమానంగా, గోపురంగా ఉన్న ఆలయం. దశ మహావిద్య శక్తి యొక్క 10 అవతారాలు కాపలాగా ఉండే కోవెల.
+        </p>
+        <p class="section-body" style="font-family:'Noto Sans Tamil',sans-serif; line-height:2;" data-lang="ml">
+          ദേവലോക ശില്പ രീതിയിൽ നിർമ്മിച്ച ക്ഷേത്രം. ശ്രീ ചക്രം തന്നെ വിമാനവും ഗോപുരവുമായ ക്ഷേത്രം. ദശ മഹാ വിദ്യ ശക്തിയുടെ 10 അവതാരങ്ങൾ കാവൽ നിൽക്കുന്ന ക്ഷേത്രം.
+        </p>
+        <div class="sthal-grid" style="margin-top:24px;">
+          <div class="sthal-card reveal-up d1">
+            <div class="sthal-card-label"><i class="bi bi-tree"></i>
+              <span data-lang="ta">ஸ்தல விருட்சம்</span><span data-lang="en">Sthala Vriksham</span><span data-lang="hi">स्थल वृक्ष</span><span data-lang="te">స్థల వృక్షం</span><span data-lang="ml">സ്ഥല വൃക്ഷം</span>
+            </div>
+            <div class="sthal-card-val">
+              <span data-lang="ta">மகா வில்வம் மற்றும் ருதிராக்ஷம்</span>
+              <span data-lang="en">Maha Vilwam and Rudraksha</span>
+              <span data-lang="hi">महा विल्व और रुद्राक्ष</span>
+              <span data-lang="te">మహా విల్వం మరియు రుద్రాక్ష</span>
+              <span data-lang="ml">മഹാ വില്വവും രുദ്രാക്ഷവും</span>
+            </div>
+          </div>
+          <div class="sthal-card reveal-up d2">
+            <div class="sthal-card-label"><i class="bi bi-droplet"></i>
+              <span data-lang="ta">தீர்த்தம்</span><span data-lang="en">Theertham</span><span data-lang="hi">तीर्थ</span><span data-lang="te">తీర్థం</span><span data-lang="ml">തീർഥം</span>
+            </div>
+            <div class="sthal-card-val">
+              <span data-lang="ta">பாதாள கங்கை தீர்த்தம்</span>
+              <span data-lang="en">Pathala Ganga Theertham</span>
+              <span data-lang="hi">पाताल गंगा तीर्थ</span>
+              <span data-lang="te">పాతాళ గంగ తీర్థం</span>
+              <span data-lang="ml">പാതാള ഗംഗ തീർഥം</span>
+            </div>
+          </div>
+          <div class="sthal-card reveal-up d3" style="grid-column:span 2">
+            <div class="sthal-card-label"><i class="bi bi-stars"></i>
+              <span data-lang="ta">ஸ்தல சிறப்பு</span><span data-lang="en">Temple Specialty</span><span data-lang="hi">स्थल विशेषता</span><span data-lang="te">స్థల విశేషం</span><span data-lang="ml">ക്ഷേത്ര വിശേഷം</span>
+            </div>
+            <div class="sthal-card-val">
+              <span data-lang="ta">குலதெய்வம் தெரியாதவர்கள் வணங்க குலதெய்வம் இருக்கும் திசை இடம் சொப்பனத்தில் காண்பிக்கும்</span>
+              <span data-lang="en">For those who do not know their Kula Deiva, the direction and place of their family deity will be revealed in a dream.</span>
+              <span data-lang="hi">जो अपने कुलदेवता को नहीं जानते, उन्हें स्वप्न में कुलदेवता का स्थान और दिशा बताई जाएगी।</span>
+              <span data-lang="te">కుల దేవత తెలియనివారికి కుల దేవత ఉన్న దిశ మరియు స్థలం కలలో చూపించబడుతుంది.</span>
+              <span data-lang="ml">കുലദൈവം അറിയാത്തവർക്ക് കുലദൈവം ഉള്ള ദിശയും സ്ഥലവും സ്വപ്നത്തിൽ കാണിക്കപ്പെടും.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TEMPLE SPECIALTIES (PARALLAX) ═══════════════ -->
+<section class="special-section" id="specialties">
+  <div class="special-parallax-bg" id="specialBg"></div>
+  <div class="special-overlay"></div>
+  <div class="section-wrap" style="position:relative;z-index:2;">
+    <div style="text-align:center" class="reveal">
+      <div class="section-eyebrow" style="justify-content:center;">
+        <span data-lang="ta">கோவில் சிறப்புகள்</span><span data-lang="en">Temple Specialties</span><span data-lang="hi">मंदिर की विशेषताएं</span><span data-lang="te">ఆలయ విశేషాలు</span><span data-lang="ml">ക്ഷേത്ര വിശേഷങ്ങൾ</span>
+      </div>
+      <h2 class="section-title" style="color:var(--gold3); text-align:center;">
+        <span data-lang="ta">இந்த ஆலயத்தின் தனிச்சிறப்புகள்</span>
+        <span data-lang="en">What Makes This Temple Unique</span>
+        <span data-lang="hi">इस मंदिर की विशेषताएं</span>
+        <span data-lang="te">ఈ ఆలయ ప్రత్యేకతలు</span>
+        <span data-lang="ml">ഈ ക്ഷേത്രത്തിന്റെ പ്രത്യേകതകൾ</span>
+      </h2>
+      <div class="section-rule center"></div>
+    </div>
+    <div class="special-grid">
+      <div class="special-card reveal d1">
+        <div class="special-card-icon"><i class="bi bi-eye"></i></div>
+        <div class="special-card-title-tamil">
+          <span data-lang="ta">வைகுண்ட ஏகாதசி அன்று விஷ்ணு தரிசனம்</span>
+          <span data-lang="en">Vishnu Darshan on Vaikunta Ekadasi</span>
+          <span data-lang="hi">वैकुंठ एकादशी पर विष्णु दर्शन</span>
+          <span data-lang="te">వైకుంఠ ఏకాదశిపై విష్ణు దర్శనం</span>
+          <span data-lang="ml">വൈകുണ്ഠ ഏകാദശിയിൽ വിഷ്ണു ദർശനം</span>
+        </div>
+        <div class="special-card-desc">
+          <span data-lang="ta">வைகுண்ட ஏகாதசி அன்று சொர்க்கவாசல் திறந்து மகா காளி அன்னை ஸ்ரீமன் விஷ்ணு ரூபத்தில் காட்சி கொடுக்கும் ஒரே ஆலயம்.</span>
+          <span data-lang="en">The only temple where Maha Kali appears in the form of Sri Vishnu on Vaikunta Ekadasi, when the gates of heaven open.</span>
+          <span data-lang="hi">एकमात्र मंदिर जहाँ वैकुंठ एकादशी पर स्वर्ग के द्वार खुलने पर महाकाली श्रीमन विष्णु रूप में दर्शन देती हैं।</span>
+          <span data-lang="te">వైకుంఠ ఏకాదశి నాడు స్వర్గ ద్వారం తెరుచుకున్నప్పుడు మహాకాళి శ్రీమన్ విష్ణు రూపంలో దర్శనమిచ్చే ఏకైక ఆలయం.</span>
+          <span data-lang="ml">വൈകുണ്ഠ ഏകാദശിയിൽ സ്വർഗ്ഗ വാതിൽ തുറക്കുമ്പോൾ മഹാകാളി ശ്രീമൻ വിഷ്ണു രൂപത്തിൽ ദർശനം നൽകുന്ന ഏകൈക ക്ഷേത്രം.</span>
+        </div>
+      </div>
+      <div class="special-card reveal d2">
+        <div class="special-card-icon"><i class="bi bi-gem"></i></div>
+        <div class="special-card-title-tamil">
+          <span data-lang="ta">ஸ்ரீ சக்ர விமானம்</span>
+          <span data-lang="en">Sri Chakra Vimanam</span>
+          <span data-lang="hi">श्री चक्र विमान</span>
+          <span data-lang="te">శ్రీ చక్ర విమానం</span>
+          <span data-lang="ml">ശ്രീ ചക്ര വിമാനം</span>
+        </div>
+        <div class="special-card-desc">
+          <span data-lang="ta">ஸ்ரீ சக்ரமே விமானமாக கோபுரமாக அமைய பெற்ற ஆலயம். தேவலோக சிற்ப முறைப்படி அமைத்த அரிய திருக்கோவில்.</span>
+          <span data-lang="en">A rare temple where the Sri Chakra itself forms the Vimanam and Gopuram, built according to Devaloka Shilpa tradition.</span>
+          <span data-lang="hi">एक दुर्लभ मंदिर जहाँ श्री चक्र स्वयं विमान और गोपुरम के रूप में स्थापित है।</span>
+          <span data-lang="te">శ్రీ చక్రమే విమానంగా, గోపురంగా ఉన్న అపూర్వమైన ఆలయం.</span>
+          <span data-lang="ml">ശ്രീ ചക്രം തന്നെ വിമാനവും ഗോപുരവുമായ അദ്വിതീയ ക്ഷേത്രം.</span>
+        </div>
+      </div>
+      <div class="special-card reveal d3">
+        <div class="special-card-icon"><i class="bi bi-infinity"></i></div>
+        <div class="special-card-title-tamil">
+          <span data-lang="ta">தச மகா வித்யா காவல்</span>
+          <span data-lang="en">Dasha Maha Vidya Guardians</span>
+          <span data-lang="hi">दश महाविद्या संरक्षण</span>
+          <span data-lang="te">దశ మహావిద్య రక్షణ</span>
+          <span data-lang="ml">ദശ മഹാ വിദ്യ സംരക്ഷണം</span>
+        </div>
+        <div class="special-card-desc">
+          <span data-lang="ta">தச மகா வித்யா எனும் சக்தியின் 10 அவதாரங்கள் காவலாக இருக்கும் கோவில்.</span>
+          <span data-lang="en">A temple guarded by the 10 avatars of Shakti known as Dasha Maha Vidya.</span>
+          <span data-lang="hi">दश महाविद्या के 10 अवतारों द्वारा संरक्षित मंदिर।</span>
+          <span data-lang="te">దశ మహావిద్య అనే శక్తి యొక్క 10 అవతారాలు కాపలా ఉండే ఆలయం.</span>
+          <span data-lang="ml">ദശ മഹാ വിദ്യ ശക്തിയുടെ 10 അവതാരങ്ങൾ കാവൽ നിൽക്കുന്ന ക്ഷേത്രം.</span>
+        </div>
+      </div>
+      <div class="special-card reveal d4">
+        <div class="special-card-icon"><i class="bi bi-shield-fill-check"></i></div>
+        <div class="special-card-title-tamil">
+          <span data-lang="ta">மாந்திரீக பிரச்சனை தீர்வு</span>
+          <span data-lang="en">Relief from Dark Forces</span>
+          <span data-lang="hi">मांत्रिक समस्याओं का समाधान</span>
+          <span data-lang="te">మాంత్రిక సమస్యల పరిష్కారం</span>
+          <span data-lang="ml">മാന്ത്രിക പ്രശ്നങ്ങൾക്ക് പരിഹാരം</span>
+        </div>
+        <div class="special-card-desc">
+          <span data-lang="ta">மந்திரம் யந்திரம் தந்திரம் போன்ற மாந்தரீக பிரச்சனைகளை உடனடி தீர்வு கிடைக்கும் கோவில்.</span>
+          <span data-lang="en">Immediate solutions to problems caused by Mantra, Yantra, and Tantra are provided at this temple.</span>
+          <span data-lang="hi">मंत्र, यंत्र, तंत्र से संबंधित समस्याओं का तत्काल समाधान यहाँ मिलता है।</span>
+          <span data-lang="te">మంత్ర, యంత్ర, తంత్ర సంబంధిత సమస్యలకు తక్షణ పరిష్కారం లభిస్తుంది.</span>
+          <span data-lang="ml">മന്ത്ര, യന്ത്ര, തന്ത്ര സംബന്ധിത പ്രശ്നങ്ങൾക്ക് ഉടനടി പരിഹാരം ലഭിക്കും.</span>
+        </div>
+      </div>
+      <div class="special-card reveal d5">
+        <div class="special-card-icon"><i class="bi bi-people-fill"></i></div>
+        <div class="special-card-title-tamil">
+          <span data-lang="ta">குலதெய்வ வழிகாட்டல்</span>
+          <span data-lang="en">Kula Deiva Guidance</span>
+          <span data-lang="hi">कुलदेवता मार्गदर्शन</span>
+          <span data-lang="te">కుల దేవత మార్గదర్శనం</span>
+          <span data-lang="ml">കുലദൈവ മാർഗ്ഗദർശനം</span>
+        </div>
+        <div class="special-card-desc">
+          <span data-lang="ta">குலதெய்வம் தெரியாதவர்களுக்கு குலதெய்வம் இருக்கும் திசை இடம் சொப்பனத்தில் காண்பிக்கும்.</span>
+          <span data-lang="en">For those unaware of their family deity, the location and direction of their Kula Deiva will be revealed in a dream.</span>
+          <span data-lang="hi">जो अपने कुलदेवता से अनजान हैं, उन्हें स्वप्न में उनका स्थान और दिशा बताई जाती है।</span>
+          <span data-lang="te">కుల దేవత తెలియనివారికి కలలో దేవత దిశ మరియు స్థలం చూపించబడతాయి.</span>
+          <span data-lang="ml">കുലദൈവം അറിയാത്തവർക്ക് സ്വപ്നത്തിൽ ദൈവത്തിന്റെ ദിശയും സ്ഥലവും വെളിപ്പെടുത്തുന്നു.</span>
+        </div>
+      </div>
+      <div class="special-card reveal d6">
+        <div class="special-card-icon"><i class="bi bi-award-fill"></i></div>
+        <div class="special-card-title-tamil">
+          <span data-lang="ta">மகா காளி ஆதி வடிவம்</span>
+          <span data-lang="en">Primal Form of Maha Kali</span>
+          <span data-lang="hi">महाकाली का आदि स्वरूप</span>
+          <span data-lang="te">మహాకాళి ఆది స్వరూపం</span>
+          <span data-lang="ml">മഹാകാളിയുടെ ആദി രൂപം</span>
+        </div>
+        <div class="special-card-desc">
+          <span data-lang="ta">உலகில் வேறு எங்கும் தரிசிக்க முடியாத உருவத்தில் காட்சி அளிக்கும் அன்னை மகா காளியின் ஆதி வடிவம் அமையபெற்ற திருக்கோவில்.</span>
+          <span data-lang="en">A temple housing the primal form of Mother Maha Kali — a form that cannot be found anywhere else in the world.</span>
+          <span data-lang="hi">एक ऐसा मंदिर जहाँ माँ महाकाली का वह आदि स्वरूप है जो दुनिया में कहीं और नहीं मिलता।</span>
+          <span data-lang="te">ప్రపంచంలో మరెక్కడా దర్శించలేని అమ్మ మహాకాళి యొక్క ఆది స్వరూపం ఉన్న ఆలయం.</span>
+          <span data-lang="ml">ലോകത്ത് മറ്റൊരിടത്തും ദർശിക്കാനാകാത്ത അമ്മ മഹാകാളിയുടെ ആദ്യ രൂപം ഉള്ള ക്ഷേത്രം.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ DEITIES ═══════════════ -->
+<section class="deities-section" id="deities">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center; margin-bottom:40px;">
+      <div class="section-eyebrow" style="justify-content:center;">
+        <span data-lang="ta">கோவிலில் வீற்றிருக்கும்</span><span data-lang="en">Enshrined Deities</span><span data-lang="hi">देवता</span><span data-lang="te">దేవతలు</span><span data-lang="ml">ദേവതകൾ</span>
+      </div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-lang="ta">தெய்வங்கள்</span>
+        <span data-lang="en">Deities of the Temple</span>
+        <span data-lang="hi">मंदिर के देवता</span>
+        <span data-lang="te">ఆలయంలోని దేవతలు</span>
+        <span data-lang="ml">ക്ഷേത്രത്തിലെ ദേവതകൾ</span>
+      </h2>
+      <div class="section-rule center"></div>
+    </div>
+    <div class="deities-main reveal">
+      <p class="deities-main-title" data-lang="ta">
+        <strong>நவகிரக விநாயகர்</strong>, <strong>சப்த மாதாக்கள்</strong>, <strong>உன்மத்த வைரவர்</strong>, <strong>வேலப்பர்</strong>, <strong>மலையாள கருப்பசாமி</strong>, <strong>வன பேச்சி</strong>, <strong>ஜடா முனீஸ்வரன்</strong> ஆகிய தெய்வங்கள் இந்த திருக்கோவிலில் அருள்பாலிக்கின்றனர்.
+      </p>
+      <p class="deities-main-title" data-lang="en">
+        <strong>Navagraha Vinayagar</strong>, <strong>Sapta Mathas</strong>, <strong>Unmatha Bhairava</strong>, <strong>Velapper</strong>, <strong>Malaiyal Karupasami</strong>, <strong>Vana Pechi</strong>, and <strong>Jada Muneeswar</strong> bestow their blessings at this sacred temple.
+      </p>
+      <p class="deities-main-title" data-lang="hi">
+        <strong>नवग्रह विनायक</strong>, <strong>सप्त माताएं</strong>, <strong>उन्मत्त भैरव</strong>, <strong>वेलप्पर</strong>, <strong>मलयाल करुप्पासामी</strong>, <strong>वन पेच्ची</strong>, और <strong>जटा मुनीश्वर</strong> इस पवित्र मंदिर में अनुग्रह प्रदान करते हैं।
+      </p>
+      <p class="deities-main-title" data-lang="te">
+        <strong>నవగ్రహ వినాయకుడు</strong>, <strong>సప్త మాతలు</strong>, <strong>ఉన్మత్త భైరవుడు</strong>, <strong>వేలప్పర్</strong>, <strong>మలయాళ కరుప్పసామి</strong>, <strong>వన పేచ్చి</ strong>, < strong >జడா முனீஸ்வரன்</ strong > ஈ ஆலயம் லோ அனுக்ரஹிஸ்துன்னார்.
+      </p>
+      <p class="deities-main-title" data-lang="ml">
+        < strong >നവഗ്രഹ വിനായകൻ</ strong >, < strong >സപ്ത മാതാക്കൾ</ strong >, < strong >ഉന്മത്ത ഭൈരവൻ</ strong >, < strong >വേലപ്പർ</ strong >, < strong >മലയാള കറുപ്പസ്വാമി</ strong >, < strong >വന പേച്ചി</ strong >, < strong >ജടാ മുനീശ്വരൻ</ strong > ഈ ക്ഷേത്രത്തിൽ അനുഗ്രഹം നൽകുന്നു.
+      </p>
+    </div>
+    <div class="deity-grid">
+      <div class="deity-card reveal d1">
+        <div class="deity-card-top">
+          <img src="assets/img/kaarirulbathrakali - Copy.jpeg" alt="Bhadrakali Amman">
+        </div>
+        <div class="deity-card-body">
+          <div class="deity-name">
+            <span data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன்</span>
+            <span data-lang="en">Sri Kaar Irul Ganapadai Bhadrakali Amman</span>
+            <span data-lang="hi">श्री कार इरुल गणपडै भद्रकाळी अम्मन</span>
+            <span data-lang="te">శ్రీ కార్ ఇరుల్ గణపడై భద్రకాళి అమ్మన్</span>
+            <span data-lang="ml">ശ്രീ കാർ ഇരുൾ ഗണപടൈ ഭദ്രകാളി അമ്മൻ</span>
+          </div>
+          <div class="deity-desc">
+            <span data-lang="ta">உக்ர சக்தி வடிவம் — பக்தர்களின் துன்பங்களை நீக்கி அருள் வழங்கும் பத்ரகாளி அம்மன்</span>
+            <span data-lang="en">Fierce Shakti form — Bhadrakali Amman who removes devotees' sorrows and grants blessings</span>
+            <span data-lang="hi">उग्र शक्ति रूप — भक्तों के कष्टों को दूर करने वाली और आशीर्वाद देने वाली भद्रकाळी अम्मन</span>
+            <span data-lang="te">ఉగ్ర శక్తి రూపం — భక్తుల దుఃఖాలు తొలగించి అనుగ్రహించే భద్రకాళి అమ్మన్</span>
+            <span data-lang="ml">ഉഗ്ര ശക്തി രൂപം — ഭക്തരുടെ ദുഃഖങ്ങൾ നീക്കി അനുഗ്രഹിക്കുന്ന ഭദ്രകാളി അമ്മൻ</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card: ரசாதள வேதாளி -->
+<div class="deity-card reveal d2">
+  <div class="deity-card-top">
+    <img src="assets/img/vedhafemale - Copy.jpg" alt="Rasathala Vedali">
+  </div>
+  <div class="deity-card-body">
+    <div class="deity-name">
+      <span data-lang="ta">ரசாதள வேதாளி</span>
+      <span data-lang="en">Rasathala Vedali</span>
+      <span data-lang="hi">रसातल वेताली</span>
+      <span data-lang="te">రసాతల వేతాళి</span>
+      <span data-lang="ml">രസാതല വേതാളി</span>
+    </div>
+    <div class="deity-desc">
+      <span data-lang="ta">ரசாதள உலகை காக்கும் வேதாளி — பக்தர்களுக்கு அருள் வழங்கும் உக்ர தேவி</span>
+      <span data-lang="en">Rasathala Vedali — fierce guardian of the nether realm who bestows protection and fearlessness upon devotees</span>
+      <span data-lang="hi">रसातल की रक्षक वेताली — भक्तों को सुरक्षा और निर्भयता प्रदान करने वाली उग्र देवी</span>
+      <span data-lang="te">రసాతల రక్షకి వేతాళి — భక్తులకు అభయమిచ్చే ఉగ్ర దేవి</span>
+      <span data-lang="ml">രസാതല രക്ഷകി വേതാളി — ഭക്തർക്ക് അഭയം നൽകുന്ന ഉഗ്ര ദേവി</span>
+    </div>
+  </div>
+</div>
+
+<!-- Card: தலாதள வேதாளம் -->
+<div class="deity-card reveal d3">
+  <div class="deity-card-top">
+    <img src="assets/img/vedhamale - Copy.jpg" alt="Thalatala Vedalam">
+  </div>
+  <div class="deity-card-body">
+    <div class="deity-name">
+      <span data-lang="ta">தலாதள வேதாளம்</span>
+      <span data-lang="en">Thalatala Vedalam</span>
+      <span data-lang="hi">तलातल वेताळम</span>
+      <span data-lang="te">తలాతల వేతాళం</span>
+      <span data-lang="ml">തലാതല വേതാളം</span>
+    </div>
+    <div class="deity-desc">
+      <span data-lang="ta">தலாதள உலகின் வேதாளம் — இருளை விரட்டி பக்தர்களை காக்கும் பேராற்றல் மிக்க சக்தி</span>
+      <span data-lang="en">Thalatala Vedalam — powerful spirit of the deep realm who wields cosmic force to ward off darkness and evil</span>
+      <span data-lang="hi">तलातल की शक्तिशाली आत्मा — अंधकार और बुराई को दूर करने वाला वेताळम</span>
+      <span data-lang="te">తలాతల శక్తిమంతమైన వేతాళం — చీకటిని తరిమి భక్తులను కాపాడే మహాశక్తి</span>
+      <span data-lang="ml">തലാതല ശക്തിമാനായ വേതാളം — ഇരുളിനെ തുരത്തി ഭക്തരെ രക്ഷിക്കുന്ന മഹാശക്തി</span>
+    </div>
+  </div>
+</div>
+      <div class="deity-card reveal d1">
+        <div class="deity-card-top">
+          <img src="assets/img/vedhalamfemale - Copy.jpg" alt="Agni Bhootham">
+        </div>
+        <div class="deity-card-body">
+          <div class="deity-name">
+            <span data-lang="ta">அக்கினி பூதம்</span>
+            <span data-lang="en">Agni Bhootham</span>
+            <span data-lang="hi">अग्नि भूतम</span>
+            <span data-lang="te">అగ్ని భూతం</span>
+            <span data-lang="ml">അഗ്നി ഭൂതം</span>
+          </div>
+          <div class="deity-desc">
+            <span data-lang="ta">நெருப்பு வடிவில் கோவிலை காக்கும் புனிதமான தெய்வீக சக்தி — தீமைகளை எரித்து பக்தர்களுக்கு தூய்மையும் அருளும் வழங்கும் காவல் சக்தி</span>
+            <span data-lang="en">Sacred fire spirit guarding the temple — burns away all evil and bestows purity and blessings upon devotees</span>
+            <span data-lang="hi">अग्नि रूप में मंदिर की रक्षा करने वाली पवित्र शक्ति — बुराई को जलाकर भक्तों को पवित्रता और आशीर्वाद देने वाली दिव्य शक्ति</span>
+            <span data-lang="te">అగ్ని రూపంలో దేవాలయాన్ని కాపాడే పవిత్ర శక్తి — చెడును దహించి భక్తులకు పవిత్రత మరియు అనుగ్రహం ఇచ్చే కాపలా శక్తి</span>
+            <span data-lang="ml">അഗ്നി രൂപത്തിൽ ക്ഷേത്രം കാക്കുന്ന പവിത്ര ശക്തി — തിന്മ ദഹിപ്പിച്ച് ഭക്തർക്ക് പരിശുദ്ധിയും അനുഗ്രഹവും നൽകുന്ന കാവൽ ശക്തി</span>
+          </div>
+        </div>
+      </div>
+      <div class="deity-card reveal d2">
+        <div class="deity-card-top">
+          <img src="assets/img/vedhalam - Copy.jpg" alt="Naga Bhootham">
+        </div>
+        <div class="deity-card-body">
+          <div class="deity-name">
+            <span data-lang="ta">நாக பூதம்</span>
+            <span data-lang="en">Naga Bhootham</span>
+            <span data-lang="hi">नाग भूतम</span>
+            <span data-lang="te">నాగ భూతం</span>
+            <span data-lang="ml">നാഗ ഭൂതം</span>
+          </div>
+          <div class="deity-desc">
+            <span data-lang="ta">பாம்பு வடிவில் கோவிலை காக்கும் புனிதமான தெய்வீக சக்தி — நாக தோஷம் நீக்கி பக்தர்களுக்கு அருள் வழங்கும் காவல் சக்தி</span>
+            <span data-lang="en">Sacred serpent spirit guarding the temple — removes Naga dosha and bestows blessings upon all devotees</span>
+            <span data-lang="hi">सर्प रूप में मंदिर की रक्षा करने वाली पवित्र शक्ति — नाग दोष निवारण कर भक्तों को आशीर्वाद देने वाली दिव्य शक्ति</span>
+            <span data-lang="te">సర్ప రూపంలో దేవాలయాన్ని కాపాడే పవిత్ర శక்తి — నాగ దోషం తొలగించి భక్తులను అనుగ్రహించే కాపలా శక్తి</span>
+            <span data-lang="ml">സർപ്പ രൂപത്തിൽ ക്ഷേത്രം കാക്കുന്ന പവിത്ര ശക്തി — നാഗദോഷം ഒഴിവാക്കി ഭക്തർക്ക് അനുഗ്രഹം നൽകുന്ന കാവൽ ശക്തി</span>
+          </div>
+        </div>
+      </div>
+      <div class="deity-card reveal d2">
+        <div class="deity-card-top"><img src="assets/img/vinayagar.jpg" alt="Navagraha Vinayagar"></div>
+        <div class="deity-card-body">
+          <div class="deity-name">
+            <span data-lang="ta">நவகிரக விநாயகர்</span>
+            <span data-lang="en">Navagraha Vinayagar</span>
+            <span data-lang="hi">नवग्रह विनायक</span>
+            <span data-lang="te">నవగ్రహ వినాయకుడు</span>
+            <span data-lang="ml">നവഗ്രഹ വിനായകൻ</span>
+          </div>
+          <div class="deity-desc">
+            <span data-lang="ta">ஒன்பது கிரகங்களின் அதிபதியாக விளங்கும் விநாயகர்</span>
+            <span data-lang="en">Vinayagar who presides over the nine planetary forces</span>
+            <span data-lang="hi">नौ ग्रहों के स्वामी विनायक</span>
+            <span data-lang="te">నవగ్రహాలకు అధిపతిగా విలసిల్లే వినాయకుడు</span>
+            <span data-lang="ml">ഒൻപത് ഗ്രഹങ്ങളുടെ അധിപതിയായ വിനായകൻ</span>
+          </div>
+        </div>
+      </div>
+      <div class="deity-card reveal d3">
+        <div class="deity-card-top"><img src="assets/img/Sapta Mathas.jpg" alt="Sapta Mathas"></div>
+        <div class="deity-card-body">
+          <div class="deity-name">
+            <span data-lang="ta">சப்த மாதாக்கள்</span>
+            <span data-lang="en">Sapta Mathas</span>
+            <span data-lang="hi">सप्त माताएं</span>
+            <span data-lang="te">సప్త మాతలు</span>
+            <span data-lang="ml">സപ്ത മാതാക്കൾ</span>
+          </div>
+          <div class="deity-desc">
+            <span data-lang="ta">ஏழு தாய் தெய்வங்கள் — அனைத்து நலன்களையும் அருளும் சக்திகள்</span>
+            <span data-lang="en">Seven Mother Goddesses — powers that bestow all blessings and well-being</span>
+            <span data-lang="hi">सात माता देवियाँ — सभी कल्याण प्रदान करने वाली शक्तियाँ</span>
+            <span data-lang="te">ఏడు మాత దేవతలు — అన్ని శ్రేయస్సులను అనుగ్రహించే శక్తులు</span>
+            <span data-lang="ml">ഏഴ് മാതൃ ദേവതകൾ — സർവ്വ ഐശ്വര്യവും നൽകുന്ന ശക്തികൾ</span>
+          </div>
+        </div>
+      </div>
+      <div class="deity-card reveal d4">
+  <div class="deity-card-top">
+    <img src="assets/img/bhairavar.jpeg" alt="Unmatha Bhairavar">
+  </div>
+
+  <div class="deity-card-body">
+    <div class="deity-name">
+      <span data-lang="ta">உன்மத்த பைரவர்</span>
+      <span data-lang="en">Unmatha Bhairavar</span>
+      <span data-lang="hi">उन्मत्त भैरव</span>
+      <span data-lang="te">ఉన్మత్త భైరవుడు</span>
+      <span data-lang="ml">ഉന്മത്ത ഭൈരവൻ</span>
+    </div>
+
+    <div class="deity-desc">
+      <span data-lang="ta">காவல் தெய்வமாக விளங்கும் பைரவர் — நலன் காப்பாளர்</span>
+      <span data-lang="en">Bhairavar, the guardian deity — protector of well-being</span>
+      <span data-lang="hi">रक्षक देव भैरव — सभी के कल्याण के संरक्षक</span>
+      <span data-lang="te">కాపలా దైవంగా వెలసే భైరవుడు — శ్రేయోరక్షకుడు</span>
+      <span data-lang="ml">കാവൽ ദൈവമായ ഭൈരവൻ — സർവ്വ ക്ഷേമ സംരക്ഷകൻ</span>
+    </div>
+  </div>
+</div>
+      <div class="deity-card reveal d5">
+        <div class="deity-card-top"><img src="assets/img/Velapper.jpg" alt="Velapper"></div>
+        <div class="deity-card-body">
+          <div class="deity-name">
+            <span data-lang="ta">வேலப்பர்</span>
+            <span data-lang="en">Velapper (Murugan)</span>
+            <span data-lang="hi">वेलप्पर (मुरुगन)</span>
+            <span data-lang="te">వేలప్పర్ (మురుగన్)</span>
+            <span data-lang="ml">വേലപ്പർ (മുരുകൻ)</span>
+          </div>
+          <div class="deity-desc">
+            <span data-lang="ta">வேல் ஏந்திய அழகிய முருகன் — ஆற்றல் மற்றும் வெற்றி தரும் தெய்வம்</span>
+            <span data-lang="en">The beautiful Murugan bearing the spear — deity of strength and victory</span>
+            <span data-lang="hi">वेल धारण करने वाले मुरुगन — शक्ति और विजय प्रदाता</span>
+            <span data-lang="te">వేల్ ధరించిన అందమైన మురుగన్ — శక్తి మరియు విజయం అనుగ్రహించే దైవం</span>
+            <span data-lang="ml">വേൽ ഏന്തിയ സുന്ദരനായ മുരുകൻ — ശക്തിയും വിജയവും നൽകുന്ന ദൈവം</span>
+          </div>
+        </div>
+      </div>
+      <div class="deity-card reveal d6">
+        <div class="deity-card-top"><img src="assets/img/jadamuneshwar.jpeg" alt="Jada Muneeswar"></div>
+        <div class="deity-card-body">
+          <div class="deity-name">
+            <span data-lang="ta">ஜடா முனீஸ்வரன்</span>
+            <span data-lang="en">Jada Muneeswar</span>
+            <span data-lang="hi">जटा मुनीश्वर</span>
+            <span data-lang="te">జడా మునీశ్వరుడు</span>
+            <span data-lang="ml">ജടാ മുനീശ്വരൻ</span>
+          </div>
+          <div class="deity-desc">
+            <span data-lang="ta">ஞானம் மற்றும் முக்தி அருளும் முனிவர் தெய்வம்</span>
+            <span data-lang="en">The sage deity who grants wisdom and liberation</span>
+            <span data-lang="hi">ज्ञान और मुक्ति देने वाले ऋषि देव</span>
+            <span data-lang="te">జ్ఞానం మరియు మోక్షం అనుగ్రహించే మునీశ్వరుడు</span>
+            <span data-lang="ml">ജ്ഞാനവും മോക്ഷവും നൽകുന്ന മുനിദേവൻ</span>
+          </div>
+        </div>
+      </div>
+      <div class="deity-card reveal d2">
+        <div class="deity-card-top"><img src="assets/img/malaiyalakarupu.jpeg" alt="Malaiyal Karupasami"></div>
+        <div class="deity-card-body">
+          <div class="deity-name">
+            <span data-lang="ta">மலையாள கருப்பசாமி</span>
+            <span data-lang="en">Malaiyal Karupasami</span>
+            <span data-lang="hi">मलयाल करुप्पासामी</span>
+            <span data-lang="te">మలయాళ కరుప్పసామి</span>
+            <span data-lang="ml">മലയാള കറുപ്പസ്വാമി</span>
+          </div>
+          <div class="deity-desc">
+            <span data-lang="ta">மலைகளின் அதிபதி — காவல் மற்றும் வளம் தரும் கருப்பசாமி</span>
+            <span data-lang="en">Lord of the mountains — Karupasami who grants protection and abundance</span>
+            <span data-lang="hi">पर्वतों के स्वामी — रक्षा और समृद्धि देने वाले करुप्पासामी</span>
+            <span data-lang="te">పర్వతాల అధిపతి — రక్షణ మరియు సమృద్ధి అనుగ్రహించే కరుప్పసామి</span>
+            <span data-lang="ml">പർവ്വതങ്ങളുടെ അധിപൻ — കാവലും ഐശ്വര്യവും നൽകുന്ന കറുപ്പസ്വാമി</span>
+          </div>
+        </div>
+      </div>
+      <div class="deity-card reveal d3">
+        <div class="deity-card-top"><img src="assets/img/vanapechi.jpeg" alt="Vana Pechi"></div>
+        <div class="deity-card-body">
+          <div class="deity-name">
+            <span data-lang="ta">வன பேச்சி</span>
+            <span data-lang="en">Vana Pechi</span>
+            <span data-lang="hi">वन पेच्ची</span>
+            <span data-lang="te">వన పేచ్చి</span>
+            <span data-lang="ml">വന പേച്ചി</span>
+          </div>
+          <div class="deity-desc">
+            <span data-lang="ta">வனத்தின் சக்தி — குழந்தைகள் மற்றும் குடும்பத்தை காக்கும் தெய்வம்</span>
+            <span data-lang="en">The power of the forest — deity who protects children and families</span>
+            <span data-lang="hi">वन की शक्ति — बच्चों और परिवार की रक्षा करने वाली देवी</span>
+            <span data-lang="te">అడవి శక్తి — పిల్లలు మరియు కుటుంబాన్ని కాపాడే దైవం</span>
+            <span data-lang="ml">വനത്തിന്റെ ശക്തി — കുട്ടികളെയും കുടുംബത്തെയും സംരക്ഷിക്കുന്ന ദൈവം</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ POOJAS & PARIGARAM ═══════════════ -->
+<section class="poojas-section" id="poojas">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center; margin-bottom:44px;">
+      <div class="section-eyebrow" style="justify-content:center;">
+        <span data-lang="ta">பூசைகள் மற்றும் பரிகாரங்கள்</span><span data-lang="en">Poojas & Parikarams</span><span data-lang="hi">पूजाएं और परिहार</span><span data-lang="te">పూజలు &amp; పరిహారాలు</span><span data-lang="ml">പൂജകൾ &amp; പരിഹാരങ്ങൾ</span>
+      </div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-lang="ta">பூசைகள் மற்றும் பரிகார பூஜைகள்</span>
+        <span data-lang="en">Poojas &amp; Parihara Poojaigal</span>
+        <span data-lang="hi">पूजाएं और परिहार पूजाएं</span>
+        <span data-lang="te">పూజలు మరియు పరిహార పూజలు</span>
+        <span data-lang="ml">പൂജകളും പരിഹാര പൂജകളും</span>
+      </h2>
+      <div class="section-rule center"></div>
+    </div>
+    <div class="pooja-grid">
+      <div class="pooja-card reveal d1">
+        <div class="pooja-card-head">
+          <div class="pooja-card-icon"><i class="bi bi-moon-fill"></i></div>
+          <div class="pooja-card-title">
+            <span data-lang="ta">பௌர்ணமி பூசை</span><span data-lang="en">Pournami Puja</span><span data-lang="hi">पौर्णमि पूजा</span><span data-lang="te">పౌర్ణమి పూజ</span><span data-lang="ml">പൗർണ്ണമി പൂജ</span>
+          </div>
+        </div>
+        <div class="pooja-card-body">
+          <p class="pooja-card-desc">
+            <span data-lang="ta">குலதெய்வம் தெரியாதவர்களுக்கு குலதெய்வத்தை காட்டி கொடுக்கும் சிறப்பு பூசை. அன்னையின் அருளால் குலதெய்வம் இருக்கும் திசை சொப்பனத்தில் காண்பிக்கும்.</span>
+            <span data-lang="en">A special puja that reveals the family deity to those who are unaware. Through the grace of the Mother, the direction of the Kula Deiva will be shown in a dream.</span>
+            <span data-lang="hi">यह विशेष पूजा उन लोगों के लिए है जो अपने कुलदेवता को नहीं जानते। देवी माँ की कृपा से स्वप्न में कुलदेवता का स्थान प्रकट होता है।</span>
+            <span data-lang="te">కుల దేవత తెలియనివారికి కుల దేవతను చూపించే ప్రత్యేక పూజ. అమ్మ అనుగ్రహం వల్ల కలలో దిశ చూపించబడుతుంది.</span>
+            <span data-lang="ml">കുലദൈവം അറിയാത്തവർക്ക് കുലദൈവത്തെ കാണിക്കുന്ന പ്രത്യേക പൂജ. അമ്മയുടെ ഭ്രഹ്മദർശനം ദൈവത്തിന്റെ ദിശ സ്വപ്നത്തിൽ വെളിപ്പെടുത്തും.</span>
+          </p>
+          <span class="pooja-free-tag"><i class="bi bi-check-circle-fill"></i> <span data-lang="ta">கட்டணமில்லை</span><span data-lang="en">Free</span><span data-lang="hi">निःशुल्क</span><span data-lang="te">ఉచితం</span><span data-lang="ml">സൗജന്യം</span></span>
+        </div>
+      </div>
+      <div class="pooja-card reveal d2">
+        <div class="pooja-card-head">
+          <div class="pooja-card-icon"><i class="bi bi-circle"></i></div>
+          <div class="pooja-card-title">
+            <span data-lang="ta">அமாவாசை பூசை</span><span data-lang="en">Amavasai Puja</span><span data-lang="hi">अमावस्या पूजा</span><span data-lang="te">అమావాస్య పూజ</span><span data-lang="ml">അമാവാസ്യ പൂജ</span>
+          </div>
+        </div>
+        <div class="pooja-card-body">
+          <p class="pooja-card-desc">
+            <span data-lang="ta">அமாவாசை நாளில் பித்ரு தர்ப்பணம் மற்றும் குல தெய்வ வழிபாடு. முன்னோர்களின் ஆசியை பெறும் சிறப்பான நாள்.</span>
+            <span data-lang="en">Pitru Tharpana and Kula Deiva worship on the Amavasai day — a special day to receive the blessings of ancestors.</span>
+            <span data-lang="hi">अमावस्या के दिन पितृ तर्पण और कुलदेवता पूजा — पूर्वजों का आशीर्वाद पाने का विशेष दिन।</span>
+            <span data-lang="te">అమావాస్య రోజు పితృ తర్పణం మరియు కుల దేవత పూజ — పితరుల ఆశీర్వాదం పొందే శుభ రోజు.</span>
+            <span data-lang="ml">അമാവാസ്യ ദിവസം പിതൃ തർപ്പണവും കുലദൈവ ആരാധനയും — പൂർവ്വികരുടെ ആശീർവ്വാദം ലഭിക്കുന്ന ദിവസം.</span>
+          </p>
+          <span class="pooja-free-tag"><i class="bi bi-check-circle-fill"></i> <span data-lang="ta">கட்டணமில்லை</span><span data-lang="en">Free</span><span data-lang="hi">निःशुल्क</span><span data-lang="te">ఉచితం</span><span data-lang="ml">സൗജന്യം</span></span>
+        </div>
+      </div>
+      <div class="pooja-card reveal d3">
+        <div class="pooja-card-head">
+          <div class="pooja-card-icon"><i class="bi bi-scissors"></i></div>
+          <div class="pooja-card-title">
+            <span data-lang="ta">வெட்டு பூசை</span><span data-lang="en">Vettu Puja</span><span data-lang="hi">वेट्टू पूजा</span><span data-lang="te">వెట్టు పూజ</span><span data-lang="ml">വെട്ടു പൂജ</span>
+          </div>
+        </div>
+        <div class="pooja-card-body">
+          <p class="pooja-card-desc">
+            <span data-lang="ta">குலதெய்வத்தை கட்டி மறித்து வைத்திருந்தால் அந்த கட்டை உடனடியாக உடைக்கும் வெட்டு பூசை. மாந்திரீக கட்டுகளை நீக்கும் சக்தி வாய்ந்த பரிகாரம்.</span>
+            <span data-lang="en">A powerful Vettu Puja that immediately breaks any mystical binding placed on the family deity. A potent remedy to dissolve dark bonds.</span>
+            <span data-lang="hi">यदि कुलदेवता को बंधन में रखा गया हो, तो यह वेट्टू पूजा उसे तुरंत तोड़ती है। मांत्रिक बंधनों को दूर करने का शक्तिशाली उपाय।</span>
+            <span data-lang="te">కుల దేవతపై మాంత్రిక బంధం వేసివుంటే దాన్ని తక్షణమే తెంచే వెట్టు పూజ.</span>
+            <span data-lang="ml">കുലദൈവത്തിൽ ബന്ധം ഉണ്ടെങ്കിൽ അത് ഉടനടി ഉടയ്ക്കുന്ന വെട്ടു പൂജ. മാന്ത്രിക ബന്ധങ്ങൾ നീക്കുന്ന ശക്തിയുള്ള പരിഹാരം.</span>
+          </p>
+          <span class="pooja-free-tag"><i class="bi bi-check-circle-fill"></i> <span data-lang="ta">கட்டணமில்லை</span><span data-lang="en">Free</span><span data-lang="hi">निःशुल्क</span><span data-lang="te">ఉచితం</span><span data-lang="ml">സൗജന്യം</span></span>
+        </div>
+      </div>
+      <div class="pooja-card reveal d4">
+        <div class="pooja-card-head">
+          <div class="pooja-card-icon"><i class="bi bi-sun-fill"></i></div>
+          <div class="pooja-card-title">
+            <span data-lang="ta">ஆடி 18 பூசை</span><span data-lang="en">Aadi 18 Puja</span><span data-lang="hi">आदि 18 पूजा</span><span data-lang="te">ఆది 18 పూజ</span><span data-lang="ml">ആടി 18 പൂജ</span>
+          </div>
+        </div>
+        <div class="pooja-card-body">
+          <p class="pooja-card-desc">
+            <span data-lang="ta">ஆடி மாதம் 18-ம் நாள் அம்மனுக்கு சிறப்பு அபிஷேகம் மற்றும் அலங்காரம். வருட விழாவிலும் குல தெய்வ வழிபாடும் நடைபெறும்.</span>
+            <span data-lang="en">Special abhishekam and decoration for the Mother on the 18th day of the Tamil month Aadi. Annual festival with Kula Deiva worship.</span>
+            <span data-lang="hi">आदि माह के 18वें दिन अम्मन को विशेष अभिषेक और सजावट। वार्षिक उत्सव में कुलदेवता पूजा भी होती है।</span>
+            <span data-lang="te">ఆది మాసం 18వ రోజున అమ్మకు విశేష అభిషేకం మరియు అలంకారం. వార్షిక ఉత్సవంలో కుల దేవత పూజ నిర్వహించబడుతుంది.</span>
+            <span data-lang="ml">ആടി മാസം 18-ആം ദിവസം അമ്മയ്ക്ക് വിശേഷ അഭിഷേകവും അലങ്കാരവും. വാർഷിക ഉത്സവത്തിൽ കുലദൈവ ആരാധനയും.</span>
+          </p>
+          <span class="pooja-free-tag"><i class="bi bi-check-circle-fill"></i> <span data-lang="ta">கட்டணமில்லை</span><span data-lang="en">Free</span><span data-lang="hi">निःशुल्क</span><span data-lang="te">ఉచితం</span><span data-lang="ml">സൗജന്യം</span></span>
+        </div>
+      </div>
+      <div class="pooja-card reveal d5">
+        <div class="pooja-card-head">
+          <div class="pooja-card-icon"><i class="bi bi-stars"></i></div>
+          <div class="pooja-card-title">
+            <span data-lang="ta">மாசி சிவராத்திரி</span><span data-lang="en">Masi Sivaratri</span><span data-lang="hi">मासी शिवरात्रि</span><span data-lang="te">మాసి శివరాత్రి</span><span data-lang="ml">മാസി ശിവരാത്രി</span>
+          </div>
+        </div>
+        <div class="pooja-card-body">
+          <p class="pooja-card-desc">
+            <span data-lang="ta">மாசி மாதம் சிவராத்திரி அன்று இரவு முழுவதும் சிறப்பு வழிபாடு. இரவு நெடுகிலும் தீபாலங்காரம் மற்றும் சிறப்பு அபிஷேகம்.</span>
+            <span data-lang="en">All-night special worship on Masi Sivaratri. Lamp decorations and special abhishekam through the night.</span>
+            <span data-lang="hi">मासी शिवरात्रि पर रात भर विशेष पूजा। रात भर दीप अलंकरण और विशेष अभिषेक।</span>
+            <span data-lang="te">మాసి శివరాత్రి రోజు రాత్రంతా ప్రత్యేక ఆరాధన. రాత్రంతా దీప అలంకారం మరియు విశేష అభిషేకం.</span>
+            <span data-lang="ml">മാസി ശിവരാത്രിയിൽ രാത്രി മുഴുവൻ പ്രത്യേക ആരാധന. ദീപ അലങ്കാരവും വിശേഷ അഭിഷേകവും.</span>
+          </p>
+          <span class="pooja-free-tag"><i class="bi bi-check-circle-fill"></i> <span data-lang="ta">கட்டணமில்லை</span><span data-lang="en">Free</span><span data-lang="hi">निःशुल्क</span><span data-lang="te">ఉచితం</span><span data-lang="ml">സൗജന്യം</span></span>
+        </div>
+      </div>
+      <div class="pooja-card reveal d6">
+        <div class="pooja-card-head">
+          <div class="pooja-card-icon"><i class="bi bi-flower3"></i></div>
+          <div class="pooja-card-title">
+            <span data-lang="ta">பங்குனி உத்திரம்</span><span data-lang="en">Panguni Uthiram</span><span data-lang="hi">पंगुनी उत्तिरम</span><span data-lang="te">పంగుని ఉత్తిరం</span><span data-lang="ml">പങ്കുനി ഉത്തിരം</span>
+          </div>
+        </div>
+        <div class="pooja-card-body">
+          <p class="pooja-card-desc">
+            <span data-lang="ta">பங்குனி மாதம் உத்திர நட்சத்திரம் அன்று சிறப்பு திருவிழா. அன்னையை ஆராதிக்க ஏராளமான பக்தர்கள் வருகை தருவர்.</span>
+            <span data-lang="en">Grand festival on Uttara Nakshatra during the month of Panguni. Thousands of devotees gather to worship the Mother.</span>
+            <span data-lang="hi">पंगुनी माह में उत्तर नक्षत्र पर भव्य उत्सव। हजारों भक्त देवी माँ की पूजा के लिए आते हैं।</span>
+            <span data-lang="te">పంగుని మాసంలో ఉత్తర నక్షత్రం రోజు ప్రత్యేక పండుగ. అమ్మను ఆరాధించడానికి అనేక మంది భక్తులు వస్తారు.</span>
+            <span data-lang="ml">പങ്കുനി മാസത്തിൽ ഉത്തര നക്ഷത്ര ദിനത്തിൽ ഭവ്യ ഉത്സവം. ആയിരക്കണക്കിന് ഭക്തർ അമ്മയെ ആരാധിക്കാൻ വരുന്നു.</span>
+          </p>
+          <span class="pooja-free-tag"><i class="bi bi-check-circle-fill"></i> <span data-lang="ta">கட்டணமில்லை</span><span data-lang="en">Free</span><span data-lang="hi">निःशुल्क</span><span data-lang="te">ఉచితం</span><span data-lang="ml">സൗജന്യം</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PUJA DAYS ═══════════════ -->
+<section class="pujadays-section" id="pujadays">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center; margin-bottom:10px;">
+      <div class="section-eyebrow" style="justify-content:center;">
+        <span data-lang="ta">பூசை நாட்கள்</span><span data-lang="en">Puja Days</span><span data-lang="hi">पूजा के दिन</span><span data-lang="te">పూజ రోజులు</span><span data-lang="ml">പൂജ ദിവസങ്ങൾ</span>
+      </div>
+      <h2 class="section-title" style="color:var(--gold3); text-align:center;">
+        <span data-lang="ta">சிறப்பு பூசை நாட்கள்</span>
+        <span data-lang="en">Special Puja Days</span>
+        <span data-lang="hi">विशेष पूजा दिवस</span>
+        <span data-lang="te">ప్రత్యేక పూజ రోజులు</span>
+        <span data-lang="ml">പ്രത്യേക പൂജ ദിവസങ്ങൾ</span>
+      </h2>
+      <div class="section-rule center"></div>
+    </div>
+    <div class="pujaday-grid">
+      <div class="pujaday-card reveal d1">
+        <i class="bi bi-moon-fill pujaday-icon"></i>
+        <div class="pujaday-name"><span data-lang="ta">பௌர்ணமி</span><span data-lang="en">Pournami</span><span data-lang="hi">पौर्णमि</span><span data-lang="te">పౌర్ణమి</span><span data-lang="ml">പൗർണ്ണമി</span></div>
+      </div>
+      <div class="pujaday-card reveal d2">
+        <i class="bi bi-circle pujaday-icon"></i>
+        <div class="pujaday-name"><span data-lang="ta">அமாவாசை</span><span data-lang="en">Amavasai</span><span data-lang="hi">अमावस्या</span><span data-lang="te">అమావాస్య</span><span data-lang="ml">അമാവാസ്യ</span></div>
+      </div>
+      <div class="pujaday-card reveal d3">
+        <i class="bi bi-sun-fill pujaday-icon"></i>
+        <div class="pujaday-name"><span data-lang="ta">ஆடி 18</span><span data-lang="en">Aadi 18</span><span data-lang="hi">आदि 18</span><span data-lang="te">ఆది 18</span><span data-lang="ml">ആടി 18</span></div>
+      </div>
+      <div class="pujaday-card reveal d4">
+        <i class="bi bi-stars pujaday-icon"></i>
+        <div class="pujaday-name"><span data-lang="ta">மாசி சிவராத்திரி</span><span data-lang="en">Masi Sivaratri</span><span data-lang="hi">मासी शिवरात्रि</span><span data-lang="te">మాసి శివరాత్రి</span><span data-lang="ml">മാസി ശിവരാത്രി</span></div>
+      </div>
+      <div class="pujaday-card reveal d5">
+        <i class="bi bi-flower1 pujaday-icon"></i>
+        <div class="pujaday-name"><span data-lang="ta">பங்குனி உத்திரம்</span><span data-lang="en">Panguni Uthiram</span><span data-lang="hi">पंगुनी उत्तिरम</span><span data-lang="te">పంగుని ఉత్తిరం</span><span data-lang="ml">പങ്കുനി ഉത്തിരം</span></div>
+      </div>
+      <div class="pujaday-card reveal d5">
+        <i class="bi bi-fire pujaday-icon"></i>
+        <div class="pujaday-name"><span data-lang="ta">ராகுகால பூஜை</span><span data-lang="en">Ragukala Pooja</span><span data-lang="hi">राहुकाल पूजा</span><span data-lang="te">రాహుకాల పూజ</span><span data-lang="ml">രാഹുകാല പൂജ</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FREE SERVICES BAND ═══════════════ -->
+<div class="free-band">
+  <div class="reveal" style="max-width:800px;margin:0 auto;">
+    <div style="font-size:2rem;color:var(--deep);margin-bottom:12px;"><i class="bi bi-gift-fill"></i></div>
+    <h2 data-lang="ta">எந்த கட்டணமும் கிடையாது</h2>
+    <h2 data-lang="en">All Pujas are FREE of Charge</h2>
+    <h2 data-lang="hi">सभी पूजाएं नि:शुल्क</h2>
+    <h2 data-lang="te">అన్ని పూజలు ఉచితం</h2>
+    <h2 data-lang="ml">എല്ലാ പൂജകളും സൗജന്യം</h2>
+    <p data-lang="ta">இங்கு அனைத்து வழிபாடும் பரிகாரங்களும் கட்டணம் இன்றி நடைபெறும். பரிகார பூஜைகளுக்கு முன் அனுமதி பெற்ற பிறகே நடைபெறும்.</p>
+    <p data-lang="en">All worship services and parikarams at this temple are conducted free of cost. Prior permission is required before parihara pujas.</p>
+    <p data-lang="hi">इस मंदिर में सभी पूजाएं और परिहार पूर्णतः नि:शुल्क हैं। परिहार पूजाओं से पहले अनुमति आवश्यक है।</p>
+    <p data-lang="te">ఈ ఆలయంలో అన్ని పూజలు మరియు పరిహారాలు ఉచితంగా నిర్వహించబడతాయి.</p>
+    <p data-lang="ml">ഈ ക്ഷേത്രത്തിൽ എല്ലാ പൂജകളും പരിഹാരങ്ങളും സൗജന്യമായി നടക്കുന്നു.</p>
+    <div style="margin-top:24px;">
+      <!-- <a href="tel:+918012709645" class="free-band-badge">
+        <i class="bi bi-telephone-fill"></i>&nbsp; +91 80127 09645
+      </a> -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ GALLERY ═══════════════ -->
+<section class="gallery-section" id="gallery">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center; margin-bottom:44px;">
+      <div class="section-eyebrow" style="justify-content:center;">
+        <span data-lang="ta">ஆலய படங்கள்</span><span data-lang="en">Temple Gallery</span><span data-lang="hi">मंदिर गैलरी</span><span data-lang="te">ఆలయ చిత్రాలు</span><span data-lang="ml">ക്ഷേത്ര ചിത്രങ്ങൾ</span>
+      </div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-lang="ta">தெய்வீக தரிசன படங்கள்</span>
+        <span data-lang="en">Divine Darshan Gallery</span>
+        <span data-lang="hi">दिव्य दर्शन गैलरी</span>
+        <span data-lang="te">దివ్య దర్శన గ్యాలరీ</span>
+        <span data-lang="ml">ദിവ്യ ദർശന ഗ്യാലറി</span>
+      </h2>
+      <div class="section-rule center"></div>
+    </div>
+    <div class="gallery-masonry">
+      <div class="gallery-item reveal">
+        <img src="assets/img/kaarirulbathrakali.jpeg" alt="Sri Kaar Irul Kanapadai Bhadrakali Amman">
+        <div class="gallery-item-overlay"><span data-lang="ta">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன்</span><span data-lang="en">Sri Kaar Irul Kanapadai Bhadrakali Amman</span><span data-lang="hi">श्री कार इरुल गणपदाई भद्रकाली अम्मन</span><span data-lang="te">శ్రీ కార్ ఇరుల్ కణపదై భద్రకాళి అమ్మన్</span><span data-lang="ml">ശ്രീ കാർ ഇരുൾ കണപദൈ ഭദ്രകാളി അമ്മൻ</span></div>
+      </div>
+      <div class="gallery-item reveal d1">
+        <img src="assets/img/jadamuneshwar.jpeg" alt="Jada Muniswaran">
+        <div class="gallery-item-overlay"><span data-lang="ta">ஜடா முனீஸ்வரர்</span><span data-lang="en">Jada Muniswaran</span><span data-lang="hi">जटा मुनीश्वर</span><span data-lang="te">జటా మునీశ్వర్</span><span data-lang="ml">ജടാ മുനീശ്വരൻ</span></div>
+      </div>
+      <div class="gallery-item reveal d2">
+        <img src="assets/img/temple.jpg" alt="Kovil">
+        <div class="gallery-item-overlay"><span data-lang="ta">கோவில்</span><span data-lang="en">Temple</span><span data-lang="hi">मंदिर</span><span data-lang="te">కోవెల</span><span data-lang="ml">ക്ഷേത്രം</span></div>
+      </div>
+      <div class="gallery-item reveal d3">
+  <img src="assets/img/vinayagar.jpg" alt="Navagraha Vinayagar">
+  
+  <div class="gallery-item-overlay">
+    <span data-lang="ta">நவகிரக விநாயகர்</span>
+    <span data-lang="en">Navagraha Vinayagar</span>
+    <span data-lang="hi">नवग्रह विनायक</span>
+    <span data-lang="te">నవగ్రహ వినాయకుడు</span>
+    <span data-lang="ml">നവഗ്രഹ വിനായകൻ</span>
+  </div>
+</div>
+      <div class="gallery-item reveal d4">
+        <img src="assets/img/vanapechi.jpeg" alt="Vanapetchi Amman">
+        <div class="gallery-item-overlay"><span data-lang="ta">வனபேச்சி அம்மன்</span><span data-lang="en">Vanapetchi Amman</span><span data-lang="hi">वनपेची अम्मन</span><span data-lang="te">వనపేచి అమ్మన్</span><span data-lang="ml">വനപേചി അമ്മൻ</span></div>
+      </div>
+      <div class="gallery-item reveal d5">
+  <img src="assets/img/bhairavar.jpeg" alt="Unmatha Bhairavar">
+  
+  <div class="gallery-item-overlay">
+    <span data-lang="ta">உன்மத்த பைரவர்</span>
+    <span data-lang="en">Unmatha Bhairavar</span>
+    <span data-lang="hi">उन्मत्त भैरव</span>
+    <span data-lang="te">ఉన్మత్త భైరవ</span>
+    <span data-lang="ml">ഉന്മത്ത ഭൈരവൻ</span>
+  </div>
+</div>
+    </div>
+    <div class="gallery-cta-row reveal" style="text-align:center;">
+      <a href="gallery.html" class="btn-gold" style="display:inline-flex; align-items:center; gap:8px;">
+        <span data-lang="ta">மேலும் காண்க</span><span data-lang="en">View More</span><span data-lang="hi">और देखें</span><span data-lang="te">మరిన్ని చూడండి</span><span data-lang="ml">കൂടുതൽ കാണുക</span>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section class="contact-section" id="contact">
+  <div class="section-wrap">
+    <div class="reveal" style="margin-bottom:44px;">
+      <div class="section-eyebrow">
+        <span data-lang="ta">தொடர்பு கொள்ளுங்கள்</span><span data-lang="en">Get In Touch</span><span data-lang="hi">संपर्क करें</span><span data-lang="te">సంప్రదించండి</span><span data-lang="ml">ബന്ധപ്പെടുക</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="ta">முகவரி மற்றும் தொடர்பு</span>
+        <span data-lang="en">Address &amp; Contact</span>
+        <span data-lang="hi">पता और संपर्क</span>
+        <span data-lang="te">చిరునామా &amp; సంప్రదింపు</span>
+        <span data-lang="ml">വിലാസവും ബന്ധപ്പെടലും</span>
+      </h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal-left">
+        <h3><i class="bi bi-geo-alt-fill" style="margin-right:10px;"></i>
+          <span data-lang="ta">ஆலய முகவரி</span>
+          <span data-lang="en">Temple Address</span>
+          <span data-lang="hi">मंदिर का पता</span>
+          <span data-lang="te">ఆలయ చిరునామా</span>
+          <span data-lang="ml">ക്ഷേത്ര വിലാസം</span>
+        </h3>
+        <div class="contact-item">
+  <div class="contact-item-icon"><i class="bi bi-door-open-fill"></i></div>
+  <div class="contact-item-text">
+    <strong>
+  <span data-lang="ta">நடை திறக்கும் நேரம்</span>
+  <span data-lang="en">Gate Opening Hours</span>
+  <span data-lang="hi">प्रवेश द्वार समय</span>
+  <span data-lang="te">గేటు తెరిచే సమయం</span>
+  <span data-lang="ml">ഗേറ്റ് തുറക്കുന്ന സമയം</span>
+</strong><br>
+    <span data-lang="ta">காலை 9.30 மணி முதல் மாலை 6 மணி வரை</span>
+    <span data-lang="en">9:30 AM – 6:00 PM</span>
+    <span data-lang="hi">सुबह 9:30 बजे से शाम 6:00 बजे तक</span>
+    <span data-lang="te">ఉదయం 9:30 నుండి సాయంత్రం 6:00 వరకు</span>
+    <span data-lang="ml">രാവിലെ 9:30 മുതൽ വൈകുന്നേരം 6:00 വരെ</span>
+  </div>
+</div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="bi bi-map-fill"></i></div>
+          <div class="contact-item-text">
+            <strong>
+              <span data-lang="ta">முகவரி</span><span data-lang="en">Location</span><span data-lang="hi">स्थान</span><span data-lang="te">స్థానం</span><span data-lang="ml">സ്ഥാനം</span>
+            </strong><br>
+            <span data-lang="ta">திருமங்கலம் டு திண்டுக்கல் நான்கு வழி சாலை, ஆஸ்டின்பட்டி பிரிவு, தனக்கன்குளம், மதுரை</span>
+            <span data-lang="en">Thirumangalam to Dindigul Four-Lane Road, Austinpatti Division, Thanakkankulam, Madurai</span>
+            <span data-lang="hi">थिरुमंगलम से दिंडीगुल चार लेन मार्ग, ऑस्टिनपट्टी डिवीजन, थनक्कनकुलम, मदुरई</span>
+            <span data-lang="te">తిరుమంగళం నుండి దిండిగల్ నాలుగు లేన్ రోడ్డు, ఆస్టిన్‌పట్టి విభాగం, తనక్కన్కులం, మదురై</span>
+            <span data-lang="ml">തിരുമംഗലം - ദിൻഡിഗൽ ഫോർ ലേൻ റോഡ്, ഓസ്റ്റിൻ പട്ടി ഡിവിഷൻ, തനക്കൻകുളം, മധുര</span>
+          </div>
+        </div>
+        <!-- <div class="contact-item">
+          <div class="contact-item-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div class="contact-item-text">
+            <strong>
+              <span data-lang="ta">தொலைபேசி</span><span data-lang="en">Phone</span><span data-lang="hi">फ़ोन</span><span data-lang="te">ఫోన్</span><span data-lang="ml">ഫോൺ</span>
+            </strong><br>
+            <a href="tel:+918012709645">+91 80127 09645</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="bi bi-whatsapp"></i></div>
+          <div class="contact-item-text">
+            <strong>WhatsApp</strong><br>
+            <a href="https://wa.me/918012709645" target="_blank">+91 80127 09645</a>
+          </div>
+        </div> -->
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+          <div class="contact-item-text">
+            <strong>Trust Registration</strong><br>
+            51/2017 &bull; 12AA &bull; 80G
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="bi bi-clock-fill"></i></div>
+          <div class="contact-item-text">
+            <strong>
+              <span data-lang="ta">பூசை நேரம்</span><span data-lang="en">Puja Timings</span><span data-lang="hi">पूजा समय</span><span data-lang="te">పూజా సమయం</span><span data-lang="ml">പൂജ സമയം</span>
+            </strong><br>
+            <span data-lang="ta">பௌர்ணமி, அமாவாசை, ஆடி 18, மாசி சிவராத்திரி, பங்குனி உத்திரம் ஆகிய நாட்களில்</span>
+            <span data-lang="en">On Pournami, Amavasai, Aadi 18, Masi Sivaratri &amp; Panguni Uthiram</span>
+            <span data-lang="hi">पौर्णमि, अमावस्या, आदि 18, मासी शिवरात्रि और पंगुनी उथिरम के दिन</span>
+            <span data-lang="te">పౌర్ణమి, అమావాస్య, ఆది 18, మాసి శివరాత్రి మరియు పంగుని ఉత్తిరం రోజులలో</span>
+            <span data-lang="ml">പൗർണ്ണമി, അമാവാസ്യ, ആടി 18, മാസി ശിവരാത്രി, പങ്കുനി ഉത്തിരം ദിവസങ്ങളിൽ</span>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrap reveal-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0!2d77.95!3d9.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnMTIuMCJOIDc3wrA1NycwMC4wIkU!5e0!3m2!1sen!2sin!4v1617000000000!5m2!1sen!2sin"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Temple Map">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ BOOKING ═══════════════ -->
+<section class="booking-section" id="booking">
+  <div class="section-wrap">
+    <div class="booking-inner reveal">
+      <div class="booking-head">
+        <div style="font-size:2rem; color:var(--gold2); margin-bottom:12px;"><i class="bi bi-calendar2-check-fill"></i></div>
+        <h2>
+          <span data-lang="ta">பூசைக்கு முன் பதிவு செய்யுங்கள்</span>
+          <span data-lang="en">Register in Advance for Puja</span>
+          <span data-lang="hi">पूजा के लिए पहले से पंजीकरण</span>
+          <span data-lang="te">పూజ కోసం ముందే నమోదు చేయండి</span>
+          <span data-lang="ml">പൂജക്ക് മുൻകൂർ രജിസ്ട്രേഷൻ</span>
+        </h2>
+        <p data-lang="ta">பரிகார பூஜைகளுக்கு முன் அனுமதி பெற்ற பிறகே நடைபெறும். கீழே உங்கள் விவரங்களை பதிவிடுங்கள்.</p>
+        <p data-lang="en">Prior permission is required before parihara pujas. Please fill in your details below.</p>
+        <p data-lang="hi">परिहार पूजाओं से पहले अनुमति आवश्यक है। नीचे अपनी जानकारी भरें।</p>
+        <p data-lang="te">పరిహార పూజలకు ముందు అనుమతి అవసరం. దయచేసి వివరాలు నమోదు చేయండి.</p>
+        <p data-lang="ml">പരിഹാര പൂജകൾക്ക് മുൻ അനുമതി ആവശ്യം. വിവരങ്ങൾ നൽകുക.</p>
+      </div>
+      <div class="booking-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label>
+              <span data-lang="ta">உங்கள் பெயர்</span><span data-lang="en">Your Name</span><span data-lang="hi">आपका नाम</span><span data-lang="te">మీ పేరు</span><span data-lang="ml">നിങ്ങളുടെ പേര്</span>
+            </label>
+            <input type="text" id="bName" placeholder="Full Name">
+          </div>
+          <div class="form-group">
+            <label>
+              <span data-lang="ta">தொலைபேசி எண்</span><span data-lang="en">Phone Number</span><span data-lang="hi">फ़ोन</span><span data-lang="te">ఫోన్</span><span data-lang="ml">ഫോൺ</span>
+            </label>
+            <input type="tel" id="bPhone" placeholder="+91 XXXXX XXXXX">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>
+              <span data-lang="ta">தேதி</span><span data-lang="en">Visit Date</span><span data-lang="hi">तारीख</span><span data-lang="te">తేదీ</span><span data-lang="ml">തീയതി</span>
+            </label>
+            <input type="date" id="bDate">
+          </div>
+          <div class="form-group">
+            <label>
+              <span data-lang="ta">பூசை வகை</span><span data-lang="en">Puja Type</span><span data-lang="hi">पूजा प्रकार</span><span data-lang="te">పూజ రకం</span><span data-lang="ml">പൂജ തരം</span>
+            </label>
+            <select id="bPuja">
+              <option value="">-- Select --</option>
+              <option>Pournami Puja / பௌர்ணமி பூசை</option>
+              <option>Amavasai Puja / அமாவாசை பூசை</option>
+              <option>Kula Deiva Puja / குல தெய்வ பூசை</option>
+              <option>Vettu Puja / வெட்டு பூசை</option>
+              <option>Parihara Puja / பரிகார பூசை</option>
+              <option>Aadi 18 Puja / ஆடி 18 பூசை</option>
+              <option>General Visit / பொது வருகை</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom:20px;">
+          <label>
+            <span data-lang="ta">கோரிக்கை / செய்தி</span><span data-lang="en">Prayer Request / Message</span><span data-lang="hi">प्रार्थना अनुरोध</span><span data-lang="te">ప్రార్థన అభ్యర్థన</span><span data-lang="ml">പ്രാർഥനാ അഭ്യർഥന</span>
+          </label>
+          <textarea id="bMsg" placeholder="Describe your prayer request..."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitBooking()">
+          <i class="bi bi-send-fill" style="margin-right:8px;"></i>
+          <span data-lang="ta">முன் பதிவு செய்க</span>
+          <span data-lang="en">Submit Booking Request</span>
+          <span data-lang="hi">बुकिंग सबमिट करें</span>
+          <span data-lang="te">బుకింగ్ సమర్పించండి</span>
+          <span data-lang="ml">ബുക്കിംഗ് സമർപ്പിക്കുക</span>
+        </button>
+        <p class="booking-note">
+          <span data-lang="ta">உங்கள் கோரிக்கையை பெற்ற பின்னர், குறிப்பிட்ட எண்ணில் தொடர்பு கொள்வோம்.</span>
+          <span data-lang="en">After receiving your request, we will contact you at the provided number.</span>
+          <span data-lang="hi">अनुरोध प्राप्त होने के बाद, दिए गए नंबर पर संपर्क किया जाएगा।</span>
+          <span data-lang="te">మీ అభ్యర్థన అందిన తర్వాత, ఇచ్చిన నంబర్‌లో సంప్రదించబడతారు.</span>
+          <span data-lang="ml">അഭ്യർഥന ലഭിച്ചശേഷം, നൽകിയ നമ്പറിൽ ബന്ധപ്പെടും.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-logo">ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி அம்மன் திருக்கோவில்<br>
+        <span style="font-size:12px; color:var(--cream);">Sri Kaar Irul Kanapadai Bhadrakali Amman Temple</span>
+      </div>
+      <p class="footer-brand-sub">திருமங்கலம் டு திண்டுக்கல் நான்கு வழி சாலை, ஆஸ்டின்பட்டி பிரிவு, தனக்கன்குளம், மதுரை</p>
+      <div class="footer-trust">
+        <i class="bi bi-patch-check-fill" style="color:var(--cream)"></i>
+        Trust Reg: 51/2017 &bull; 12AA &bull; 80G
+      </div>
+      <div class="footer-trust" style="margin-top:8px;">
+  <i class="bi bi-clock" style="color:var(--cream)"></i>
+  <span data-lang="ta">நடை திறக்கும் நேரம் : காலை 9.30 – மாலை 6.00</span>
+  <span data-lang="en">Gate Opening Hours: 9:30 AM – 6:00 PM</span>
+  <span data-lang="hi">प्रवेश द्वार समय: सुबह 9:30 – शाम 6:00</span>
+  <span data-lang="te">గేటు తెరిచే సమయం: ఉదయం 9:30 – సాయంత్రం 6:00</span>
+  <span data-lang="ml">ഗേറ്റ് തുറക്കുന്ന സമയം: രാവിലെ 9:30 – വൈകുന്നേരം 6:00</span>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#home"><i class="bi bi-chevron-right"></i> Home</a></li>
+        <li><a href="#about"><i class="bi bi-chevron-right"></i> About</a></li>
+        <li><a href="#deities"><i class="bi bi-chevron-right"></i> Deities</a></li>
+        <li><a href="#poojas"><i class="bi bi-chevron-right"></i> Poojas</a></li>
+        <li><a href="#gallery"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+        <li><a href="#contact"><i class="bi bi-chevron-right"></i> Contact</a></li>
+        <li><a href="#booking"><i class="bi bi-chevron-right"></i> Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Puja Days</h4>
+      <ul>
+        <li><a href="#pujadays"><i class="bi bi-moon"></i> Pournami</a></li>
+        <li><a href="#pujadays"><i class="bi bi-circle"></i> Amavasai</a></li>
+        <li><a href="#pujadays"><i class="bi bi-sun"></i> Aadi 18</a></li>
+        <li><a href="#pujadays"><i class="bi bi-stars"></i> Masi Sivaratri</a></li>
+        <li><a href="#pujadays"><i class="bi bi-flower1"></i> Panguni Uthiram</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Deities</h4>
+      <ul>
+        <li><a href="#deities"><i class="bi bi-flower1"></i> Bhadrakali Amman</a></li>
+        <li><a href="#deities"><i class="bi bi-star"></i> Navagraha Vinayagar</a></li>
+        <li><a href="#deities"><i class="bi bi-people"></i> Sapta Mathas</a></li>
+        <li><a href="#deities"><i class="bi bi-shield"></i> Unmatta Bhairava</a></li>
+        <li><a href="#deities"><i class="bi bi-lightning"></i> Velapper</a></li>
+        <li><a href="#deities"><i class="bi bi-moon-stars"></i> Jata Muneeswar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 ஸ்ரீ கார் இருள் கணபடை பத்ரகாளி திருக்கோவில், மதுரை. All rights reserved.</p>
+    <p>Developed by <a href="https://softwaredevelopmentandgraphicdesign.tech/" target="_blank" style="color:#C9920A; text-decoration:none;">SDGD</a></p>
+  </div>
+</footer>
+
+<!-- BOTTOM MOBILE NAV -->
+<nav class="bottom-nav">
+  <a href="index.html" class="bottom-nav-item active">
+    <i class="bi bi-house-fill"></i>
+    <span class="bottom-nav-label">
+      <span data-lang="ta">முகப்பு</span>
+      <span data-lang="en">Home</span>
+      <span data-lang="hi">होम</span>
+      <span data-lang="te">హోమ్</span>
+      <span data-lang="ml">ഹോം</span>
+    </span>
+  </a>
+  <a href="about.html" class="bottom-nav-item">
+    <i class="bi bi-info-circle-fill"></i>
+    <span class="bottom-nav-label">
+      <span data-lang="ta">அறிமுகம்</span>
+      <span data-lang="en">About</span>
+      <span data-lang="hi">परिचय</span>
+      <span data-lang="te">పరిచయం</span>
+      <span data-lang="ml">പരിചയം</span>
+    </span>
+  </a>
+  <a href="deities.html" class="bottom-nav-item">
+    <i class="bi bi-flower2"></i>
+    <span class="bottom-nav-label">
+      <span data-lang="ta">தெய்வம்</span>
+      <span data-lang="en">Deities</span>
+      <span data-lang="hi">देवता</span>
+      <span data-lang="te">దేవతలు</span>
+      <span data-lang="ml">ദേവതകൾ</span>
+    </span>
+  </a>
+  <a href="gallery.html" class="bottom-nav-item">
+    <i class="bi bi-images"></i>
+    <span class="bottom-nav-label">
+      <span data-lang="ta">படங்கள்</span>
+      <span data-lang="en">Gallery</span>
+      <span data-lang="hi">गैलरी</span>
+      <span data-lang="te">గ్యాలరీ</span>
+      <span data-lang="ml">ഗ്യാലറി</span>
+    </span>
+  </a>
+  <a href="contact.html" class="bottom-nav-item">
+    <i class="bi bi-telephone-fill"></i>
+    <span class="bottom-nav-label">
+      <span data-lang="ta">தொடர்பு</span>
+      <span data-lang="en">Contact</span>
+      <span data-lang="hi">संपर्क</span>
+      <span data-lang="te">సంప్రదించు</span>
+      <span data-lang="ml">ബന്ധപ്പെടുക</span>
+    </span>
+  </a>
+</nav>
+
+<!-- ═══════════════ FLOATING BUTTONS ═══════════════ -->
+<!-- <div class="float-group">
+  <a href="tel:+918012709645" class="float-btn float-call" title="Call Us">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+  <a href="https://wa.me/918012709645" target="_blank" class="float-btn float-whatsapp" title="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <button class="float-btn float-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+</div> -->
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
